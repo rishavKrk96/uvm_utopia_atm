@@ -1,0 +1,1676 @@
+[2023-06-05 18:22:32 EDT] vlib work && vlog -writetoplevels questa.tops '-timescale' '1ns/1ns' +incdir+$UVM_HOME/src -L $QUESTA_HOME/uvm-1.2 design.sv testbench.sv  && vsim -f questa.tops -batch -do "vsim -voptargs=+acc=npr ; run -all; exit" -voptargs=+acc=npr  
+QuestaSim-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+Start time: 18:22:32 on Jun 05,2023
+vlog -writetoplevels questa.tops -timescale 1ns/1ns "+incdir+/playground_lib/uvm-1.2/src" -L /usr/share/questa/questasim//uvm-1.2 design.sv testbench.sv 
+-- Compiling package design_sv_unit
+-- Compiling module squat
+-- Compiling module utopia1_atm_rx
+-- Compiling module utopia1_atm_tx
+** Note: (vlog-2286) testbench.sv(4): Using implicit +incdir+/usr/share/questa/questasim/uvm-1.2/../verilog_src/uvm-1.2/src from import uvm_pkg
+-- Compiling package testbench_sv_unit
+-- Importing package /usr/share/questa/questasim//uvm-1.2.uvm_pkg (uvm-1.2 Built-in)
+** Warning: atm_cell.sv(190): (vlog-2217) No default specified for 'prefix'.  Default must match the value specified in class at atm_cell.sv(152) for strict LRM compliance.
+** Warning: atm_cell.sv(220): (vlog-2217) No default specified for 'to'.  Default must match the value specified in class at atm_cell.sv(154) for strict LRM compliance.
+** Warning: atm_cell.sv(318): (vlog-2217) No default specified for 'prefix'.  Default must match the value specified in class at atm_cell.sv(105) for strict LRM compliance.
+** Warning: atm_cell.sv(343): (vlog-2217) No default specified for 'to'.  Default must match the value specified in class at atm_cell.sv(107) for strict LRM compliance.
+-- Compiling interface Utopia
+-- Compiling module top
+-- Compiling interface cpu_ifc
+-- Compiling interface LookupTable
+
+Top level modules:
+  top
+End time: 18:22:33 on Jun 05,2023, Elapsed time: 0:00:01
+Errors: 0, Warnings: 4
+# vsim top -batch -do "vsim -voptargs=+acc=npr ; run -all; exit" -voptargs="+acc=npr" 
+# Start time: 18:22:33 on Jun 05,2023
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10016) Option '-L /usr/share/questa/questasim//uvm-1.2' was detected by vlog for design-unit 'top', but was not detected by vopt. The vlog option will be ignored.
+# ** Warning: (vopt-10016) Option '-L /usr/share/questa/questasim//uvm-1.2' was detected by vlog for design-unit 'testbench_sv_unit', but was not detected by vopt. The vlog option will be ignored.
+# ** Warning: (vopt-10016) Option '-L /usr/share/questa/questasim//uvm-1.2' was detected by vlog for design-unit 'Utopia', but was not detected by vopt. The vlog option will be ignored.
+# ** Warning: (vopt-10016) Option '-L /usr/share/questa/questasim//uvm-1.2' was detected by vlog for design-unit 'cpu_ifc', but was not detected by vopt. The vlog option will be ignored.
+# ** Warning: (vopt-10016) Option '-L /usr/share/questa/questasim//uvm-1.2' was detected by vlog for design-unit 'squat', but was not detected by vopt. The vlog option will be ignored.
+# ** Warning: (vopt-10016) Option '-L /usr/share/questa/questasim//uvm-1.2' was detected by vlog for design-unit 'design_sv_unit', but was not detected by vopt. The vlog option will be ignored.
+# ** Warning: (vopt-10016) Option '-L /usr/share/questa/questasim//uvm-1.2' was detected by vlog for design-unit 'LookupTable', but was not detected by vopt. The vlog option will be ignored.
+# ** Warning: (vopt-10016) Option '-L /usr/share/questa/questasim//uvm-1.2' was detected by vlog for design-unit 'utopia1_atm_rx', but was not detected by vopt. The vlog option will be ignored.
+# ** Warning: (vopt-10016) Option '-L /usr/share/questa/questasim//uvm-1.2' was detected by vlog for design-unit 'utopia1_atm_tx', but was not detected by vopt. The vlog option will be ignored.
+# ** Warning: atm_cell.sv(190): (vopt-2217) No default specified for 'prefix'.  Default must match the value specified in class at atm_cell.sv(152) for strict LRM compliance.
+# ** Warning: atm_cell.sv(220): (vopt-2217) No default specified for 'to'.  Default must match the value specified in class at atm_cell.sv(154) for strict LRM compliance.
+# ** Warning: atm_cell.sv(318): (vopt-2217) No default specified for 'prefix'.  Default must match the value specified in class at atm_cell.sv(105) for strict LRM compliance.
+# ** Warning: atm_cell.sv(343): (vopt-2217) No default specified for 'to'.  Default must match the value specified in class at atm_cell.sv(107) for strict LRM compliance.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=13.
+# //  Questa Sim-64
+# //  Version 2021.3 linux_x86_64 Jul 13 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading /usr/share/questa/questasim//uvm-1.2.uvm_pkg(fast)
+# Loading work.testbench_sv_unit(fast)
+# Loading /usr/share/questa/questasim//uvm-1.2.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading work.cpu_ifc(fast__2)
+# Loading work.design_sv_unit(fast)
+# Loading work.squat(fast)
+# Loading work.LookupTable(fast__1)
+# Loading work.utopia1_atm_rx(fast)
+# Loading work.utopia1_atm_tx(fast)
+# Loading work.cpu_ifc(fast)
+# Loading work.Utopia(fast)
+# ** Warning: (vsim-8441) Clocking block output rx_vif.cbr.clav is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /testbench_sv_unit File: monitor.svh Line: 149
+# ** Warning: (vsim-8441) Clocking block output rx_vif.cbr.data is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /testbench_sv_unit File: monitor.svh Line: 159
+# ** Warning: (vsim-8441) Clocking block output rx_vif.cbr.soc is not legal in this
+# or another expression.
+#    Time: 0 ns  Iteration: 0  Region: /testbench_sv_unit File: monitor.svh Line: 151
+# Compiling /tmp/unknown@d32169d902d7_dpi_13/linux_x86_64_gcc-7.4.0/exportwrapper.c
+# Loading /tmp/unknown@d32169d902d7_dpi_13/linux_x86_64_gcc-7.4.0/vsim_auto_compile.so
+# Loading /usr/share/questa/questasim/uvm-1.2/linux_x86_64/uvm_dpi.so
+# 
+# vsim -voptargs=+acc=npr 
+# run -all
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test uni_seq_test...
+# ** Warning: In instance '\/testbench_sv_unit::utopia_coverage::CG_fwd#1 ' the 'option.per_instance' is set to '0' (false). Assignment to members 'weight', 'goal' and 'comment' of 'option' would not have any effect.
+# ** Warning: In instance '\/testbench_sv_unit::utopia_coverage::CG_fwd#2 ' the 'option.per_instance' is set to '0' (false). Assignment to members 'weight', 'goal' and 'comment' of 'option' would not have any effect.
+# ** Warning: In instance '\/testbench_sv_unit::utopia_coverage::CG_fwd#3 ' the 'option.per_instance' is set to '0' (false). Assignment to members 'weight', 'goal' and 'comment' of 'option' would not have any effect.
+# ** Warning: In instance '\/testbench_sv_unit::utopia_coverage::CG_fwd#4 ' the 'option.per_instance' is set to '0' (false). Assignment to members 'weight', 'goal' and 'comment' of 'option' would not have any effect.
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_root.svh(579) @ 0: reporter [UVMTOP] UVM testbench topology:
+# ------------------------------------------------------------------------
+# Name                             Type                        Size  Value
+# ------------------------------------------------------------------------
+# uvm_test_top                     uni_seq_test                -     @383 
+#   env                            utopia_env                  -     @395 
+#     cpu_agnt                     cpu_agent                   -     @716 
+#       cpu_drv                    cpu_driver                  -     @725 
+#         rsp_port                 uvm_analysis_port           -     @742 
+#         seq_item_port            uvm_seq_item_pull_port      -     @733 
+#       cpu_sqncr                  cpu_sequencer               -     @751 
+#         rsp_export               uvm_analysis_export         -     @759 
+#         seq_item_export          uvm_seq_item_pull_imp       -     @865 
+#         arbitration_queue        array                       0     -    
+#         lock_queue               array                       0     -    
+#         num_last_reqs            integral                    32    'd1  
+#         num_last_rsps            integral                    32    'd1  
+#     utopia_agnt_Rx[0]            utopia_rx_agent             -     @415 
+#       utopia_drv                 utopia_driver               -     @881 
+#         rsp_port                 uvm_analysis_port           -     @898 
+#         seq_item_port            uvm_seq_item_pull_port      -     @889 
+#       utopia_mon                 utopia_rx_monitor           -     @1030
+#         item_collected_port      uvm_analysis_port           -     @1038
+#         item_collected_port_cov  uvm_analysis_port           -     @1047
+#       utopia_sqncr               utopia_sequencer            -     @907 
+#         rsp_export               uvm_analysis_export         -     @915 
+#         seq_item_export          uvm_seq_item_pull_imp       -     @1021
+#         arbitration_queue        array                       0     -    
+#         lock_queue               array                       0     -    
+#         num_last_reqs            integral                    32    'd1  
+#         num_last_rsps            integral                    32    'd1  
+#     utopia_agnt_Rx[1]            utopia_rx_agent             -     @423 
+#       utopia_drv                 utopia_driver               -     @1064
+#         rsp_port                 uvm_analysis_port           -     @1081
+#         seq_item_port            uvm_seq_item_pull_port      -     @1072
+#       utopia_mon                 utopia_rx_monitor           -     @1213
+#         item_collected_port      uvm_analysis_port           -     @1221
+#         item_collected_port_cov  uvm_analysis_port           -     @1230
+#       utopia_sqncr               utopia_sequencer            -     @1090
+#         rsp_export               uvm_analysis_export         -     @1098
+#         seq_item_export          uvm_seq_item_pull_imp       -     @1204
+#         arbitration_queue        array                       0     -    
+#         lock_queue               array                       0     -    
+#         num_last_reqs            integral                    32    'd1  
+#         num_last_rsps            integral                    32    'd1  
+#     utopia_agnt_Rx[2]            utopia_rx_agent             -     @431 
+#       utopia_drv                 utopia_driver               -     @1247
+#         rsp_port                 uvm_analysis_port           -     @1264
+#         seq_item_port            uvm_seq_item_pull_port      -     @1255
+#       utopia_mon                 utopia_rx_monitor           -     @1396
+#         item_collected_port      uvm_analysis_port           -     @1404
+#         item_collected_port_cov  uvm_analysis_port           -     @1413
+#       utopia_sqncr               utopia_sequencer            -     @1273
+#         rsp_export               uvm_analysis_export         -     @1281
+#         seq_item_export          uvm_seq_item_pull_imp       -     @1387
+#         arbitration_queue        array                       0     -    
+#         lock_queue               array                       0     -    
+#         num_last_reqs            integral                    32    'd1  
+#         num_last_rsps            integral                    32    'd1  
+#     utopia_agnt_Rx[3]            utopia_rx_agent             -     @439 
+#       utopia_drv                 utopia_driver               -     @1430
+#         rsp_port                 uvm_analysis_port           -     @1447
+#         seq_item_port            uvm_seq_item_pull_port      -     @1438
+#       utopia_mon                 utopia_rx_monitor           -     @1579
+#         item_collected_port      uvm_analysis_port           -     @1587
+#         item_collected_port_cov  uvm_analysis_port           -     @1596
+#       utopia_sqncr               utopia_sequencer            -     @1456
+#         rsp_export               uvm_analysis_export         -     @1464
+#         seq_item_export          uvm_seq_item_pull_imp       -     @1570
+#         arbitration_queue        array                       0     -    
+#         lock_queue               array                       0     -    
+#         num_last_reqs            integral                    32    'd1  
+#         num_last_rsps            integral                    32    'd1  
+#     utopia_agnt_Tx[0]            utopia_tx_agent             -     @447 
+#       utopia_mon                 utopia_tx_monitor           -     @1613
+#         item_collected_port      uvm_analysis_port           -     @1621
+#     utopia_agnt_Tx[1]            utopia_tx_agent             -     @455 
+#       utopia_mon                 utopia_tx_monitor           -     @1632
+#         item_collected_port      uvm_analysis_port           -     @1640
+#     utopia_agnt_Tx[2]            utopia_tx_agent             -     @463 
+#       utopia_mon                 utopia_tx_monitor           -     @1651
+#         item_collected_port      uvm_analysis_port           -     @1659
+#     utopia_agnt_Tx[3]            utopia_tx_agent             -     @471 
+#       utopia_mon                 utopia_tx_monitor           -     @1670
+#         item_collected_port      uvm_analysis_port           -     @1678
+#     utopia_cov                   utopia_coverage             -     @487 
+#       analysis_imp               uvm_analysis_imp            -     @495 
+#       tlm_a_fifo_cov[0]          uvm_tlm_analysis_fifo #(T)  -     @504 
+#         analysis_export          uvm_analysis_imp            -     @548 
+#         get_ap                   uvm_analysis_port           -     @539 
+#         get_peek_export          uvm_get_peek_imp            -     @521 
+#         put_ap                   uvm_analysis_port           -     @530 
+#         put_export               uvm_put_imp                 -     @512 
+#       tlm_a_fifo_cov[1]          uvm_tlm_analysis_fifo #(T)  -     @557 
+#         analysis_export          uvm_analysis_imp            -     @601 
+#         get_ap                   uvm_analysis_port           -     @592 
+#         get_peek_export          uvm_get_peek_imp            -     @574 
+#         put_ap                   uvm_analysis_port           -     @583 
+#         put_export               uvm_put_imp                 -     @565 
+#       tlm_a_fifo_cov[2]          uvm_tlm_analysis_fifo #(T)  -     @610 
+#         analysis_export          uvm_analysis_imp            -     @654 
+#         get_ap                   uvm_analysis_port           -     @645 
+#         get_peek_export          uvm_get_peek_imp            -     @627 
+#         put_ap                   uvm_analysis_port           -     @636 
+#         put_export               uvm_put_imp                 -     @618 
+#       tlm_a_fifo_cov[3]          uvm_tlm_analysis_fifo #(T)  -     @663 
+#         analysis_export          uvm_analysis_imp            -     @707 
+#         get_ap                   uvm_analysis_port           -     @698 
+#         get_peek_export          uvm_get_peek_imp            -     @680 
+#         put_ap                   uvm_analysis_port           -     @689 
+#         put_export               uvm_put_imp                 -     @671 
+#     utopia_scbd                  utopia_scoreboard           -     @479 
+#       tlm_a_fifo_rcvd[0]         uvm_tlm_analysis_fifo #(T)  -     @1688
+#         analysis_export          uvm_analysis_imp            -     @1732
+#         get_ap                   uvm_analysis_port           -     @1723
+#         get_peek_export          uvm_get_peek_imp            -     @1705
+#         put_ap                   uvm_analysis_port           -     @1714
+#         put_export               uvm_put_imp                 -     @1696
+#       tlm_a_fifo_rcvd[1]         uvm_tlm_analysis_fifo #(T)  -     @1741
+#         analysis_export          uvm_analysis_imp            -     @1785
+#         get_ap                   uvm_analysis_port           -     @1776
+#         get_peek_export          uvm_get_peek_imp            -     @1758
+#         put_ap                   uvm_analysis_port           -     @1767
+#         put_export               uvm_put_imp                 -     @1749
+#       tlm_a_fifo_rcvd[2]         uvm_tlm_analysis_fifo #(T)  -     @1794
+#         analysis_export          uvm_analysis_imp            -     @1838
+#         get_ap                   uvm_analysis_port           -     @1829
+#         get_peek_export          uvm_get_peek_imp            -     @1811
+#         put_ap                   uvm_analysis_port           -     @1820
+#         put_export               uvm_put_imp                 -     @1802
+#       tlm_a_fifo_rcvd[3]         uvm_tlm_analysis_fifo #(T)  -     @1847
+#         analysis_export          uvm_analysis_imp            -     @1891
+#         get_ap                   uvm_analysis_port           -     @1882
+#         get_peek_export          uvm_get_peek_imp            -     @1864
+#         put_ap                   uvm_analysis_port           -     @1873
+#         put_export               uvm_put_imp                 -     @1855
+#       tlm_a_fifo_sent[0]         uvm_tlm_analysis_fifo #(T)  -     @1900
+#         analysis_export          uvm_analysis_imp            -     @1944
+#         get_ap                   uvm_analysis_port           -     @1935
+#         get_peek_export          uvm_get_peek_imp            -     @1917
+#         put_ap                   uvm_analysis_port           -     @1926
+#         put_export               uvm_put_imp                 -     @1908
+#       tlm_a_fifo_sent[1]         uvm_tlm_analysis_fifo #(T)  -     @1953
+#         analysis_export          uvm_analysis_imp            -     @1997
+#         get_ap                   uvm_analysis_port           -     @1988
+#         get_peek_export          uvm_get_peek_imp            -     @1970
+#         put_ap                   uvm_analysis_port           -     @1979
+#         put_export               uvm_put_imp                 -     @1961
+#       tlm_a_fifo_sent[2]         uvm_tlm_analysis_fifo #(T)  -     @2006
+#         analysis_export          uvm_analysis_imp            -     @2050
+#         get_ap                   uvm_analysis_port           -     @2041
+#         get_peek_export          uvm_get_peek_imp            -     @2023
+#         put_ap                   uvm_analysis_port           -     @2032
+#         put_export               uvm_put_imp                 -     @2014
+#       tlm_a_fifo_sent[3]         uvm_tlm_analysis_fifo #(T)  -     @2059
+#         analysis_export          uvm_analysis_imp            -     @2103
+#         get_ap                   uvm_analysis_port           -     @2094
+#         get_peek_export          uvm_get_peek_imp            -     @2076
+#         put_ap                   uvm_analysis_port           -     @2085
+#         put_export               uvm_put_imp                 -     @2067
+# ------------------------------------------------------------------------
+# 
+# Memory: Loading ... Verifying ...Verified
+#                25705: event ev triggered
+#                25705: event ev trigger received
+#                25705: event ev trigger received
+#                25705: event ev trigger received
+#                25705: event ev trigger received
+# Scoreboard Run Phase starts....
+# UVM_INFO atm_cell.sv(196) @ 25705: uvm_test_top.env.utopia_agnt_Rx[0].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @25705: UNI id:0 GFC=d, VPI=b9, VCI=30ab, CLP=1, PT=0, HEC=a5, Payload[0]=3f
+# @25705: db 93 0a b8 a5 3f 5f cf da 56 21 26 db 2f 08 87 f4 1d d1 8a 7c 62 7c b9 65 33 39 51 91 79 19 a5 b1 0c 72 f8 8c 06 c3 98 05 83 44 fd 46 d0 b4 ba fd b6 0c 78 6b 
+# 
+# UVM_INFO driver.svh(89) @ 25705: uvm_test_top.env.utopia_agnt_Rx[0].utopia_drv [utopia_driver] Sending cell:
+# db 93 0a b8 a5 3f 5f cf da 56 21 26 db 2f 08 87 f4 1d d1 8a 7c 62 7c b9 65 33 39 51 91 79 19 a5 b1 0c 72 f8 8c 06 c3 98 05 83 44 fd 46 d0 b4 ba fd b6 0c 78 6b 
+# UVM_INFO atm_cell.sv(324) @ 26235: reporter@@NNI_cell [NNI_cell]  @26235 NNI id:0 VPI=db9, VCI=30ab, CLP=1, PT=0, HEC=a5, Payload[0]=3f
+#  @26235 db 93 0a b8 a5 3f 5f cf da 56 21 26 db 2f 08 87 f4 1d d1 8a 7c 62 7c b9 65 33 39 51 91 79 19 a5 b1 0c 72 f8 8c 06 c3 98 05 83 44 fd 46 d0 b4 ba fd b6 0c 78 6b 
+# 
+# UVM_INFO atm_cell.sv(196) @ 26235: uvm_test_top.env.utopia_agnt_Rx[1].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @26235: UNI id:0 GFC=b, VPI=2c, VCI=229e, CLP=0, PT=7, HEC=12, Payload[0]=58
+# @26235: b2 c2 29 e7 12 58 44 df c5 c0 54 46 67 42 8e b0 49 6c da 05 e1 af 44 91 eb e9 d7 e3 10 ba bc 41 c7 7d 0e 96 1e 0a 5a 1f 8c f9 f1 df fb c0 66 6c a9 08 3d 14 38 
+# 
+# UVM_INFO driver.svh(89) @ 26235: uvm_test_top.env.utopia_agnt_Rx[1].utopia_drv [utopia_driver] Sending cell:
+# b2 c2 29 e7 12 58 44 df c5 c0 54 46 67 42 8e b0 49 6c da 05 e1 af 44 91 eb e9 d7 e3 10 ba bc 41 c7 7d 0e 96 1e 0a 5a 1f 8c f9 f1 df fb c0 66 6c a9 08 3d 14 38 
+# UVM_INFO atm_cell.sv(324) @ 26775: reporter@@NNI_cell [NNI_cell]  @26775 NNI id:0 VPI=b2c, VCI=229e, CLP=0, PT=7, HEC=12, Payload[0]=58
+#  @26775 b2 c2 29 e7 12 58 44 df c5 c0 54 46 67 42 8e b0 49 6c da 05 e1 af 44 91 eb e9 d7 e3 10 ba bc 41 c7 7d 0e 96 1e 0a 5a 1f 8c f9 f1 df fb c0 66 6c a9 08 3d 14 38 
+# 
+# UVM_INFO atm_cell.sv(196) @ 26775: uvm_test_top.env.utopia_agnt_Rx[2].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @26775: UNI id:0 GFC=6, VPI=95, VCI=a582, CLP=0, PT=2, HEC=4f, Payload[0]=6e
+# @26775: 69 5a 58 22 4f 6e c2 3e 88 1c cd e5 1a 5e e6 4e 0a 10 41 d9 fa 74 ce be 3d d3 43 f7 fd a9 23 8b ba c7 cd 0e 2a 70 be f4 29 9c eb 43 68 34 f9 5c bf 5d 6b d8 0d 
+# 
+# UVM_INFO driver.svh(89) @ 26775: uvm_test_top.env.utopia_agnt_Rx[2].utopia_drv [utopia_driver] Sending cell:
+# 69 5a 58 22 4f 6e c2 3e 88 1c cd e5 1a 5e e6 4e 0a 10 41 d9 fa 74 ce be 3d d3 43 f7 fd a9 23 8b ba c7 cd 0e 2a 70 be f4 29 9c eb 43 68 34 f9 5c bf 5d 6b d8 0d 
+# UVM_INFO atm_cell.sv(324) @ 26815: reporter@@NNI_cell [NNI_cell] @26815 NNI id:0 VPI=0b9, VCI=30ab, CLP=1, PT=0, HEC=a5, Payload[0]=3f
+# @26815 0b 93 0a b8 a5 3f 5f cf da 56 21 26 db 2f 08 87 f4 1d d1 8a 7c 62 7c b9 65 33 39 51 91 79 19 a5 b1 0c 72 f8 8c 06 c3 98 05 83 44 fd 46 d0 b4 ba fd b6 0c 78 6b 
+# 
+# UVM_INFO atm_cell.sv(324) @ 26815: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=30ab, CLP=1, PT=0, HEC=a5, Payload[0]=3f
+# 0b 93 0a b8 a5 3f 5f cf da 56 21 26 db 2f 08 87 f4 1d d1 8a 7c 62 7c b9 65 33 39 51 91 79 19 a5 b1 0c 72 f8 8c 06 c3 98 05 83 44 fd 46 d0 b4 ba fd b6 0c 78 6b 
+# 
+# UVM_INFO atm_cell.sv(324) @ 26815: reporter@@NNI_cell [NNI_cell] @26815 NNI id:0 VPI=0b9, VCI=30ab, CLP=1, PT=0, HEC=a5, Payload[0]=3f
+# @26815 0b 93 0a b8 a5 3f 5f cf da 56 21 26 db 2f 08 87 f4 1d d1 8a 7c 62 7c b9 65 33 39 51 91 79 19 a5 b1 0c 72 f8 8c 06 c3 98 05 83 44 fd 46 d0 b4 ba fd b6 0c 78 6b 
+# 
+# UVM_INFO atm_cell.sv(324) @ 26815: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=30ab, CLP=1, PT=0, HEC=a5, Payload[0]=3f
+# 0b 93 0a b8 a5 3f 5f cf da 56 21 26 db 2f 08 87 f4 1d d1 8a 7c 62 7c b9 65 33 39 51 91 79 19 a5 b1 0c 72 f8 8c 06 c3 98 05 83 44 fd 46 d0 b4 ba fd b6 0c 78 6b 
+# 
+# UVM_INFO atm_cell.sv(324) @ 26815: reporter@@NNI_cell [NNI_cell] @26815 NNI id:0 VPI=0b9, VCI=30ab, CLP=1, PT=0, HEC=a5, Payload[0]=3f
+# @26815 0b 93 0a b8 a5 3f 5f cf da 56 21 26 db 2f 08 87 f4 1d d1 8a 7c 62 7c b9 65 33 39 51 91 79 19 a5 b1 0c 72 f8 8c 06 c3 98 05 83 44 fd 46 d0 b4 ba fd b6 0c 78 6b 
+# 
+# UVM_INFO atm_cell.sv(324) @ 26815: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=30ab, CLP=1, PT=0, HEC=a5, Payload[0]=3f
+# 0b 93 0a b8 a5 3f 5f cf da 56 21 26 db 2f 08 87 f4 1d d1 8a 7c 62 7c b9 65 33 39 51 91 79 19 a5 b1 0c 72 f8 8c 06 c3 98 05 83 44 fd 46 d0 b4 ba fd b6 0c 78 6b 
+# 
+# UVM_INFO atm_cell.sv(324) @ 27315: reporter@@NNI_cell [NNI_cell]  @27315 NNI id:0 VPI=695, VCI=a582, CLP=0, PT=2, HEC=4f, Payload[0]=6e
+#  @27315 69 5a 58 22 4f 6e c2 3e 88 1c cd e5 1a 5e e6 4e 0a 10 41 d9 fa 74 ce be 3d d3 43 f7 fd a9 23 8b ba c7 cd 0e 2a 70 be f4 29 9c eb 43 68 34 f9 5c bf 5d 6b d8 0d 
+# 
+# UVM_INFO atm_cell.sv(196) @ 27315: uvm_test_top.env.utopia_agnt_Rx[3].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @27315: UNI id:0 GFC=7, VPI=22, VCI=7617, CLP=0, PT=2, HEC=a7, Payload[0]=7c
+# @27315: 72 27 61 72 a7 7c 85 bb a1 dc 78 e4 24 32 1d fa 67 c4 67 f1 19 56 57 6b 6d d2 6e 78 33 e8 e2 4b b3 58 73 c2 b4 e3 56 85 91 4f c0 3c f5 12 d5 15 3c b3 be 6d 42 
+# 
+# UVM_INFO driver.svh(89) @ 27315: uvm_test_top.env.utopia_agnt_Rx[3].utopia_drv [utopia_driver] Sending cell:
+# 72 27 61 72 a7 7c 85 bb a1 dc 78 e4 24 32 1d fa 67 c4 67 f1 19 56 57 6b 6d d2 6e 78 33 e8 e2 4b b3 58 73 c2 b4 e3 56 85 91 4f c0 3c f5 12 d5 15 3c b3 be 6d 42 
+# UVM_INFO atm_cell.sv(324) @ 27355: reporter@@NNI_cell [NNI_cell] @27355 NNI id:0 VPI=02c, VCI=229e, CLP=0, PT=7, HEC=12, Payload[0]=58
+# @27355 02 c2 29 e7 12 58 44 df c5 c0 54 46 67 42 8e b0 49 6c da 05 e1 af 44 91 eb e9 d7 e3 10 ba bc 41 c7 7d 0e 96 1e 0a 5a 1f 8c f9 f1 df fb c0 66 6c a9 08 3d 14 38 
+# 
+# UVM_INFO atm_cell.sv(324) @ 27355: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=02c, VCI=229e, CLP=0, PT=7, HEC=12, Payload[0]=58
+# 02 c2 29 e7 12 58 44 df c5 c0 54 46 67 42 8e b0 49 6c da 05 e1 af 44 91 eb e9 d7 e3 10 ba bc 41 c7 7d 0e 96 1e 0a 5a 1f 8c f9 f1 df fb c0 66 6c a9 08 3d 14 38 
+# 
+# UVM_INFO atm_cell.sv(324) @ 27375: reporter@@NNI_cell [NNI_cell] @27375 NNI id:0 VPI=02c, VCI=229e, CLP=0, PT=7, HEC=12, Payload[0]=58
+# @27375 02 c2 29 e7 12 58 44 df c5 c0 54 46 67 42 8e b0 49 6c da 05 e1 af 44 91 eb e9 d7 e3 10 ba bc 41 c7 7d 0e 96 1e 0a 5a 1f 8c f9 f1 df fb c0 66 6c a9 08 3d 14 38 
+# 
+# UVM_INFO atm_cell.sv(324) @ 27375: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=02c, VCI=229e, CLP=0, PT=7, HEC=12, Payload[0]=58
+# 02 c2 29 e7 12 58 44 df c5 c0 54 46 67 42 8e b0 49 6c da 05 e1 af 44 91 eb e9 d7 e3 10 ba bc 41 c7 7d 0e 96 1e 0a 5a 1f 8c f9 f1 df fb c0 66 6c a9 08 3d 14 38 
+# 
+# UVM_INFO atm_cell.sv(324) @ 27855: reporter@@NNI_cell [NNI_cell]  @27855 NNI id:0 VPI=722, VCI=7617, CLP=0, PT=2, HEC=a7, Payload[0]=7c
+#  @27855 72 27 61 72 a7 7c 85 bb a1 dc 78 e4 24 32 1d fa 67 c4 67 f1 19 56 57 6b 6d d2 6e 78 33 e8 e2 4b b3 58 73 c2 b4 e3 56 85 91 4f c0 3c f5 12 d5 15 3c b3 be 6d 42 
+# 
+# UVM_INFO atm_cell.sv(324) @ 27895: reporter@@NNI_cell [NNI_cell] @27895 NNI id:0 VPI=095, VCI=a582, CLP=0, PT=2, HEC=4f, Payload[0]=6e
+# @27895 09 5a 58 22 4f 6e c2 3e 88 1c cd e5 1a 5e e6 4e 0a 10 41 d9 fa 74 ce be 3d d3 43 f7 fd a9 23 8b ba c7 cd 0e 2a 70 be f4 29 9c eb 43 68 34 f9 5c bf 5d 6b d8 0d 
+# 
+# UVM_INFO atm_cell.sv(324) @ 27895: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=095, VCI=a582, CLP=0, PT=2, HEC=4f, Payload[0]=6e
+# 09 5a 58 22 4f 6e c2 3e 88 1c cd e5 1a 5e e6 4e 0a 10 41 d9 fa 74 ce be 3d d3 43 f7 fd a9 23 8b ba c7 cd 0e 2a 70 be f4 29 9c eb 43 68 34 f9 5c bf 5d 6b d8 0d 
+# 
+# UVM_INFO atm_cell.sv(324) @ 27915: reporter@@NNI_cell [NNI_cell] @27915 NNI id:0 VPI=095, VCI=a582, CLP=0, PT=2, HEC=4f, Payload[0]=6e
+# @27915 09 5a 58 22 4f 6e c2 3e 88 1c cd e5 1a 5e e6 4e 0a 10 41 d9 fa 74 ce be 3d d3 43 f7 fd a9 23 8b ba c7 cd 0e 2a 70 be f4 29 9c eb 43 68 34 f9 5c bf 5d 6b d8 0d 
+# 
+# UVM_INFO atm_cell.sv(324) @ 27915: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=095, VCI=a582, CLP=0, PT=2, HEC=4f, Payload[0]=6e
+# 09 5a 58 22 4f 6e c2 3e 88 1c cd e5 1a 5e e6 4e 0a 10 41 d9 fa 74 ce be 3d d3 43 f7 fd a9 23 8b ba c7 cd 0e 2a 70 be f4 29 9c eb 43 68 34 f9 5c bf 5d 6b d8 0d 
+# 
+# UVM_INFO atm_cell.sv(324) @ 28435: reporter@@NNI_cell [NNI_cell] @28435 NNI id:0 VPI=022, VCI=7617, CLP=0, PT=2, HEC=a7, Payload[0]=7c
+# @28435 02 27 61 72 a7 7c 85 bb a1 dc 78 e4 24 32 1d fa 67 c4 67 f1 19 56 57 6b 6d d2 6e 78 33 e8 e2 4b b3 58 73 c2 b4 e3 56 85 91 4f c0 3c f5 12 d5 15 3c b3 be 6d 42 
+# 
+# UVM_INFO atm_cell.sv(324) @ 28435: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=022, VCI=7617, CLP=0, PT=2, HEC=a7, Payload[0]=7c
+# 02 27 61 72 a7 7c 85 bb a1 dc 78 e4 24 32 1d fa 67 c4 67 f1 19 56 57 6b 6d d2 6e 78 33 e8 e2 4b b3 58 73 c2 b4 e3 56 85 91 4f c0 3c f5 12 d5 15 3c b3 be 6d 42 
+# 
+# UVM_INFO atm_cell.sv(324) @ 28455: reporter@@NNI_cell [NNI_cell] @28455 NNI id:0 VPI=022, VCI=7617, CLP=0, PT=2, HEC=a7, Payload[0]=7c
+# @28455 02 27 61 72 a7 7c 85 bb a1 dc 78 e4 24 32 1d fa 67 c4 67 f1 19 56 57 6b 6d d2 6e 78 33 e8 e2 4b b3 58 73 c2 b4 e3 56 85 91 4f c0 3c f5 12 d5 15 3c b3 be 6d 42 
+# 
+# UVM_INFO atm_cell.sv(324) @ 28455: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=022, VCI=7617, CLP=0, PT=2, HEC=a7, Payload[0]=7c
+# 02 27 61 72 a7 7c 85 bb a1 dc 78 e4 24 32 1d fa 67 c4 67 f1 19 56 57 6b 6d d2 6e 78 33 e8 e2 4b b3 58 73 c2 b4 e3 56 85 91 4f c0 3c f5 12 d5 15 3c b3 be 6d 42 
+# 
+# UVM_INFO atm_cell.sv(324) @ 35705: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=722, VCI=7617, CLP=0, PT=2, HEC=a7, Payload[0]=7c
+# 72 27 61 72 a7 7c 85 bb a1 dc 78 e4 24 32 1d fa 67 c4 67 f1 19 56 57 6b 6d d2 6e 78 33 e8 e2 4b b3 58 73 c2 b4 e3 56 85 91 4f c0 3c f5 12 d5 15 3c b3 be 6d 42 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#4 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 3
+# UVM_INFO atm_cell.sv(324) @ 35705: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=695, VCI=a582, CLP=0, PT=2, HEC=4f, Payload[0]=6e
+# 69 5a 58 22 4f 6e c2 3e 88 1c cd e5 1a 5e e6 4e 0a 10 41 d9 fa 74 ce be 3d d3 43 f7 fd a9 23 8b ba c7 cd 0e 2a 70 be f4 29 9c eb 43 68 34 f9 5c bf 5d 6b d8 0d 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#3 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 2
+# UVM_INFO atm_cell.sv(324) @ 35705: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=b2c, VCI=229e, CLP=0, PT=7, HEC=12, Payload[0]=58
+# b2 c2 29 e7 12 58 44 df c5 c0 54 46 67 42 8e b0 49 6c da 05 e1 af 44 91 eb e9 d7 e3 10 ba bc 41 c7 7d 0e 96 1e 0a 5a 1f 8c f9 f1 df fb c0 66 6c a9 08 3d 14 38 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#2 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 1
+# UVM_INFO atm_cell.sv(324) @ 35705: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=db9, VCI=30ab, CLP=1, PT=0, HEC=a5, Payload[0]=3f
+# db 93 0a b8 a5 3f 5f cf da 56 21 26 db 2f 08 87 f4 1d d1 8a 7c 62 7c b9 65 33 39 51 91 79 19 a5 b1 0c 72 f8 8c 06 c3 98 05 83 44 fd 46 d0 b4 ba fd b6 0c 78 6b 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#1 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 0
+# UVM_INFO scoreboard.svh(175) @ 35705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @35705: Scb save for RX port: VPI=22, Forward=1100
+# UVM_INFO scoreboard.svh(175) @ 35705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @35705: Scb save for RX port: VPI=95, Forward=1001
+# UVM_INFO scoreboard.svh(175) @ 35705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @35705: Scb save for RX port: VPI=2c, Forward=0011
+# UVM_INFO scoreboard.svh(175) @ 35705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @35705: Scb save for RX port: VPI=b9, Forward=1110
+# UVM_INFO atm_cell.sv(324) @ 35705: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=30ab, CLP=1, PT=0, HEC=a5, Payload[0]=3f
+# 0b 93 0a b8 a5 3f 5f cf da 56 21 26 db 2f 08 87 f4 1d d1 8a 7c 62 7c b9 65 33 39 51 91 79 19 a5 b1 0c 72 f8 8c 06 c3 98 05 83 44 fd 46 d0 b4 ba fd b6 0c 78 6b 
+# 
+# UVM_INFO scoreboard.svh(195) @ 35705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @35705: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 35705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @35705: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 35705: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=30ab, CLP=1, PT=0, HEC=a5, Payload[0]=3f
+# 0b 93 0a b8 a5 3f 5f cf da 56 21 26 db 2f 08 87 f4 1d d1 8a 7c 62 7c b9 65 33 39 51 91 79 19 a5 b1 0c 72 f8 8c 06 c3 98 05 83 44 fd 46 d0 b4 ba fd b6 0c 78 6b 
+# 
+# UVM_INFO scoreboard.svh(195) @ 35705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @35705: Scb check for port 2: 
+# UVM_INFO scoreboard.svh(210) @ 35705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @35705: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 35705: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=30ab, CLP=1, PT=0, HEC=a5, Payload[0]=3f
+# 0b 93 0a b8 a5 3f 5f cf da 56 21 26 db 2f 08 87 f4 1d d1 8a 7c 62 7c b9 65 33 39 51 91 79 19 a5 b1 0c 72 f8 8c 06 c3 98 05 83 44 fd 46 d0 b4 ba fd b6 0c 78 6b 
+# 
+# UVM_INFO scoreboard.svh(195) @ 35705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @35705: Scb check for port 1: 
+# UVM_INFO scoreboard.svh(210) @ 35705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @35705: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 35705: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=02c, VCI=229e, CLP=0, PT=7, HEC=12, Payload[0]=58
+# 02 c2 29 e7 12 58 44 df c5 c0 54 46 67 42 8e b0 49 6c da 05 e1 af 44 91 eb e9 d7 e3 10 ba bc 41 c7 7d 0e 96 1e 0a 5a 1f 8c f9 f1 df fb c0 66 6c a9 08 3d 14 38 
+# 
+# UVM_INFO scoreboard.svh(195) @ 35705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @35705: Scb check for port 0: 
+# UVM_INFO scoreboard.svh(210) @ 35705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @35705: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 45705: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=095, VCI=a582, CLP=0, PT=2, HEC=4f, Payload[0]=6e
+# 09 5a 58 22 4f 6e c2 3e 88 1c cd e5 1a 5e e6 4e 0a 10 41 d9 fa 74 ce be 3d d3 43 f7 fd a9 23 8b ba c7 cd 0e 2a 70 be f4 29 9c eb 43 68 34 f9 5c bf 5d 6b d8 0d 
+# 
+# UVM_INFO scoreboard.svh(195) @ 45705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @45705: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 45705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @45705: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 45705: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=022, VCI=7617, CLP=0, PT=2, HEC=a7, Payload[0]=7c
+# 02 27 61 72 a7 7c 85 bb a1 dc 78 e4 24 32 1d fa 67 c4 67 f1 19 56 57 6b 6d d2 6e 78 33 e8 e2 4b b3 58 73 c2 b4 e3 56 85 91 4f c0 3c f5 12 d5 15 3c b3 be 6d 42 
+# 
+# UVM_INFO scoreboard.svh(195) @ 45705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @45705: Scb check for port 2: 
+# UVM_INFO scoreboard.svh(210) @ 45705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @45705: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 45705: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=02c, VCI=229e, CLP=0, PT=7, HEC=12, Payload[0]=58
+# 02 c2 29 e7 12 58 44 df c5 c0 54 46 67 42 8e b0 49 6c da 05 e1 af 44 91 eb e9 d7 e3 10 ba bc 41 c7 7d 0e 96 1e 0a 5a 1f 8c f9 f1 df fb c0 66 6c a9 08 3d 14 38 
+# 
+# UVM_INFO scoreboard.svh(195) @ 45705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @45705: Scb check for port 1: 
+# UVM_INFO scoreboard.svh(210) @ 45705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @45705: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 45705: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=095, VCI=a582, CLP=0, PT=2, HEC=4f, Payload[0]=6e
+# 09 5a 58 22 4f 6e c2 3e 88 1c cd e5 1a 5e e6 4e 0a 10 41 d9 fa 74 ce be 3d d3 43 f7 fd a9 23 8b ba c7 cd 0e 2a 70 be f4 29 9c eb 43 68 34 f9 5c bf 5d 6b d8 0d 
+# 
+# UVM_INFO scoreboard.svh(195) @ 45705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @45705: Scb check for port 0: 
+# UVM_INFO scoreboard.svh(210) @ 45705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @45705: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 55705: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=022, VCI=7617, CLP=0, PT=2, HEC=a7, Payload[0]=7c
+# 02 27 61 72 a7 7c 85 bb a1 dc 78 e4 24 32 1d fa 67 c4 67 f1 19 56 57 6b 6d d2 6e 78 33 e8 e2 4b b3 58 73 c2 b4 e3 56 85 91 4f c0 3c f5 12 d5 15 3c b3 be 6d 42 
+# 
+# UVM_INFO scoreboard.svh(195) @ 55705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @55705: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 55705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @55705: Match found for the cell 
+# UVM_INFO atm_cell.sv(196) @ 167855: uvm_test_top.env.utopia_agnt_Rx[0].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @167855: UNI id:0 GFC=9, VPI=e7, VCI=bdfd, CLP=1, PT=7, HEC=26, Payload[0]=19
+# @167855: 9e 7b df df 26 19 f1 95 ca 76 98 d2 2b 56 04 0b 96 76 1b b9 2b fa 10 32 a7 a1 15 11 e7 c4 08 71 ae 9e a2 7e 29 ec 85 94 54 b7 83 c5 9d 3d 61 be 6b 7b 3a 3a c8 
+# 
+# UVM_INFO driver.svh(89) @ 167855: uvm_test_top.env.utopia_agnt_Rx[0].utopia_drv [utopia_driver] Sending cell:
+# 9e 7b df df 26 19 f1 95 ca 76 98 d2 2b 56 04 0b 96 76 1b b9 2b fa 10 32 a7 a1 15 11 e7 c4 08 71 ae 9e a2 7e 29 ec 85 94 54 b7 83 c5 9d 3d 61 be 6b 7b 3a 3a c8 
+# UVM_INFO atm_cell.sv(324) @ 168385: reporter@@NNI_cell [NNI_cell]  @168385 NNI id:0 VPI=9e7, VCI=bdfd, CLP=1, PT=7, HEC=26, Payload[0]=19
+#  @168385 9e 7b df df 26 19 f1 95 ca 76 98 d2 2b 56 04 0b 96 76 1b b9 2b fa 10 32 a7 a1 15 11 e7 c4 08 71 ae 9e a2 7e 29 ec 85 94 54 b7 83 c5 9d 3d 61 be 6b 7b 3a 3a c8 
+# 
+# UVM_INFO scoreboard.svh(175) @ 168385: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @168385: Scb save for RX port: VPI=e7, Forward=1011
+# UVM_INFO atm_cell.sv(324) @ 168385: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0e7, VCI=bdfd, CLP=1, PT=7, HEC=26, Payload[0]=19
+# 0e 7b df df 26 19 f1 95 ca 76 98 d2 2b 56 04 0b 96 76 1b b9 2b fa 10 32 a7 a1 15 11 e7 c4 08 71 ae 9e a2 7e 29 ec 85 94 54 b7 83 c5 9d 3d 61 be 6b 7b 3a 3a c8 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#1 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 0
+# UVM_INFO atm_cell.sv(196) @ 168385: uvm_test_top.env.utopia_agnt_Rx[1].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @168385: UNI id:0 GFC=3, VPI=3b, VCI=34fe, CLP=0, PT=5, HEC=bc, Payload[0]=24
+# @168385: 33 b3 4f e5 bc 24 6f 07 6e 11 f9 6a 05 70 54 90 6f 0d e8 48 e0 c9 4e 77 5a a2 fd 50 91 57 36 90 2a 78 70 81 cc 3e 5b 72 32 30 fe a7 fc c0 d2 2e 9b 4c ae 71 3b 
+# 
+# UVM_INFO driver.svh(89) @ 168385: uvm_test_top.env.utopia_agnt_Rx[1].utopia_drv [utopia_driver] Sending cell:
+# 33 b3 4f e5 bc 24 6f 07 6e 11 f9 6a 05 70 54 90 6f 0d e8 48 e0 c9 4e 77 5a a2 fd 50 91 57 36 90 2a 78 70 81 cc 3e 5b 72 32 30 fe a7 fc c0 d2 2e 9b 4c ae 71 3b 
+# UVM_INFO atm_cell.sv(324) @ 168925: reporter@@NNI_cell [NNI_cell]  @168925 NNI id:0 VPI=33b, VCI=34fe, CLP=0, PT=5, HEC=bc, Payload[0]=24
+#  @168925 33 b3 4f e5 bc 24 6f 07 6e 11 f9 6a 05 70 54 90 6f 0d e8 48 e0 c9 4e 77 5a a2 fd 50 91 57 36 90 2a 78 70 81 cc 3e 5b 72 32 30 fe a7 fc c0 d2 2e 9b 4c ae 71 3b 
+# 
+# UVM_INFO scoreboard.svh(175) @ 168925: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @168925: Scb save for RX port: VPI=3b, Forward=0101
+# UVM_INFO atm_cell.sv(324) @ 168925: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=03b, VCI=34fe, CLP=0, PT=5, HEC=bc, Payload[0]=24
+# 03 b3 4f e5 bc 24 6f 07 6e 11 f9 6a 05 70 54 90 6f 0d e8 48 e0 c9 4e 77 5a a2 fd 50 91 57 36 90 2a 78 70 81 cc 3e 5b 72 32 30 fe a7 fc c0 d2 2e 9b 4c ae 71 3b 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#2 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 1
+# UVM_INFO atm_cell.sv(196) @ 168925: uvm_test_top.env.utopia_agnt_Rx[2].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @168925: UNI id:0 GFC=7, VPI=c8, VCI=4144, CLP=0, PT=3, HEC=e2, Payload[0]=b6
+# @168925: 7c 84 14 43 e2 b6 4f 93 c9 02 6c 0f d5 e9 d1 35 5c 43 07 b6 0f 23 93 3f e3 54 d4 e0 e6 8e b4 b3 48 c6 84 71 97 e8 6d 61 10 39 e9 4d 2e 3c 11 b8 7b 06 87 f2 21 
+# 
+# UVM_INFO driver.svh(89) @ 168925: uvm_test_top.env.utopia_agnt_Rx[2].utopia_drv [utopia_driver] Sending cell:
+# 7c 84 14 43 e2 b6 4f 93 c9 02 6c 0f d5 e9 d1 35 5c 43 07 b6 0f 23 93 3f e3 54 d4 e0 e6 8e b4 b3 48 c6 84 71 97 e8 6d 61 10 39 e9 4d 2e 3c 11 b8 7b 06 87 f2 21 
+# UVM_INFO atm_cell.sv(324) @ 168965: reporter@@NNI_cell [NNI_cell] @168965 NNI id:0 VPI=0e7, VCI=bdfd, CLP=1, PT=7, HEC=26, Payload[0]=19
+# @168965 0e 7b df df 26 19 f1 95 ca 76 98 d2 2b 56 04 0b 96 76 1b b9 2b fa 10 32 a7 a1 15 11 e7 c4 08 71 ae 9e a2 7e 29 ec 85 94 54 b7 83 c5 9d 3d 61 be 6b 7b 3a 3a c8 
+# 
+# UVM_INFO atm_cell.sv(324) @ 168965: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0e7, VCI=bdfd, CLP=1, PT=7, HEC=26, Payload[0]=19
+# 0e 7b df df 26 19 f1 95 ca 76 98 d2 2b 56 04 0b 96 76 1b b9 2b fa 10 32 a7 a1 15 11 e7 c4 08 71 ae 9e a2 7e 29 ec 85 94 54 b7 83 c5 9d 3d 61 be 6b 7b 3a 3a c8 
+# 
+# UVM_INFO atm_cell.sv(324) @ 168965: reporter@@NNI_cell [NNI_cell] @168965 NNI id:0 VPI=0e7, VCI=bdfd, CLP=1, PT=7, HEC=26, Payload[0]=19
+# @168965 0e 7b df df 26 19 f1 95 ca 76 98 d2 2b 56 04 0b 96 76 1b b9 2b fa 10 32 a7 a1 15 11 e7 c4 08 71 ae 9e a2 7e 29 ec 85 94 54 b7 83 c5 9d 3d 61 be 6b 7b 3a 3a c8 
+# 
+# UVM_INFO atm_cell.sv(324) @ 168965: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0e7, VCI=bdfd, CLP=1, PT=7, HEC=26, Payload[0]=19
+# 0e 7b df df 26 19 f1 95 ca 76 98 d2 2b 56 04 0b 96 76 1b b9 2b fa 10 32 a7 a1 15 11 e7 c4 08 71 ae 9e a2 7e 29 ec 85 94 54 b7 83 c5 9d 3d 61 be 6b 7b 3a 3a c8 
+# 
+# UVM_INFO atm_cell.sv(324) @ 168965: reporter@@NNI_cell [NNI_cell] @168965 NNI id:0 VPI=0e7, VCI=bdfd, CLP=1, PT=7, HEC=26, Payload[0]=19
+# @168965 0e 7b df df 26 19 f1 95 ca 76 98 d2 2b 56 04 0b 96 76 1b b9 2b fa 10 32 a7 a1 15 11 e7 c4 08 71 ae 9e a2 7e 29 ec 85 94 54 b7 83 c5 9d 3d 61 be 6b 7b 3a 3a c8 
+# 
+# UVM_INFO atm_cell.sv(324) @ 168965: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0e7, VCI=bdfd, CLP=1, PT=7, HEC=26, Payload[0]=19
+# 0e 7b df df 26 19 f1 95 ca 76 98 d2 2b 56 04 0b 96 76 1b b9 2b fa 10 32 a7 a1 15 11 e7 c4 08 71 ae 9e a2 7e 29 ec 85 94 54 b7 83 c5 9d 3d 61 be 6b 7b 3a 3a c8 
+# 
+# UVM_INFO atm_cell.sv(324) @ 168965: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0e7, VCI=bdfd, CLP=1, PT=7, HEC=26, Payload[0]=19
+# 0e 7b df df 26 19 f1 95 ca 76 98 d2 2b 56 04 0b 96 76 1b b9 2b fa 10 32 a7 a1 15 11 e7 c4 08 71 ae 9e a2 7e 29 ec 85 94 54 b7 83 c5 9d 3d 61 be 6b 7b 3a 3a c8 
+# 
+# UVM_INFO scoreboard.svh(195) @ 168965: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @168965: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 168965: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @168965: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 168965: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0e7, VCI=bdfd, CLP=1, PT=7, HEC=26, Payload[0]=19
+# 0e 7b df df 26 19 f1 95 ca 76 98 d2 2b 56 04 0b 96 76 1b b9 2b fa 10 32 a7 a1 15 11 e7 c4 08 71 ae 9e a2 7e 29 ec 85 94 54 b7 83 c5 9d 3d 61 be 6b 7b 3a 3a c8 
+# 
+# UVM_INFO scoreboard.svh(195) @ 168965: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @168965: Scb check for port 1: 
+# UVM_INFO scoreboard.svh(210) @ 168965: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @168965: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 168965: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0e7, VCI=bdfd, CLP=1, PT=7, HEC=26, Payload[0]=19
+# 0e 7b df df 26 19 f1 95 ca 76 98 d2 2b 56 04 0b 96 76 1b b9 2b fa 10 32 a7 a1 15 11 e7 c4 08 71 ae 9e a2 7e 29 ec 85 94 54 b7 83 c5 9d 3d 61 be 6b 7b 3a 3a c8 
+# 
+# UVM_INFO scoreboard.svh(195) @ 168965: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @168965: Scb check for port 0: 
+# UVM_INFO scoreboard.svh(210) @ 168965: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @168965: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 169465: reporter@@NNI_cell [NNI_cell]  @169465 NNI id:0 VPI=7c8, VCI=4144, CLP=0, PT=3, HEC=e2, Payload[0]=b6
+#  @169465 7c 84 14 43 e2 b6 4f 93 c9 02 6c 0f d5 e9 d1 35 5c 43 07 b6 0f 23 93 3f e3 54 d4 e0 e6 8e b4 b3 48 c6 84 71 97 e8 6d 61 10 39 e9 4d 2e 3c 11 b8 7b 06 87 f2 21 
+# 
+# UVM_INFO scoreboard.svh(175) @ 169465: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @169465: Scb save for RX port: VPI=c8, Forward=1101
+# UVM_INFO atm_cell.sv(324) @ 169465: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0c8, VCI=4144, CLP=0, PT=3, HEC=e2, Payload[0]=b6
+# 0c 84 14 43 e2 b6 4f 93 c9 02 6c 0f d5 e9 d1 35 5c 43 07 b6 0f 23 93 3f e3 54 d4 e0 e6 8e b4 b3 48 c6 84 71 97 e8 6d 61 10 39 e9 4d 2e 3c 11 b8 7b 06 87 f2 21 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#3 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 2
+# UVM_INFO atm_cell.sv(196) @ 169465: uvm_test_top.env.utopia_agnt_Rx[3].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @169465: UNI id:0 GFC=f, VPI=7c, VCI=9c97, CLP=1, PT=0, HEC=bc, Payload[0]=ba
+# @169465: f7 c9 c9 78 bc ba 55 34 2e e2 69 59 af f5 31 ab d4 60 3c 61 a9 e2 35 9c c0 6b a0 56 05 07 2e 68 3c bd 6c e5 52 16 c6 bc 74 37 44 c0 b1 90 55 df f8 4a b4 be 50 
+# 
+# UVM_INFO driver.svh(89) @ 169465: uvm_test_top.env.utopia_agnt_Rx[3].utopia_drv [utopia_driver] Sending cell:
+# f7 c9 c9 78 bc ba 55 34 2e e2 69 59 af f5 31 ab d4 60 3c 61 a9 e2 35 9c c0 6b a0 56 05 07 2e 68 3c bd 6c e5 52 16 c6 bc 74 37 44 c0 b1 90 55 df f8 4a b4 be 50 
+# UVM_INFO atm_cell.sv(324) @ 169505: reporter@@NNI_cell [NNI_cell] @169505 NNI id:0 VPI=03b, VCI=34fe, CLP=0, PT=5, HEC=bc, Payload[0]=24
+# @169505 03 b3 4f e5 bc 24 6f 07 6e 11 f9 6a 05 70 54 90 6f 0d e8 48 e0 c9 4e 77 5a a2 fd 50 91 57 36 90 2a 78 70 81 cc 3e 5b 72 32 30 fe a7 fc c0 d2 2e 9b 4c ae 71 3b 
+# 
+# UVM_INFO atm_cell.sv(324) @ 169505: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=03b, VCI=34fe, CLP=0, PT=5, HEC=bc, Payload[0]=24
+# 03 b3 4f e5 bc 24 6f 07 6e 11 f9 6a 05 70 54 90 6f 0d e8 48 e0 c9 4e 77 5a a2 fd 50 91 57 36 90 2a 78 70 81 cc 3e 5b 72 32 30 fe a7 fc c0 d2 2e 9b 4c ae 71 3b 
+# 
+# UVM_INFO atm_cell.sv(324) @ 169505: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=03b, VCI=34fe, CLP=0, PT=5, HEC=bc, Payload[0]=24
+# 03 b3 4f e5 bc 24 6f 07 6e 11 f9 6a 05 70 54 90 6f 0d e8 48 e0 c9 4e 77 5a a2 fd 50 91 57 36 90 2a 78 70 81 cc 3e 5b 72 32 30 fe a7 fc c0 d2 2e 9b 4c ae 71 3b 
+# 
+# UVM_INFO scoreboard.svh(195) @ 169505: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @169505: Scb check for port 2: 
+# UVM_INFO scoreboard.svh(210) @ 169505: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @169505: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 169525: reporter@@NNI_cell [NNI_cell] @169525 NNI id:0 VPI=03b, VCI=34fe, CLP=0, PT=5, HEC=bc, Payload[0]=24
+# @169525 03 b3 4f e5 bc 24 6f 07 6e 11 f9 6a 05 70 54 90 6f 0d e8 48 e0 c9 4e 77 5a a2 fd 50 91 57 36 90 2a 78 70 81 cc 3e 5b 72 32 30 fe a7 fc c0 d2 2e 9b 4c ae 71 3b 
+# 
+# UVM_INFO atm_cell.sv(324) @ 169525: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=03b, VCI=34fe, CLP=0, PT=5, HEC=bc, Payload[0]=24
+# 03 b3 4f e5 bc 24 6f 07 6e 11 f9 6a 05 70 54 90 6f 0d e8 48 e0 c9 4e 77 5a a2 fd 50 91 57 36 90 2a 78 70 81 cc 3e 5b 72 32 30 fe a7 fc c0 d2 2e 9b 4c ae 71 3b 
+# 
+# UVM_INFO atm_cell.sv(324) @ 169525: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=03b, VCI=34fe, CLP=0, PT=5, HEC=bc, Payload[0]=24
+# 03 b3 4f e5 bc 24 6f 07 6e 11 f9 6a 05 70 54 90 6f 0d e8 48 e0 c9 4e 77 5a a2 fd 50 91 57 36 90 2a 78 70 81 cc 3e 5b 72 32 30 fe a7 fc c0 d2 2e 9b 4c ae 71 3b 
+# 
+# UVM_INFO scoreboard.svh(195) @ 169525: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @169525: Scb check for port 0: 
+# UVM_INFO scoreboard.svh(210) @ 169525: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @169525: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 170005: reporter@@NNI_cell [NNI_cell]  @170005 NNI id:0 VPI=f7c, VCI=9c97, CLP=1, PT=0, HEC=bc, Payload[0]=ba
+#  @170005 f7 c9 c9 78 bc ba 55 34 2e e2 69 59 af f5 31 ab d4 60 3c 61 a9 e2 35 9c c0 6b a0 56 05 07 2e 68 3c bd 6c e5 52 16 c6 bc 74 37 44 c0 b1 90 55 df f8 4a b4 be 50 
+# 
+# UVM_INFO scoreboard.svh(175) @ 170005: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @170005: Scb save for RX port: VPI=7c, Forward=0001
+# UVM_INFO atm_cell.sv(324) @ 170005: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=07c, VCI=9c97, CLP=1, PT=0, HEC=bc, Payload[0]=ba
+# 07 c9 c9 78 bc ba 55 34 2e e2 69 59 af f5 31 ab d4 60 3c 61 a9 e2 35 9c c0 6b a0 56 05 07 2e 68 3c bd 6c e5 52 16 c6 bc 74 37 44 c0 b1 90 55 df f8 4a b4 be 50 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#4 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 3
+# UVM_INFO atm_cell.sv(324) @ 170045: reporter@@NNI_cell [NNI_cell] @170045 NNI id:0 VPI=0c8, VCI=4144, CLP=0, PT=3, HEC=e2, Payload[0]=b6
+# @170045 0c 84 14 43 e2 b6 4f 93 c9 02 6c 0f d5 e9 d1 35 5c 43 07 b6 0f 23 93 3f e3 54 d4 e0 e6 8e b4 b3 48 c6 84 71 97 e8 6d 61 10 39 e9 4d 2e 3c 11 b8 7b 06 87 f2 21 
+# 
+# UVM_INFO atm_cell.sv(324) @ 170045: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0c8, VCI=4144, CLP=0, PT=3, HEC=e2, Payload[0]=b6
+# 0c 84 14 43 e2 b6 4f 93 c9 02 6c 0f d5 e9 d1 35 5c 43 07 b6 0f 23 93 3f e3 54 d4 e0 e6 8e b4 b3 48 c6 84 71 97 e8 6d 61 10 39 e9 4d 2e 3c 11 b8 7b 06 87 f2 21 
+# 
+# UVM_INFO atm_cell.sv(324) @ 170045: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0c8, VCI=4144, CLP=0, PT=3, HEC=e2, Payload[0]=b6
+# 0c 84 14 43 e2 b6 4f 93 c9 02 6c 0f d5 e9 d1 35 5c 43 07 b6 0f 23 93 3f e3 54 d4 e0 e6 8e b4 b3 48 c6 84 71 97 e8 6d 61 10 39 e9 4d 2e 3c 11 b8 7b 06 87 f2 21 
+# 
+# UVM_INFO scoreboard.svh(195) @ 170045: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @170045: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 170045: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @170045: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 170065: reporter@@NNI_cell [NNI_cell] @170065 NNI id:0 VPI=0c8, VCI=4144, CLP=0, PT=3, HEC=e2, Payload[0]=b6
+# @170065 0c 84 14 43 e2 b6 4f 93 c9 02 6c 0f d5 e9 d1 35 5c 43 07 b6 0f 23 93 3f e3 54 d4 e0 e6 8e b4 b3 48 c6 84 71 97 e8 6d 61 10 39 e9 4d 2e 3c 11 b8 7b 06 87 f2 21 
+# 
+# UVM_INFO atm_cell.sv(324) @ 170065: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0c8, VCI=4144, CLP=0, PT=3, HEC=e2, Payload[0]=b6
+# 0c 84 14 43 e2 b6 4f 93 c9 02 6c 0f d5 e9 d1 35 5c 43 07 b6 0f 23 93 3f e3 54 d4 e0 e6 8e b4 b3 48 c6 84 71 97 e8 6d 61 10 39 e9 4d 2e 3c 11 b8 7b 06 87 f2 21 
+# 
+# UVM_INFO atm_cell.sv(324) @ 170065: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0c8, VCI=4144, CLP=0, PT=3, HEC=e2, Payload[0]=b6
+# 0c 84 14 43 e2 b6 4f 93 c9 02 6c 0f d5 e9 d1 35 5c 43 07 b6 0f 23 93 3f e3 54 d4 e0 e6 8e b4 b3 48 c6 84 71 97 e8 6d 61 10 39 e9 4d 2e 3c 11 b8 7b 06 87 f2 21 
+# 
+# UVM_INFO scoreboard.svh(195) @ 170065: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @170065: Scb check for port 2: 
+# UVM_INFO scoreboard.svh(210) @ 170065: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @170065: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 170085: reporter@@NNI_cell [NNI_cell] @170085 NNI id:0 VPI=0c8, VCI=4144, CLP=0, PT=3, HEC=e2, Payload[0]=b6
+# @170085 0c 84 14 43 e2 b6 4f 93 c9 02 6c 0f d5 e9 d1 35 5c 43 07 b6 0f 23 93 3f e3 54 d4 e0 e6 8e b4 b3 48 c6 84 71 97 e8 6d 61 10 39 e9 4d 2e 3c 11 b8 7b 06 87 f2 21 
+# 
+# UVM_INFO atm_cell.sv(324) @ 170085: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0c8, VCI=4144, CLP=0, PT=3, HEC=e2, Payload[0]=b6
+# 0c 84 14 43 e2 b6 4f 93 c9 02 6c 0f d5 e9 d1 35 5c 43 07 b6 0f 23 93 3f e3 54 d4 e0 e6 8e b4 b3 48 c6 84 71 97 e8 6d 61 10 39 e9 4d 2e 3c 11 b8 7b 06 87 f2 21 
+# 
+# UVM_INFO atm_cell.sv(324) @ 170085: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0c8, VCI=4144, CLP=0, PT=3, HEC=e2, Payload[0]=b6
+# 0c 84 14 43 e2 b6 4f 93 c9 02 6c 0f d5 e9 d1 35 5c 43 07 b6 0f 23 93 3f e3 54 d4 e0 e6 8e b4 b3 48 c6 84 71 97 e8 6d 61 10 39 e9 4d 2e 3c 11 b8 7b 06 87 f2 21 
+# 
+# UVM_INFO scoreboard.svh(195) @ 170085: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @170085: Scb check for port 0: 
+# UVM_INFO scoreboard.svh(210) @ 170085: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @170085: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 170645: reporter@@NNI_cell [NNI_cell] @170645 NNI id:0 VPI=07c, VCI=9c97, CLP=1, PT=0, HEC=bc, Payload[0]=ba
+# @170645 07 c9 c9 78 bc ba 55 34 2e e2 69 59 af f5 31 ab d4 60 3c 61 a9 e2 35 9c c0 6b a0 56 05 07 2e 68 3c bd 6c e5 52 16 c6 bc 74 37 44 c0 b1 90 55 df f8 4a b4 be 50 
+# 
+# UVM_INFO atm_cell.sv(324) @ 170645: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=07c, VCI=9c97, CLP=1, PT=0, HEC=bc, Payload[0]=ba
+# 07 c9 c9 78 bc ba 55 34 2e e2 69 59 af f5 31 ab d4 60 3c 61 a9 e2 35 9c c0 6b a0 56 05 07 2e 68 3c bd 6c e5 52 16 c6 bc 74 37 44 c0 b1 90 55 df f8 4a b4 be 50 
+# 
+# UVM_INFO atm_cell.sv(324) @ 170645: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=07c, VCI=9c97, CLP=1, PT=0, HEC=bc, Payload[0]=ba
+# 07 c9 c9 78 bc ba 55 34 2e e2 69 59 af f5 31 ab d4 60 3c 61 a9 e2 35 9c c0 6b a0 56 05 07 2e 68 3c bd 6c e5 52 16 c6 bc 74 37 44 c0 b1 90 55 df f8 4a b4 be 50 
+# 
+# UVM_INFO scoreboard.svh(195) @ 170645: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @170645: Scb check for port 0: 
+# UVM_INFO scoreboard.svh(210) @ 170645: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @170645: Match found for the cell 
+# UVM_INFO atm_cell.sv(196) @ 310005: uvm_test_top.env.utopia_agnt_Rx[0].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @310005: UNI id:0 GFC=a, VPI=4f, VCI=66b1, CLP=0, PT=1, HEC=f6, Payload[0]=65
+# @310005: a4 f6 6b 11 f6 65 e6 b6 70 0f b5 52 15 d3 45 41 ab e7 31 bb f0 d1 d7 74 31 39 c4 ef 8d 48 37 b5 a4 f6 37 40 f7 be 96 09 cb d5 ae c9 e9 78 ed 9b cf 55 30 89 78 
+# 
+# UVM_INFO driver.svh(89) @ 310005: uvm_test_top.env.utopia_agnt_Rx[0].utopia_drv [utopia_driver] Sending cell:
+# a4 f6 6b 11 f6 65 e6 b6 70 0f b5 52 15 d3 45 41 ab e7 31 bb f0 d1 d7 74 31 39 c4 ef 8d 48 37 b5 a4 f6 37 40 f7 be 96 09 cb d5 ae c9 e9 78 ed 9b cf 55 30 89 78 
+# UVM_INFO atm_cell.sv(324) @ 310535: reporter@@NNI_cell [NNI_cell]  @310535 NNI id:0 VPI=a4f, VCI=66b1, CLP=0, PT=1, HEC=f6, Payload[0]=65
+#  @310535 a4 f6 6b 11 f6 65 e6 b6 70 0f b5 52 15 d3 45 41 ab e7 31 bb f0 d1 d7 74 31 39 c4 ef 8d 48 37 b5 a4 f6 37 40 f7 be 96 09 cb d5 ae c9 e9 78 ed 9b cf 55 30 89 78 
+# 
+# UVM_INFO scoreboard.svh(175) @ 310535: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @310535: Scb save for RX port: VPI=4f, Forward=0100
+# UVM_INFO atm_cell.sv(324) @ 310535: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=04f, VCI=66b1, CLP=0, PT=1, HEC=f6, Payload[0]=65
+# 04 f6 6b 11 f6 65 e6 b6 70 0f b5 52 15 d3 45 41 ab e7 31 bb f0 d1 d7 74 31 39 c4 ef 8d 48 37 b5 a4 f6 37 40 f7 be 96 09 cb d5 ae c9 e9 78 ed 9b cf 55 30 89 78 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#1 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 0
+# UVM_INFO atm_cell.sv(196) @ 310535: uvm_test_top.env.utopia_agnt_Rx[1].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @310535: UNI id:0 GFC=c, VPI=30, VCI=a6c8, CLP=0, PT=3, HEC=cb, Payload[0]=1a
+# @310535: c3 0a 6c 83 cb 1a aa c0 89 9c b7 3f 71 a4 5b 42 b3 48 54 1b b4 0c 30 5b 54 00 6f e2 fd d7 d4 70 ef dd a4 fc 30 31 79 47 52 07 fd 98 aa c6 bb ac 5e 7f ba 04 d9 
+# 
+# UVM_INFO driver.svh(89) @ 310535: uvm_test_top.env.utopia_agnt_Rx[1].utopia_drv [utopia_driver] Sending cell:
+# c3 0a 6c 83 cb 1a aa c0 89 9c b7 3f 71 a4 5b 42 b3 48 54 1b b4 0c 30 5b 54 00 6f e2 fd d7 d4 70 ef dd a4 fc 30 31 79 47 52 07 fd 98 aa c6 bb ac 5e 7f ba 04 d9 
+# UVM_INFO atm_cell.sv(324) @ 311075: reporter@@NNI_cell [NNI_cell]  @311075 NNI id:0 VPI=c30, VCI=a6c8, CLP=0, PT=3, HEC=cb, Payload[0]=1a
+#  @311075 c3 0a 6c 83 cb 1a aa c0 89 9c b7 3f 71 a4 5b 42 b3 48 54 1b b4 0c 30 5b 54 00 6f e2 fd d7 d4 70 ef dd a4 fc 30 31 79 47 52 07 fd 98 aa c6 bb ac 5e 7f ba 04 d9 
+# 
+# UVM_INFO scoreboard.svh(175) @ 311075: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @311075: Scb save for RX port: VPI=30, Forward=1101
+# UVM_INFO atm_cell.sv(324) @ 311075: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=030, VCI=a6c8, CLP=0, PT=3, HEC=cb, Payload[0]=1a
+# 03 0a 6c 83 cb 1a aa c0 89 9c b7 3f 71 a4 5b 42 b3 48 54 1b b4 0c 30 5b 54 00 6f e2 fd d7 d4 70 ef dd a4 fc 30 31 79 47 52 07 fd 98 aa c6 bb ac 5e 7f ba 04 d9 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#2 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 1
+# UVM_INFO atm_cell.sv(196) @ 311075: uvm_test_top.env.utopia_agnt_Rx[2].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @311075: UNI id:0 GFC=9, VPI=23, VCI=2f24, CLP=0, PT=1, HEC=e6, Payload[0]=86
+# @311075: 92 32 f2 41 e6 86 cf 75 cd 65 9e d1 a5 e7 dc b7 05 e6 95 0d f5 cf e2 22 7b 97 ca 17 cf 09 06 01 df 51 bd 1e c8 d0 cb 90 be f5 42 7e 93 20 d9 69 b5 70 e0 5d 97 
+# 
+# UVM_INFO driver.svh(89) @ 311075: uvm_test_top.env.utopia_agnt_Rx[2].utopia_drv [utopia_driver] Sending cell:
+# 92 32 f2 41 e6 86 cf 75 cd 65 9e d1 a5 e7 dc b7 05 e6 95 0d f5 cf e2 22 7b 97 ca 17 cf 09 06 01 df 51 bd 1e c8 d0 cb 90 be f5 42 7e 93 20 d9 69 b5 70 e0 5d 97 
+# UVM_INFO atm_cell.sv(324) @ 311115: reporter@@NNI_cell [NNI_cell] @311115 NNI id:0 VPI=04f, VCI=66b1, CLP=0, PT=1, HEC=f6, Payload[0]=65
+# @311115 04 f6 6b 11 f6 65 e6 b6 70 0f b5 52 15 d3 45 41 ab e7 31 bb f0 d1 d7 74 31 39 c4 ef 8d 48 37 b5 a4 f6 37 40 f7 be 96 09 cb d5 ae c9 e9 78 ed 9b cf 55 30 89 78 
+# 
+# UVM_INFO atm_cell.sv(324) @ 311115: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=04f, VCI=66b1, CLP=0, PT=1, HEC=f6, Payload[0]=65
+# 04 f6 6b 11 f6 65 e6 b6 70 0f b5 52 15 d3 45 41 ab e7 31 bb f0 d1 d7 74 31 39 c4 ef 8d 48 37 b5 a4 f6 37 40 f7 be 96 09 cb d5 ae c9 e9 78 ed 9b cf 55 30 89 78 
+# 
+# UVM_INFO atm_cell.sv(324) @ 311115: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=04f, VCI=66b1, CLP=0, PT=1, HEC=f6, Payload[0]=65
+# 04 f6 6b 11 f6 65 e6 b6 70 0f b5 52 15 d3 45 41 ab e7 31 bb f0 d1 d7 74 31 39 c4 ef 8d 48 37 b5 a4 f6 37 40 f7 be 96 09 cb d5 ae c9 e9 78 ed 9b cf 55 30 89 78 
+# 
+# UVM_INFO scoreboard.svh(195) @ 311115: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @311115: Scb check for port 2: 
+# UVM_INFO scoreboard.svh(210) @ 311115: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @311115: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 311615: reporter@@NNI_cell [NNI_cell]  @311615 NNI id:0 VPI=923, VCI=2f24, CLP=0, PT=1, HEC=e6, Payload[0]=86
+#  @311615 92 32 f2 41 e6 86 cf 75 cd 65 9e d1 a5 e7 dc b7 05 e6 95 0d f5 cf e2 22 7b 97 ca 17 cf 09 06 01 df 51 bd 1e c8 d0 cb 90 be f5 42 7e 93 20 d9 69 b5 70 e0 5d 97 
+# 
+# UVM_INFO scoreboard.svh(175) @ 311615: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @311615: Scb save for RX port: VPI=23, Forward=0101
+# UVM_INFO atm_cell.sv(324) @ 311615: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=023, VCI=2f24, CLP=0, PT=1, HEC=e6, Payload[0]=86
+# 02 32 f2 41 e6 86 cf 75 cd 65 9e d1 a5 e7 dc b7 05 e6 95 0d f5 cf e2 22 7b 97 ca 17 cf 09 06 01 df 51 bd 1e c8 d0 cb 90 be f5 42 7e 93 20 d9 69 b5 70 e0 5d 97 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#3 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 2
+# UVM_INFO atm_cell.sv(196) @ 311615: uvm_test_top.env.utopia_agnt_Rx[3].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @311615: UNI id:0 GFC=0, VPI=ac, VCI=5837, CLP=1, PT=1, HEC=65, Payload[0]=b5
+# @311615: 0a c5 83 79 65 b5 b8 16 10 29 1d d3 df 0d 3a 42 30 09 28 da c0 21 7c 50 9c d8 cd b5 32 84 9c b5 ca 1b 50 7f 89 9e d9 31 84 81 ac 36 e2 76 a6 92 eb 32 38 f3 64 
+# 
+# UVM_INFO driver.svh(89) @ 311615: uvm_test_top.env.utopia_agnt_Rx[3].utopia_drv [utopia_driver] Sending cell:
+# 0a c5 83 79 65 b5 b8 16 10 29 1d d3 df 0d 3a 42 30 09 28 da c0 21 7c 50 9c d8 cd b5 32 84 9c b5 ca 1b 50 7f 89 9e d9 31 84 81 ac 36 e2 76 a6 92 eb 32 38 f3 64 
+# UVM_INFO atm_cell.sv(324) @ 311655: reporter@@NNI_cell [NNI_cell] @311655 NNI id:0 VPI=030, VCI=a6c8, CLP=0, PT=3, HEC=cb, Payload[0]=1a
+# @311655 03 0a 6c 83 cb 1a aa c0 89 9c b7 3f 71 a4 5b 42 b3 48 54 1b b4 0c 30 5b 54 00 6f e2 fd d7 d4 70 ef dd a4 fc 30 31 79 47 52 07 fd 98 aa c6 bb ac 5e 7f ba 04 d9 
+# 
+# UVM_INFO atm_cell.sv(324) @ 311655: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=030, VCI=a6c8, CLP=0, PT=3, HEC=cb, Payload[0]=1a
+# 03 0a 6c 83 cb 1a aa c0 89 9c b7 3f 71 a4 5b 42 b3 48 54 1b b4 0c 30 5b 54 00 6f e2 fd d7 d4 70 ef dd a4 fc 30 31 79 47 52 07 fd 98 aa c6 bb ac 5e 7f ba 04 d9 
+# 
+# UVM_INFO atm_cell.sv(324) @ 311655: reporter@@NNI_cell [NNI_cell] @311655 NNI id:0 VPI=030, VCI=a6c8, CLP=0, PT=3, HEC=cb, Payload[0]=1a
+# @311655 03 0a 6c 83 cb 1a aa c0 89 9c b7 3f 71 a4 5b 42 b3 48 54 1b b4 0c 30 5b 54 00 6f e2 fd d7 d4 70 ef dd a4 fc 30 31 79 47 52 07 fd 98 aa c6 bb ac 5e 7f ba 04 d9 
+# 
+# UVM_INFO atm_cell.sv(324) @ 311655: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=030, VCI=a6c8, CLP=0, PT=3, HEC=cb, Payload[0]=1a
+# 03 0a 6c 83 cb 1a aa c0 89 9c b7 3f 71 a4 5b 42 b3 48 54 1b b4 0c 30 5b 54 00 6f e2 fd d7 d4 70 ef dd a4 fc 30 31 79 47 52 07 fd 98 aa c6 bb ac 5e 7f ba 04 d9 
+# 
+# UVM_INFO atm_cell.sv(324) @ 311655: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=030, VCI=a6c8, CLP=0, PT=3, HEC=cb, Payload[0]=1a
+# 03 0a 6c 83 cb 1a aa c0 89 9c b7 3f 71 a4 5b 42 b3 48 54 1b b4 0c 30 5b 54 00 6f e2 fd d7 d4 70 ef dd a4 fc 30 31 79 47 52 07 fd 98 aa c6 bb ac 5e 7f ba 04 d9 
+# 
+# UVM_INFO scoreboard.svh(195) @ 311655: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @311655: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 311655: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @311655: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 311655: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=030, VCI=a6c8, CLP=0, PT=3, HEC=cb, Payload[0]=1a
+# 03 0a 6c 83 cb 1a aa c0 89 9c b7 3f 71 a4 5b 42 b3 48 54 1b b4 0c 30 5b 54 00 6f e2 fd d7 d4 70 ef dd a4 fc 30 31 79 47 52 07 fd 98 aa c6 bb ac 5e 7f ba 04 d9 
+# 
+# UVM_INFO scoreboard.svh(195) @ 311655: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @311655: Scb check for port 0: 
+# UVM_INFO scoreboard.svh(210) @ 311655: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @311655: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 311675: reporter@@NNI_cell [NNI_cell] @311675 NNI id:0 VPI=030, VCI=a6c8, CLP=0, PT=3, HEC=cb, Payload[0]=1a
+# @311675 03 0a 6c 83 cb 1a aa c0 89 9c b7 3f 71 a4 5b 42 b3 48 54 1b b4 0c 30 5b 54 00 6f e2 fd d7 d4 70 ef dd a4 fc 30 31 79 47 52 07 fd 98 aa c6 bb ac 5e 7f ba 04 d9 
+# 
+# UVM_INFO atm_cell.sv(324) @ 311675: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=030, VCI=a6c8, CLP=0, PT=3, HEC=cb, Payload[0]=1a
+# 03 0a 6c 83 cb 1a aa c0 89 9c b7 3f 71 a4 5b 42 b3 48 54 1b b4 0c 30 5b 54 00 6f e2 fd d7 d4 70 ef dd a4 fc 30 31 79 47 52 07 fd 98 aa c6 bb ac 5e 7f ba 04 d9 
+# 
+# UVM_INFO atm_cell.sv(324) @ 311675: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=030, VCI=a6c8, CLP=0, PT=3, HEC=cb, Payload[0]=1a
+# 03 0a 6c 83 cb 1a aa c0 89 9c b7 3f 71 a4 5b 42 b3 48 54 1b b4 0c 30 5b 54 00 6f e2 fd d7 d4 70 ef dd a4 fc 30 31 79 47 52 07 fd 98 aa c6 bb ac 5e 7f ba 04 d9 
+# 
+# UVM_INFO scoreboard.svh(195) @ 311675: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @311675: Scb check for port 2: 
+# UVM_INFO scoreboard.svh(210) @ 311675: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @311675: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 312155: reporter@@NNI_cell [NNI_cell]  @312155 NNI id:0 VPI=0ac, VCI=5837, CLP=1, PT=1, HEC=65, Payload[0]=b5
+#  @312155 0a c5 83 79 65 b5 b8 16 10 29 1d d3 df 0d 3a 42 30 09 28 da c0 21 7c 50 9c d8 cd b5 32 84 9c b5 ca 1b 50 7f 89 9e d9 31 84 81 ac 36 e2 76 a6 92 eb 32 38 f3 64 
+# 
+# UVM_INFO scoreboard.svh(175) @ 312155: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @312155: Scb save for RX port: VPI=ac, Forward=1010
+# UVM_INFO atm_cell.sv(324) @ 312155: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0ac, VCI=5837, CLP=1, PT=1, HEC=65, Payload[0]=b5
+# 0a c5 83 79 65 b5 b8 16 10 29 1d d3 df 0d 3a 42 30 09 28 da c0 21 7c 50 9c d8 cd b5 32 84 9c b5 ca 1b 50 7f 89 9e d9 31 84 81 ac 36 e2 76 a6 92 eb 32 38 f3 64 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#4 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 3
+# UVM_INFO atm_cell.sv(324) @ 312215: reporter@@NNI_cell [NNI_cell] @312215 NNI id:0 VPI=023, VCI=2f24, CLP=0, PT=1, HEC=e6, Payload[0]=86
+# @312215 02 32 f2 41 e6 86 cf 75 cd 65 9e d1 a5 e7 dc b7 05 e6 95 0d f5 cf e2 22 7b 97 ca 17 cf 09 06 01 df 51 bd 1e c8 d0 cb 90 be f5 42 7e 93 20 d9 69 b5 70 e0 5d 97 
+# 
+# UVM_INFO atm_cell.sv(324) @ 312215: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=023, VCI=2f24, CLP=0, PT=1, HEC=e6, Payload[0]=86
+# 02 32 f2 41 e6 86 cf 75 cd 65 9e d1 a5 e7 dc b7 05 e6 95 0d f5 cf e2 22 7b 97 ca 17 cf 09 06 01 df 51 bd 1e c8 d0 cb 90 be f5 42 7e 93 20 d9 69 b5 70 e0 5d 97 
+# 
+# UVM_INFO atm_cell.sv(324) @ 312215: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=023, VCI=2f24, CLP=0, PT=1, HEC=e6, Payload[0]=86
+# 02 32 f2 41 e6 86 cf 75 cd 65 9e d1 a5 e7 dc b7 05 e6 95 0d f5 cf e2 22 7b 97 ca 17 cf 09 06 01 df 51 bd 1e c8 d0 cb 90 be f5 42 7e 93 20 d9 69 b5 70 e0 5d 97 
+# 
+# UVM_INFO scoreboard.svh(195) @ 312215: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @312215: Scb check for port 0: 
+# UVM_INFO scoreboard.svh(210) @ 312215: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @312215: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 312235: reporter@@NNI_cell [NNI_cell] @312235 NNI id:0 VPI=023, VCI=2f24, CLP=0, PT=1, HEC=e6, Payload[0]=86
+# @312235 02 32 f2 41 e6 86 cf 75 cd 65 9e d1 a5 e7 dc b7 05 e6 95 0d f5 cf e2 22 7b 97 ca 17 cf 09 06 01 df 51 bd 1e c8 d0 cb 90 be f5 42 7e 93 20 d9 69 b5 70 e0 5d 97 
+# 
+# UVM_INFO atm_cell.sv(324) @ 312235: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=023, VCI=2f24, CLP=0, PT=1, HEC=e6, Payload[0]=86
+# 02 32 f2 41 e6 86 cf 75 cd 65 9e d1 a5 e7 dc b7 05 e6 95 0d f5 cf e2 22 7b 97 ca 17 cf 09 06 01 df 51 bd 1e c8 d0 cb 90 be f5 42 7e 93 20 d9 69 b5 70 e0 5d 97 
+# 
+# UVM_INFO atm_cell.sv(324) @ 312235: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=023, VCI=2f24, CLP=0, PT=1, HEC=e6, Payload[0]=86
+# 02 32 f2 41 e6 86 cf 75 cd 65 9e d1 a5 e7 dc b7 05 e6 95 0d f5 cf e2 22 7b 97 ca 17 cf 09 06 01 df 51 bd 1e c8 d0 cb 90 be f5 42 7e 93 20 d9 69 b5 70 e0 5d 97 
+# 
+# UVM_INFO scoreboard.svh(195) @ 312235: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @312235: Scb check for port 2: 
+# UVM_INFO scoreboard.svh(210) @ 312235: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @312235: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 312735: reporter@@NNI_cell [NNI_cell] @312735 NNI id:0 VPI=0ac, VCI=5837, CLP=1, PT=1, HEC=65, Payload[0]=b5
+# @312735 0a c5 83 79 65 b5 b8 16 10 29 1d d3 df 0d 3a 42 30 09 28 da c0 21 7c 50 9c d8 cd b5 32 84 9c b5 ca 1b 50 7f 89 9e d9 31 84 81 ac 36 e2 76 a6 92 eb 32 38 f3 64 
+# 
+# UVM_INFO atm_cell.sv(324) @ 312735: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0ac, VCI=5837, CLP=1, PT=1, HEC=65, Payload[0]=b5
+# 0a c5 83 79 65 b5 b8 16 10 29 1d d3 df 0d 3a 42 30 09 28 da c0 21 7c 50 9c d8 cd b5 32 84 9c b5 ca 1b 50 7f 89 9e d9 31 84 81 ac 36 e2 76 a6 92 eb 32 38 f3 64 
+# 
+# UVM_INFO atm_cell.sv(324) @ 312735: reporter@@NNI_cell [NNI_cell] @312735 NNI id:0 VPI=0ac, VCI=5837, CLP=1, PT=1, HEC=65, Payload[0]=b5
+# @312735 0a c5 83 79 65 b5 b8 16 10 29 1d d3 df 0d 3a 42 30 09 28 da c0 21 7c 50 9c d8 cd b5 32 84 9c b5 ca 1b 50 7f 89 9e d9 31 84 81 ac 36 e2 76 a6 92 eb 32 38 f3 64 
+# 
+# UVM_INFO atm_cell.sv(324) @ 312735: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0ac, VCI=5837, CLP=1, PT=1, HEC=65, Payload[0]=b5
+# 0a c5 83 79 65 b5 b8 16 10 29 1d d3 df 0d 3a 42 30 09 28 da c0 21 7c 50 9c d8 cd b5 32 84 9c b5 ca 1b 50 7f 89 9e d9 31 84 81 ac 36 e2 76 a6 92 eb 32 38 f3 64 
+# 
+# UVM_INFO atm_cell.sv(324) @ 312735: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0ac, VCI=5837, CLP=1, PT=1, HEC=65, Payload[0]=b5
+# 0a c5 83 79 65 b5 b8 16 10 29 1d d3 df 0d 3a 42 30 09 28 da c0 21 7c 50 9c d8 cd b5 32 84 9c b5 ca 1b 50 7f 89 9e d9 31 84 81 ac 36 e2 76 a6 92 eb 32 38 f3 64 
+# 
+# UVM_INFO scoreboard.svh(195) @ 312735: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @312735: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 312735: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @312735: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 312735: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0ac, VCI=5837, CLP=1, PT=1, HEC=65, Payload[0]=b5
+# 0a c5 83 79 65 b5 b8 16 10 29 1d d3 df 0d 3a 42 30 09 28 da c0 21 7c 50 9c d8 cd b5 32 84 9c b5 ca 1b 50 7f 89 9e d9 31 84 81 ac 36 e2 76 a6 92 eb 32 38 f3 64 
+# 
+# UVM_INFO scoreboard.svh(195) @ 312735: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @312735: Scb check for port 1: 
+# UVM_INFO scoreboard.svh(210) @ 312735: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @312735: Match found for the cell 
+# UVM_INFO atm_cell.sv(196) @ 452155: uvm_test_top.env.utopia_agnt_Rx[0].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @452155: UNI id:0 GFC=1, VPI=0a, VCI=9cc3, CLP=1, PT=0, HEC=f9, Payload[0]=e1
+# @452155: 10 a9 cc 38 f9 e1 88 88 97 3a d0 d5 e8 f0 f5 97 f8 78 73 7e fd de 09 2c f9 3d f0 07 ac 9a 8e a6 40 2a ae b7 59 72 ef 2c 1c 4f e5 c5 2e 99 d9 29 23 73 9c 3f 1e 
+# 
+# UVM_INFO driver.svh(89) @ 452155: uvm_test_top.env.utopia_agnt_Rx[0].utopia_drv [utopia_driver] Sending cell:
+# 10 a9 cc 38 f9 e1 88 88 97 3a d0 d5 e8 f0 f5 97 f8 78 73 7e fd de 09 2c f9 3d f0 07 ac 9a 8e a6 40 2a ae b7 59 72 ef 2c 1c 4f e5 c5 2e 99 d9 29 23 73 9c 3f 1e 
+# UVM_INFO atm_cell.sv(324) @ 452685: reporter@@NNI_cell [NNI_cell]  @452685 NNI id:0 VPI=10a, VCI=9cc3, CLP=1, PT=0, HEC=f9, Payload[0]=e1
+#  @452685 10 a9 cc 38 f9 e1 88 88 97 3a d0 d5 e8 f0 f5 97 f8 78 73 7e fd de 09 2c f9 3d f0 07 ac 9a 8e a6 40 2a ae b7 59 72 ef 2c 1c 4f e5 c5 2e 99 d9 29 23 73 9c 3f 1e 
+# 
+# UVM_INFO scoreboard.svh(175) @ 452685: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @452685: Scb save for RX port: VPI=a, Forward=1000
+# UVM_INFO atm_cell.sv(324) @ 452685: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=00a, VCI=9cc3, CLP=1, PT=0, HEC=f9, Payload[0]=e1
+# 00 a9 cc 38 f9 e1 88 88 97 3a d0 d5 e8 f0 f5 97 f8 78 73 7e fd de 09 2c f9 3d f0 07 ac 9a 8e a6 40 2a ae b7 59 72 ef 2c 1c 4f e5 c5 2e 99 d9 29 23 73 9c 3f 1e 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#1 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 0
+# UVM_INFO atm_cell.sv(196) @ 452685: uvm_test_top.env.utopia_agnt_Rx[1].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @452685: UNI id:0 GFC=6, VPI=32, VCI=250e, CLP=0, PT=0, HEC=0d, Payload[0]=24
+# @452685: 63 22 50 e0 0d 24 aa 02 f3 3c 0b 5a 6c 0c 4c cf 46 1f df 0a 92 71 3d b4 f4 3c 39 76 d6 a4 b3 1b 27 63 ed f2 81 6e c5 37 97 1d 24 ad 00 03 04 40 7b 86 af 0a 98 
+# 
+# UVM_INFO driver.svh(89) @ 452685: uvm_test_top.env.utopia_agnt_Rx[1].utopia_drv [utopia_driver] Sending cell:
+# 63 22 50 e0 0d 24 aa 02 f3 3c 0b 5a 6c 0c 4c cf 46 1f df 0a 92 71 3d b4 f4 3c 39 76 d6 a4 b3 1b 27 63 ed f2 81 6e c5 37 97 1d 24 ad 00 03 04 40 7b 86 af 0a 98 
+# UVM_INFO atm_cell.sv(324) @ 453225: reporter@@NNI_cell [NNI_cell]  @453225 NNI id:0 VPI=632, VCI=250e, CLP=0, PT=0, HEC=0d, Payload[0]=24
+#  @453225 63 22 50 e0 0d 24 aa 02 f3 3c 0b 5a 6c 0c 4c cf 46 1f df 0a 92 71 3d b4 f4 3c 39 76 d6 a4 b3 1b 27 63 ed f2 81 6e c5 37 97 1d 24 ad 00 03 04 40 7b 86 af 0a 98 
+# 
+# UVM_INFO scoreboard.svh(175) @ 453225: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @453225: Scb save for RX port: VPI=32, Forward=0001
+# UVM_INFO atm_cell.sv(324) @ 453225: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=032, VCI=250e, CLP=0, PT=0, HEC=0d, Payload[0]=24
+# 03 22 50 e0 0d 24 aa 02 f3 3c 0b 5a 6c 0c 4c cf 46 1f df 0a 92 71 3d b4 f4 3c 39 76 d6 a4 b3 1b 27 63 ed f2 81 6e c5 37 97 1d 24 ad 00 03 04 40 7b 86 af 0a 98 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#2 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 1
+# UVM_INFO atm_cell.sv(196) @ 453225: uvm_test_top.env.utopia_agnt_Rx[2].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @453225: UNI id:0 GFC=8, VPI=b9, VCI=0898, CLP=0, PT=4, HEC=d9, Payload[0]=da
+# @453225: 8b 90 89 84 d9 da 4b de e6 59 f6 8b 3f 80 23 f2 27 46 f8 a2 02 5f cc ab c5 58 a4 d9 3d 31 11 d8 c5 f2 31 58 db c5 7b a4 f5 45 18 f5 67 45 aa 51 cb b8 8b 02 e1 
+# 
+# UVM_INFO driver.svh(89) @ 453225: uvm_test_top.env.utopia_agnt_Rx[2].utopia_drv [utopia_driver] Sending cell:
+# 8b 90 89 84 d9 da 4b de e6 59 f6 8b 3f 80 23 f2 27 46 f8 a2 02 5f cc ab c5 58 a4 d9 3d 31 11 d8 c5 f2 31 58 db c5 7b a4 f5 45 18 f5 67 45 aa 51 cb b8 8b 02 e1 
+# UVM_INFO atm_cell.sv(324) @ 453265: reporter@@NNI_cell [NNI_cell] @453265 NNI id:0 VPI=00a, VCI=9cc3, CLP=1, PT=0, HEC=f9, Payload[0]=e1
+# @453265 00 a9 cc 38 f9 e1 88 88 97 3a d0 d5 e8 f0 f5 97 f8 78 73 7e fd de 09 2c f9 3d f0 07 ac 9a 8e a6 40 2a ae b7 59 72 ef 2c 1c 4f e5 c5 2e 99 d9 29 23 73 9c 3f 1e 
+# 
+# UVM_INFO atm_cell.sv(324) @ 453265: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=00a, VCI=9cc3, CLP=1, PT=0, HEC=f9, Payload[0]=e1
+# 00 a9 cc 38 f9 e1 88 88 97 3a d0 d5 e8 f0 f5 97 f8 78 73 7e fd de 09 2c f9 3d f0 07 ac 9a 8e a6 40 2a ae b7 59 72 ef 2c 1c 4f e5 c5 2e 99 d9 29 23 73 9c 3f 1e 
+# 
+# UVM_INFO atm_cell.sv(324) @ 453265: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=00a, VCI=9cc3, CLP=1, PT=0, HEC=f9, Payload[0]=e1
+# 00 a9 cc 38 f9 e1 88 88 97 3a d0 d5 e8 f0 f5 97 f8 78 73 7e fd de 09 2c f9 3d f0 07 ac 9a 8e a6 40 2a ae b7 59 72 ef 2c 1c 4f e5 c5 2e 99 d9 29 23 73 9c 3f 1e 
+# 
+# UVM_INFO scoreboard.svh(195) @ 453265: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @453265: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 453265: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @453265: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 453765: reporter@@NNI_cell [NNI_cell]  @453765 NNI id:0 VPI=8b9, VCI=0898, CLP=0, PT=4, HEC=d9, Payload[0]=da
+#  @453765 8b 90 89 84 d9 da 4b de e6 59 f6 8b 3f 80 23 f2 27 46 f8 a2 02 5f cc ab c5 58 a4 d9 3d 31 11 d8 c5 f2 31 58 db c5 7b a4 f5 45 18 f5 67 45 aa 51 cb b8 8b 02 e1 
+# 
+# UVM_INFO scoreboard.svh(175) @ 453765: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @453765: Scb save for RX port: VPI=b9, Forward=1110
+# UVM_INFO atm_cell.sv(324) @ 453765: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=0898, CLP=0, PT=4, HEC=d9, Payload[0]=da
+# 0b 90 89 84 d9 da 4b de e6 59 f6 8b 3f 80 23 f2 27 46 f8 a2 02 5f cc ab c5 58 a4 d9 3d 31 11 d8 c5 f2 31 58 db c5 7b a4 f5 45 18 f5 67 45 aa 51 cb b8 8b 02 e1 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#3 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 2
+# UVM_INFO atm_cell.sv(196) @ 453765: uvm_test_top.env.utopia_agnt_Rx[3].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @453765: UNI id:0 GFC=9, VPI=cc, VCI=ef34, CLP=1, PT=0, HEC=9e, Payload[0]=43
+# @453765: 9c ce f3 48 9e 43 77 d5 70 15 6a 72 20 88 cf 4e fe af 83 16 fc eb fa f3 5c 78 2c 1e 12 61 7f fd 21 2b bd 33 68 71 30 ea e4 ab 5c 39 e5 b6 a9 45 56 30 05 a6 6b 
+# 
+# UVM_INFO driver.svh(89) @ 453765: uvm_test_top.env.utopia_agnt_Rx[3].utopia_drv [utopia_driver] Sending cell:
+# 9c ce f3 48 9e 43 77 d5 70 15 6a 72 20 88 cf 4e fe af 83 16 fc eb fa f3 5c 78 2c 1e 12 61 7f fd 21 2b bd 33 68 71 30 ea e4 ab 5c 39 e5 b6 a9 45 56 30 05 a6 6b 
+# UVM_INFO atm_cell.sv(324) @ 453805: reporter@@NNI_cell [NNI_cell] @453805 NNI id:0 VPI=032, VCI=250e, CLP=0, PT=0, HEC=0d, Payload[0]=24
+# @453805 03 22 50 e0 0d 24 aa 02 f3 3c 0b 5a 6c 0c 4c cf 46 1f df 0a 92 71 3d b4 f4 3c 39 76 d6 a4 b3 1b 27 63 ed f2 81 6e c5 37 97 1d 24 ad 00 03 04 40 7b 86 af 0a 98 
+# 
+# UVM_INFO atm_cell.sv(324) @ 453805: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=032, VCI=250e, CLP=0, PT=0, HEC=0d, Payload[0]=24
+# 03 22 50 e0 0d 24 aa 02 f3 3c 0b 5a 6c 0c 4c cf 46 1f df 0a 92 71 3d b4 f4 3c 39 76 d6 a4 b3 1b 27 63 ed f2 81 6e c5 37 97 1d 24 ad 00 03 04 40 7b 86 af 0a 98 
+# 
+# UVM_INFO atm_cell.sv(324) @ 453805: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=032, VCI=250e, CLP=0, PT=0, HEC=0d, Payload[0]=24
+# 03 22 50 e0 0d 24 aa 02 f3 3c 0b 5a 6c 0c 4c cf 46 1f df 0a 92 71 3d b4 f4 3c 39 76 d6 a4 b3 1b 27 63 ed f2 81 6e c5 37 97 1d 24 ad 00 03 04 40 7b 86 af 0a 98 
+# 
+# UVM_INFO scoreboard.svh(195) @ 453805: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @453805: Scb check for port 0: 
+# UVM_INFO scoreboard.svh(210) @ 453805: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @453805: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 454305: reporter@@NNI_cell [NNI_cell]  @454305 NNI id:0 VPI=9cc, VCI=ef34, CLP=1, PT=0, HEC=9e, Payload[0]=43
+#  @454305 9c ce f3 48 9e 43 77 d5 70 15 6a 72 20 88 cf 4e fe af 83 16 fc eb fa f3 5c 78 2c 1e 12 61 7f fd 21 2b bd 33 68 71 30 ea e4 ab 5c 39 e5 b6 a9 45 56 30 05 a6 6b 
+# 
+# UVM_INFO scoreboard.svh(175) @ 454305: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @454305: Scb save for RX port: VPI=cc, Forward=0000
+# UVM_INFO atm_cell.sv(324) @ 454305: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0cc, VCI=ef34, CLP=1, PT=0, HEC=9e, Payload[0]=43
+# 0c ce f3 48 9e 43 77 d5 70 15 6a 72 20 88 cf 4e fe af 83 16 fc eb fa f3 5c 78 2c 1e 12 61 7f fd 21 2b bd 33 68 71 30 ea e4 ab 5c 39 e5 b6 a9 45 56 30 05 a6 6b 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#4 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 3
+# UVM_INFO atm_cell.sv(324) @ 454345: reporter@@NNI_cell [NNI_cell] @454345 NNI id:0 VPI=0b9, VCI=0898, CLP=0, PT=4, HEC=d9, Payload[0]=da
+# @454345 0b 90 89 84 d9 da 4b de e6 59 f6 8b 3f 80 23 f2 27 46 f8 a2 02 5f cc ab c5 58 a4 d9 3d 31 11 d8 c5 f2 31 58 db c5 7b a4 f5 45 18 f5 67 45 aa 51 cb b8 8b 02 e1 
+# 
+# UVM_INFO atm_cell.sv(324) @ 454345: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=0898, CLP=0, PT=4, HEC=d9, Payload[0]=da
+# 0b 90 89 84 d9 da 4b de e6 59 f6 8b 3f 80 23 f2 27 46 f8 a2 02 5f cc ab c5 58 a4 d9 3d 31 11 d8 c5 f2 31 58 db c5 7b a4 f5 45 18 f5 67 45 aa 51 cb b8 8b 02 e1 
+# 
+# UVM_INFO atm_cell.sv(324) @ 454345: reporter@@NNI_cell [NNI_cell] @454345 NNI id:0 VPI=0b9, VCI=0898, CLP=0, PT=4, HEC=d9, Payload[0]=da
+# @454345 0b 90 89 84 d9 da 4b de e6 59 f6 8b 3f 80 23 f2 27 46 f8 a2 02 5f cc ab c5 58 a4 d9 3d 31 11 d8 c5 f2 31 58 db c5 7b a4 f5 45 18 f5 67 45 aa 51 cb b8 8b 02 e1 
+# 
+# UVM_INFO atm_cell.sv(324) @ 454345: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=0898, CLP=0, PT=4, HEC=d9, Payload[0]=da
+# 0b 90 89 84 d9 da 4b de e6 59 f6 8b 3f 80 23 f2 27 46 f8 a2 02 5f cc ab c5 58 a4 d9 3d 31 11 d8 c5 f2 31 58 db c5 7b a4 f5 45 18 f5 67 45 aa 51 cb b8 8b 02 e1 
+# 
+# UVM_INFO atm_cell.sv(324) @ 454345: reporter@@NNI_cell [NNI_cell] @454345 NNI id:0 VPI=0b9, VCI=0898, CLP=0, PT=4, HEC=d9, Payload[0]=da
+# @454345 0b 90 89 84 d9 da 4b de e6 59 f6 8b 3f 80 23 f2 27 46 f8 a2 02 5f cc ab c5 58 a4 d9 3d 31 11 d8 c5 f2 31 58 db c5 7b a4 f5 45 18 f5 67 45 aa 51 cb b8 8b 02 e1 
+# 
+# UVM_INFO atm_cell.sv(324) @ 454345: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=0898, CLP=0, PT=4, HEC=d9, Payload[0]=da
+# 0b 90 89 84 d9 da 4b de e6 59 f6 8b 3f 80 23 f2 27 46 f8 a2 02 5f cc ab c5 58 a4 d9 3d 31 11 d8 c5 f2 31 58 db c5 7b a4 f5 45 18 f5 67 45 aa 51 cb b8 8b 02 e1 
+# 
+# UVM_INFO atm_cell.sv(324) @ 454345: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=0898, CLP=0, PT=4, HEC=d9, Payload[0]=da
+# 0b 90 89 84 d9 da 4b de e6 59 f6 8b 3f 80 23 f2 27 46 f8 a2 02 5f cc ab c5 58 a4 d9 3d 31 11 d8 c5 f2 31 58 db c5 7b a4 f5 45 18 f5 67 45 aa 51 cb b8 8b 02 e1 
+# 
+# UVM_INFO scoreboard.svh(195) @ 454345: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @454345: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 454345: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @454345: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 454345: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=0898, CLP=0, PT=4, HEC=d9, Payload[0]=da
+# 0b 90 89 84 d9 da 4b de e6 59 f6 8b 3f 80 23 f2 27 46 f8 a2 02 5f cc ab c5 58 a4 d9 3d 31 11 d8 c5 f2 31 58 db c5 7b a4 f5 45 18 f5 67 45 aa 51 cb b8 8b 02 e1 
+# 
+# UVM_INFO scoreboard.svh(195) @ 454345: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @454345: Scb check for port 2: 
+# UVM_INFO scoreboard.svh(210) @ 454345: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @454345: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 454345: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=0898, CLP=0, PT=4, HEC=d9, Payload[0]=da
+# 0b 90 89 84 d9 da 4b de e6 59 f6 8b 3f 80 23 f2 27 46 f8 a2 02 5f cc ab c5 58 a4 d9 3d 31 11 d8 c5 f2 31 58 db c5 7b a4 f5 45 18 f5 67 45 aa 51 cb b8 8b 02 e1 
+# 
+# UVM_INFO scoreboard.svh(195) @ 454345: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @454345: Scb check for port 1: 
+# UVM_INFO scoreboard.svh(210) @ 454345: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @454345: Match found for the cell 
+# UVM_INFO atm_cell.sv(196) @ 594305: uvm_test_top.env.utopia_agnt_Rx[0].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @594305: UNI id:0 GFC=4, VPI=9a, VCI=487e, CLP=1, PT=0, HEC=c0, Payload[0]=86
+# @594305: 49 a4 87 e8 c0 86 47 f0 6e 6f 06 d4 d8 69 8e 2d 61 4e 31 78 28 67 50 80 a0 db 92 b1 cd a5 1d d0 e6 5e a1 18 f1 5a 8e bd 37 bd f1 b2 08 3b a4 f5 c0 d9 e3 12 c4 
+# 
+# UVM_INFO driver.svh(89) @ 594305: uvm_test_top.env.utopia_agnt_Rx[0].utopia_drv [utopia_driver] Sending cell:
+# 49 a4 87 e8 c0 86 47 f0 6e 6f 06 d4 d8 69 8e 2d 61 4e 31 78 28 67 50 80 a0 db 92 b1 cd a5 1d d0 e6 5e a1 18 f1 5a 8e bd 37 bd f1 b2 08 3b a4 f5 c0 d9 e3 12 c4 
+# UVM_INFO atm_cell.sv(324) @ 594835: reporter@@NNI_cell [NNI_cell]  @594835 NNI id:0 VPI=49a, VCI=487e, CLP=1, PT=0, HEC=c0, Payload[0]=86
+#  @594835 49 a4 87 e8 c0 86 47 f0 6e 6f 06 d4 d8 69 8e 2d 61 4e 31 78 28 67 50 80 a0 db 92 b1 cd a5 1d d0 e6 5e a1 18 f1 5a 8e bd 37 bd f1 b2 08 3b a4 f5 c0 d9 e3 12 c4 
+# 
+# UVM_INFO scoreboard.svh(175) @ 594835: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @594835: Scb save for RX port: VPI=9a, Forward=1010
+# UVM_INFO atm_cell.sv(324) @ 594835: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=09a, VCI=487e, CLP=1, PT=0, HEC=c0, Payload[0]=86
+# 09 a4 87 e8 c0 86 47 f0 6e 6f 06 d4 d8 69 8e 2d 61 4e 31 78 28 67 50 80 a0 db 92 b1 cd a5 1d d0 e6 5e a1 18 f1 5a 8e bd 37 bd f1 b2 08 3b a4 f5 c0 d9 e3 12 c4 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#1 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 0
+# UVM_INFO atm_cell.sv(196) @ 594835: uvm_test_top.env.utopia_agnt_Rx[1].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @594835: UNI id:0 GFC=c, VPI=5a, VCI=aa35, CLP=1, PT=0, HEC=d6, Payload[0]=9d
+# @594835: c5 aa a3 58 d6 9d 62 c7 fc 89 d6 7a d4 03 24 7f d2 ce 6f ec 35 a5 1d 15 19 fd 4a b6 fd f2 86 6b 71 19 4f 09 96 23 3b bc 92 ce 87 8e 37 6f a1 81 c7 c3 fd d9 7d 
+# 
+# UVM_INFO driver.svh(89) @ 594835: uvm_test_top.env.utopia_agnt_Rx[1].utopia_drv [utopia_driver] Sending cell:
+# c5 aa a3 58 d6 9d 62 c7 fc 89 d6 7a d4 03 24 7f d2 ce 6f ec 35 a5 1d 15 19 fd 4a b6 fd f2 86 6b 71 19 4f 09 96 23 3b bc 92 ce 87 8e 37 6f a1 81 c7 c3 fd d9 7d 
+# UVM_INFO atm_cell.sv(324) @ 595375: reporter@@NNI_cell [NNI_cell]  @595375 NNI id:0 VPI=c5a, VCI=aa35, CLP=1, PT=0, HEC=d6, Payload[0]=9d
+#  @595375 c5 aa a3 58 d6 9d 62 c7 fc 89 d6 7a d4 03 24 7f d2 ce 6f ec 35 a5 1d 15 19 fd 4a b6 fd f2 86 6b 71 19 4f 09 96 23 3b bc 92 ce 87 8e 37 6f a1 81 c7 c3 fd d9 7d 
+# 
+# UVM_INFO scoreboard.svh(175) @ 595375: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @595375: Scb save for RX port: VPI=5a, Forward=1011
+# UVM_INFO atm_cell.sv(324) @ 595375: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=05a, VCI=aa35, CLP=1, PT=0, HEC=d6, Payload[0]=9d
+# 05 aa a3 58 d6 9d 62 c7 fc 89 d6 7a d4 03 24 7f d2 ce 6f ec 35 a5 1d 15 19 fd 4a b6 fd f2 86 6b 71 19 4f 09 96 23 3b bc 92 ce 87 8e 37 6f a1 81 c7 c3 fd d9 7d 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#2 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 1
+# UVM_INFO atm_cell.sv(196) @ 595375: uvm_test_top.env.utopia_agnt_Rx[2].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @595375: UNI id:0 GFC=a, VPI=62, VCI=7d97, CLP=0, PT=1, HEC=dc, Payload[0]=a9
+# @595375: a6 27 d9 71 dc a9 b0 2e 26 aa a5 d6 bb 9c cd 70 0e ee 70 98 6e 87 67 67 32 d1 0a 5b f1 36 3d 56 4d 26 e0 a8 76 f9 74 68 2e 86 21 02 73 d2 a8 6b 8e 47 05 64 83 
+# 
+# UVM_INFO driver.svh(89) @ 595375: uvm_test_top.env.utopia_agnt_Rx[2].utopia_drv [utopia_driver] Sending cell:
+# a6 27 d9 71 dc a9 b0 2e 26 aa a5 d6 bb 9c cd 70 0e ee 70 98 6e 87 67 67 32 d1 0a 5b f1 36 3d 56 4d 26 e0 a8 76 f9 74 68 2e 86 21 02 73 d2 a8 6b 8e 47 05 64 83 
+# UVM_INFO atm_cell.sv(324) @ 595415: reporter@@NNI_cell [NNI_cell] @595415 NNI id:0 VPI=09a, VCI=487e, CLP=1, PT=0, HEC=c0, Payload[0]=86
+# @595415 09 a4 87 e8 c0 86 47 f0 6e 6f 06 d4 d8 69 8e 2d 61 4e 31 78 28 67 50 80 a0 db 92 b1 cd a5 1d d0 e6 5e a1 18 f1 5a 8e bd 37 bd f1 b2 08 3b a4 f5 c0 d9 e3 12 c4 
+# 
+# UVM_INFO atm_cell.sv(324) @ 595415: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=09a, VCI=487e, CLP=1, PT=0, HEC=c0, Payload[0]=86
+# 09 a4 87 e8 c0 86 47 f0 6e 6f 06 d4 d8 69 8e 2d 61 4e 31 78 28 67 50 80 a0 db 92 b1 cd a5 1d d0 e6 5e a1 18 f1 5a 8e bd 37 bd f1 b2 08 3b a4 f5 c0 d9 e3 12 c4 
+# 
+# UVM_INFO atm_cell.sv(324) @ 595415: reporter@@NNI_cell [NNI_cell] @595415 NNI id:0 VPI=09a, VCI=487e, CLP=1, PT=0, HEC=c0, Payload[0]=86
+# @595415 09 a4 87 e8 c0 86 47 f0 6e 6f 06 d4 d8 69 8e 2d 61 4e 31 78 28 67 50 80 a0 db 92 b1 cd a5 1d d0 e6 5e a1 18 f1 5a 8e bd 37 bd f1 b2 08 3b a4 f5 c0 d9 e3 12 c4 
+# 
+# UVM_INFO atm_cell.sv(324) @ 595415: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=09a, VCI=487e, CLP=1, PT=0, HEC=c0, Payload[0]=86
+# 09 a4 87 e8 c0 86 47 f0 6e 6f 06 d4 d8 69 8e 2d 61 4e 31 78 28 67 50 80 a0 db 92 b1 cd a5 1d d0 e6 5e a1 18 f1 5a 8e bd 37 bd f1 b2 08 3b a4 f5 c0 d9 e3 12 c4 
+# 
+# UVM_INFO atm_cell.sv(324) @ 595415: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=09a, VCI=487e, CLP=1, PT=0, HEC=c0, Payload[0]=86
+# 09 a4 87 e8 c0 86 47 f0 6e 6f 06 d4 d8 69 8e 2d 61 4e 31 78 28 67 50 80 a0 db 92 b1 cd a5 1d d0 e6 5e a1 18 f1 5a 8e bd 37 bd f1 b2 08 3b a4 f5 c0 d9 e3 12 c4 
+# 
+# UVM_INFO scoreboard.svh(195) @ 595415: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @595415: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 595415: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @595415: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 595415: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=09a, VCI=487e, CLP=1, PT=0, HEC=c0, Payload[0]=86
+# 09 a4 87 e8 c0 86 47 f0 6e 6f 06 d4 d8 69 8e 2d 61 4e 31 78 28 67 50 80 a0 db 92 b1 cd a5 1d d0 e6 5e a1 18 f1 5a 8e bd 37 bd f1 b2 08 3b a4 f5 c0 d9 e3 12 c4 
+# 
+# UVM_INFO scoreboard.svh(195) @ 595415: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @595415: Scb check for port 1: 
+# UVM_INFO scoreboard.svh(210) @ 595415: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @595415: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 595915: reporter@@NNI_cell [NNI_cell]  @595915 NNI id:0 VPI=a62, VCI=7d97, CLP=0, PT=1, HEC=dc, Payload[0]=a9
+#  @595915 a6 27 d9 71 dc a9 b0 2e 26 aa a5 d6 bb 9c cd 70 0e ee 70 98 6e 87 67 67 32 d1 0a 5b f1 36 3d 56 4d 26 e0 a8 76 f9 74 68 2e 86 21 02 73 d2 a8 6b 8e 47 05 64 83 
+# 
+# UVM_INFO scoreboard.svh(175) @ 595915: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @595915: Scb save for RX port: VPI=62, Forward=0010
+# UVM_INFO atm_cell.sv(324) @ 595915: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=062, VCI=7d97, CLP=0, PT=1, HEC=dc, Payload[0]=a9
+# 06 27 d9 71 dc a9 b0 2e 26 aa a5 d6 bb 9c cd 70 0e ee 70 98 6e 87 67 67 32 d1 0a 5b f1 36 3d 56 4d 26 e0 a8 76 f9 74 68 2e 86 21 02 73 d2 a8 6b 8e 47 05 64 83 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#3 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 2
+# UVM_INFO atm_cell.sv(196) @ 595915: uvm_test_top.env.utopia_agnt_Rx[3].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @595915: UNI id:0 GFC=6, VPI=93, VCI=039b, CLP=1, PT=0, HEC=22, Payload[0]=8f
+# @595915: 69 30 39 b8 22 8f 26 c4 71 b9 14 c1 07 48 ea 12 11 9f 2b b3 42 7c d8 6d a4 53 dc 7c 5e 4e 19 cb ba c6 1d e2 ee 40 25 14 f9 60 5a 71 05 cf 49 f3 c0 c0 82 c5 8c 
+# 
+# UVM_INFO driver.svh(89) @ 595915: uvm_test_top.env.utopia_agnt_Rx[3].utopia_drv [utopia_driver] Sending cell:
+# 69 30 39 b8 22 8f 26 c4 71 b9 14 c1 07 48 ea 12 11 9f 2b b3 42 7c d8 6d a4 53 dc 7c 5e 4e 19 cb ba c6 1d e2 ee 40 25 14 f9 60 5a 71 05 cf 49 f3 c0 c0 82 c5 8c 
+# UVM_INFO atm_cell.sv(324) @ 595955: reporter@@NNI_cell [NNI_cell] @595955 NNI id:0 VPI=05a, VCI=aa35, CLP=1, PT=0, HEC=d6, Payload[0]=9d
+# @595955 05 aa a3 58 d6 9d 62 c7 fc 89 d6 7a d4 03 24 7f d2 ce 6f ec 35 a5 1d 15 19 fd 4a b6 fd f2 86 6b 71 19 4f 09 96 23 3b bc 92 ce 87 8e 37 6f a1 81 c7 c3 fd d9 7d 
+# 
+# UVM_INFO atm_cell.sv(324) @ 595955: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=05a, VCI=aa35, CLP=1, PT=0, HEC=d6, Payload[0]=9d
+# 05 aa a3 58 d6 9d 62 c7 fc 89 d6 7a d4 03 24 7f d2 ce 6f ec 35 a5 1d 15 19 fd 4a b6 fd f2 86 6b 71 19 4f 09 96 23 3b bc 92 ce 87 8e 37 6f a1 81 c7 c3 fd d9 7d 
+# 
+# UVM_INFO atm_cell.sv(324) @ 595955: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=05a, VCI=aa35, CLP=1, PT=0, HEC=d6, Payload[0]=9d
+# 05 aa a3 58 d6 9d 62 c7 fc 89 d6 7a d4 03 24 7f d2 ce 6f ec 35 a5 1d 15 19 fd 4a b6 fd f2 86 6b 71 19 4f 09 96 23 3b bc 92 ce 87 8e 37 6f a1 81 c7 c3 fd d9 7d 
+# 
+# UVM_INFO scoreboard.svh(195) @ 595955: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @595955: Scb check for port 0: 
+# UVM_INFO scoreboard.svh(210) @ 595955: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @595955: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 595975: reporter@@NNI_cell [NNI_cell] @595975 NNI id:0 VPI=05a, VCI=aa35, CLP=1, PT=0, HEC=d6, Payload[0]=9d
+# @595975 05 aa a3 58 d6 9d 62 c7 fc 89 d6 7a d4 03 24 7f d2 ce 6f ec 35 a5 1d 15 19 fd 4a b6 fd f2 86 6b 71 19 4f 09 96 23 3b bc 92 ce 87 8e 37 6f a1 81 c7 c3 fd d9 7d 
+# 
+# UVM_INFO atm_cell.sv(324) @ 595975: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=05a, VCI=aa35, CLP=1, PT=0, HEC=d6, Payload[0]=9d
+# 05 aa a3 58 d6 9d 62 c7 fc 89 d6 7a d4 03 24 7f d2 ce 6f ec 35 a5 1d 15 19 fd 4a b6 fd f2 86 6b 71 19 4f 09 96 23 3b bc 92 ce 87 8e 37 6f a1 81 c7 c3 fd d9 7d 
+# 
+# UVM_INFO atm_cell.sv(324) @ 595975: reporter@@NNI_cell [NNI_cell] @595975 NNI id:0 VPI=05a, VCI=aa35, CLP=1, PT=0, HEC=d6, Payload[0]=9d
+# @595975 05 aa a3 58 d6 9d 62 c7 fc 89 d6 7a d4 03 24 7f d2 ce 6f ec 35 a5 1d 15 19 fd 4a b6 fd f2 86 6b 71 19 4f 09 96 23 3b bc 92 ce 87 8e 37 6f a1 81 c7 c3 fd d9 7d 
+# 
+# UVM_INFO atm_cell.sv(324) @ 595975: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=05a, VCI=aa35, CLP=1, PT=0, HEC=d6, Payload[0]=9d
+# 05 aa a3 58 d6 9d 62 c7 fc 89 d6 7a d4 03 24 7f d2 ce 6f ec 35 a5 1d 15 19 fd 4a b6 fd f2 86 6b 71 19 4f 09 96 23 3b bc 92 ce 87 8e 37 6f a1 81 c7 c3 fd d9 7d 
+# 
+# UVM_INFO atm_cell.sv(324) @ 595975: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=05a, VCI=aa35, CLP=1, PT=0, HEC=d6, Payload[0]=9d
+# 05 aa a3 58 d6 9d 62 c7 fc 89 d6 7a d4 03 24 7f d2 ce 6f ec 35 a5 1d 15 19 fd 4a b6 fd f2 86 6b 71 19 4f 09 96 23 3b bc 92 ce 87 8e 37 6f a1 81 c7 c3 fd d9 7d 
+# 
+# UVM_INFO scoreboard.svh(195) @ 595975: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @595975: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 595975: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @595975: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 595975: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=05a, VCI=aa35, CLP=1, PT=0, HEC=d6, Payload[0]=9d
+# 05 aa a3 58 d6 9d 62 c7 fc 89 d6 7a d4 03 24 7f d2 ce 6f ec 35 a5 1d 15 19 fd 4a b6 fd f2 86 6b 71 19 4f 09 96 23 3b bc 92 ce 87 8e 37 6f a1 81 c7 c3 fd d9 7d 
+# 
+# UVM_INFO scoreboard.svh(195) @ 595975: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @595975: Scb check for port 1: 
+# UVM_INFO scoreboard.svh(210) @ 595975: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @595975: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 596455: reporter@@NNI_cell [NNI_cell]  @596455 NNI id:0 VPI=693, VCI=039b, CLP=1, PT=0, HEC=22, Payload[0]=8f
+#  @596455 69 30 39 b8 22 8f 26 c4 71 b9 14 c1 07 48 ea 12 11 9f 2b b3 42 7c d8 6d a4 53 dc 7c 5e 4e 19 cb ba c6 1d e2 ee 40 25 14 f9 60 5a 71 05 cf 49 f3 c0 c0 82 c5 8c 
+# 
+# UVM_INFO scoreboard.svh(175) @ 596455: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @596455: Scb save for RX port: VPI=93, Forward=1000
+# UVM_INFO atm_cell.sv(324) @ 596455: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=093, VCI=039b, CLP=1, PT=0, HEC=22, Payload[0]=8f
+# 09 30 39 b8 22 8f 26 c4 71 b9 14 c1 07 48 ea 12 11 9f 2b b3 42 7c d8 6d a4 53 dc 7c 5e 4e 19 cb ba c6 1d e2 ee 40 25 14 f9 60 5a 71 05 cf 49 f3 c0 c0 82 c5 8c 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#4 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 3
+# UVM_INFO atm_cell.sv(324) @ 596535: reporter@@NNI_cell [NNI_cell] @596535 NNI id:0 VPI=062, VCI=7d97, CLP=0, PT=1, HEC=dc, Payload[0]=a9
+# @596535 06 27 d9 71 dc a9 b0 2e 26 aa a5 d6 bb 9c cd 70 0e ee 70 98 6e 87 67 67 32 d1 0a 5b f1 36 3d 56 4d 26 e0 a8 76 f9 74 68 2e 86 21 02 73 d2 a8 6b 8e 47 05 64 83 
+# 
+# UVM_INFO atm_cell.sv(324) @ 596535: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=062, VCI=7d97, CLP=0, PT=1, HEC=dc, Payload[0]=a9
+# 06 27 d9 71 dc a9 b0 2e 26 aa a5 d6 bb 9c cd 70 0e ee 70 98 6e 87 67 67 32 d1 0a 5b f1 36 3d 56 4d 26 e0 a8 76 f9 74 68 2e 86 21 02 73 d2 a8 6b 8e 47 05 64 83 
+# 
+# UVM_INFO atm_cell.sv(324) @ 596535: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=062, VCI=7d97, CLP=0, PT=1, HEC=dc, Payload[0]=a9
+# 06 27 d9 71 dc a9 b0 2e 26 aa a5 d6 bb 9c cd 70 0e ee 70 98 6e 87 67 67 32 d1 0a 5b f1 36 3d 56 4d 26 e0 a8 76 f9 74 68 2e 86 21 02 73 d2 a8 6b 8e 47 05 64 83 
+# 
+# UVM_INFO scoreboard.svh(195) @ 596535: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @596535: Scb check for port 1: 
+# UVM_INFO scoreboard.svh(210) @ 596535: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @596535: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 597035: reporter@@NNI_cell [NNI_cell] @597035 NNI id:0 VPI=093, VCI=039b, CLP=1, PT=0, HEC=22, Payload[0]=8f
+# @597035 09 30 39 b8 22 8f 26 c4 71 b9 14 c1 07 48 ea 12 11 9f 2b b3 42 7c d8 6d a4 53 dc 7c 5e 4e 19 cb ba c6 1d e2 ee 40 25 14 f9 60 5a 71 05 cf 49 f3 c0 c0 82 c5 8c 
+# 
+# UVM_INFO atm_cell.sv(324) @ 597035: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=093, VCI=039b, CLP=1, PT=0, HEC=22, Payload[0]=8f
+# 09 30 39 b8 22 8f 26 c4 71 b9 14 c1 07 48 ea 12 11 9f 2b b3 42 7c d8 6d a4 53 dc 7c 5e 4e 19 cb ba c6 1d e2 ee 40 25 14 f9 60 5a 71 05 cf 49 f3 c0 c0 82 c5 8c 
+# 
+# UVM_INFO atm_cell.sv(324) @ 597035: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=093, VCI=039b, CLP=1, PT=0, HEC=22, Payload[0]=8f
+# 09 30 39 b8 22 8f 26 c4 71 b9 14 c1 07 48 ea 12 11 9f 2b b3 42 7c d8 6d a4 53 dc 7c 5e 4e 19 cb ba c6 1d e2 ee 40 25 14 f9 60 5a 71 05 cf 49 f3 c0 c0 82 c5 8c 
+# 
+# UVM_INFO scoreboard.svh(195) @ 597035: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @597035: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 597035: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @597035: Match found for the cell 
+# UVM_INFO atm_cell.sv(196) @ 736455: uvm_test_top.env.utopia_agnt_Rx[0].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @736455: UNI id:0 GFC=1, VPI=92, VCI=27f7, CLP=0, PT=3, HEC=3e, Payload[0]=dc
+# @736455: 19 22 7f 73 3e dc 7f d8 1f 89 8f cb c1 6d ad 14 5d 0c 66 76 40 63 f4 d6 91 69 e4 28 d8 b8 ce e3 6b 8a 73 23 2f b2 3d 24 99 49 64 16 03 42 a6 f8 23 a7 6b 4d 64 
+# 
+# UVM_INFO driver.svh(89) @ 736455: uvm_test_top.env.utopia_agnt_Rx[0].utopia_drv [utopia_driver] Sending cell:
+# 19 22 7f 73 3e dc 7f d8 1f 89 8f cb c1 6d ad 14 5d 0c 66 76 40 63 f4 d6 91 69 e4 28 d8 b8 ce e3 6b 8a 73 23 2f b2 3d 24 99 49 64 16 03 42 a6 f8 23 a7 6b 4d 64 
+# UVM_INFO atm_cell.sv(324) @ 736985: reporter@@NNI_cell [NNI_cell]  @736985 NNI id:0 VPI=192, VCI=27f7, CLP=0, PT=3, HEC=3e, Payload[0]=dc
+#  @736985 19 22 7f 73 3e dc 7f d8 1f 89 8f cb c1 6d ad 14 5d 0c 66 76 40 63 f4 d6 91 69 e4 28 d8 b8 ce e3 6b 8a 73 23 2f b2 3d 24 99 49 64 16 03 42 a6 f8 23 a7 6b 4d 64 
+# 
+# UVM_INFO scoreboard.svh(175) @ 736985: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @736985: Scb save for RX port: VPI=92, Forward=0001
+# UVM_INFO atm_cell.sv(324) @ 736985: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=092, VCI=27f7, CLP=0, PT=3, HEC=3e, Payload[0]=dc
+# 09 22 7f 73 3e dc 7f d8 1f 89 8f cb c1 6d ad 14 5d 0c 66 76 40 63 f4 d6 91 69 e4 28 d8 b8 ce e3 6b 8a 73 23 2f b2 3d 24 99 49 64 16 03 42 a6 f8 23 a7 6b 4d 64 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#1 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 0
+# UVM_INFO atm_cell.sv(196) @ 736985: uvm_test_top.env.utopia_agnt_Rx[1].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @736985: UNI id:0 GFC=f, VPI=bd, VCI=0463, CLP=0, PT=3, HEC=4f, Payload[0]=26
+# @736985: fb d0 46 33 4f 26 1a c4 4f 23 b9 6e 72 9c a1 16 e5 7b be 0b dc d6 04 2e d6 02 5a e7 49 a1 87 b2 da 76 3b 45 a5 eb b8 09 68 da e3 e2 10 0d e5 fd fd 4f 25 d9 89 
+# 
+# UVM_INFO driver.svh(89) @ 736985: uvm_test_top.env.utopia_agnt_Rx[1].utopia_drv [utopia_driver] Sending cell:
+# fb d0 46 33 4f 26 1a c4 4f 23 b9 6e 72 9c a1 16 e5 7b be 0b dc d6 04 2e d6 02 5a e7 49 a1 87 b2 da 76 3b 45 a5 eb b8 09 68 da e3 e2 10 0d e5 fd fd 4f 25 d9 89 
+# UVM_INFO atm_cell.sv(324) @ 737525: reporter@@NNI_cell [NNI_cell]  @737525 NNI id:0 VPI=fbd, VCI=0463, CLP=0, PT=3, HEC=4f, Payload[0]=26
+#  @737525 fb d0 46 33 4f 26 1a c4 4f 23 b9 6e 72 9c a1 16 e5 7b be 0b dc d6 04 2e d6 02 5a e7 49 a1 87 b2 da 76 3b 45 a5 eb b8 09 68 da e3 e2 10 0d e5 fd fd 4f 25 d9 89 
+# 
+# UVM_INFO scoreboard.svh(175) @ 737525: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @737525: Scb save for RX port: VPI=bd, Forward=1010
+# UVM_INFO atm_cell.sv(324) @ 737525: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0bd, VCI=0463, CLP=0, PT=3, HEC=4f, Payload[0]=26
+# 0b d0 46 33 4f 26 1a c4 4f 23 b9 6e 72 9c a1 16 e5 7b be 0b dc d6 04 2e d6 02 5a e7 49 a1 87 b2 da 76 3b 45 a5 eb b8 09 68 da e3 e2 10 0d e5 fd fd 4f 25 d9 89 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#2 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 1
+# UVM_INFO atm_cell.sv(196) @ 737525: uvm_test_top.env.utopia_agnt_Rx[2].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @737525: UNI id:0 GFC=1, VPI=66, VCI=0207, CLP=0, PT=6, HEC=68, Payload[0]=45
+# @737525: 16 60 20 76 68 45 61 f3 49 6c 65 6b e8 b7 2e fd ae e0 1d 42 c9 e6 49 ea 78 96 21 10 4c 2b 71 23 65 cd 57 0d 2f db af 2d 92 da 39 18 63 97 38 d9 60 fe 8f 3f 6b 
+# 
+# UVM_INFO driver.svh(89) @ 737525: uvm_test_top.env.utopia_agnt_Rx[2].utopia_drv [utopia_driver] Sending cell:
+# 16 60 20 76 68 45 61 f3 49 6c 65 6b e8 b7 2e fd ae e0 1d 42 c9 e6 49 ea 78 96 21 10 4c 2b 71 23 65 cd 57 0d 2f db af 2d 92 da 39 18 63 97 38 d9 60 fe 8f 3f 6b 
+# UVM_INFO atm_cell.sv(324) @ 737565: reporter@@NNI_cell [NNI_cell] @737565 NNI id:0 VPI=092, VCI=27f7, CLP=0, PT=3, HEC=3e, Payload[0]=dc
+# @737565 09 22 7f 73 3e dc 7f d8 1f 89 8f cb c1 6d ad 14 5d 0c 66 76 40 63 f4 d6 91 69 e4 28 d8 b8 ce e3 6b 8a 73 23 2f b2 3d 24 99 49 64 16 03 42 a6 f8 23 a7 6b 4d 64 
+# 
+# UVM_INFO atm_cell.sv(324) @ 737565: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=092, VCI=27f7, CLP=0, PT=3, HEC=3e, Payload[0]=dc
+# 09 22 7f 73 3e dc 7f d8 1f 89 8f cb c1 6d ad 14 5d 0c 66 76 40 63 f4 d6 91 69 e4 28 d8 b8 ce e3 6b 8a 73 23 2f b2 3d 24 99 49 64 16 03 42 a6 f8 23 a7 6b 4d 64 
+# 
+# UVM_INFO atm_cell.sv(324) @ 737565: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=092, VCI=27f7, CLP=0, PT=3, HEC=3e, Payload[0]=dc
+# 09 22 7f 73 3e dc 7f d8 1f 89 8f cb c1 6d ad 14 5d 0c 66 76 40 63 f4 d6 91 69 e4 28 d8 b8 ce e3 6b 8a 73 23 2f b2 3d 24 99 49 64 16 03 42 a6 f8 23 a7 6b 4d 64 
+# 
+# UVM_INFO scoreboard.svh(195) @ 737565: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @737565: Scb check for port 0: 
+# UVM_INFO scoreboard.svh(210) @ 737565: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @737565: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 738065: reporter@@NNI_cell [NNI_cell]  @738065 NNI id:0 VPI=166, VCI=0207, CLP=0, PT=6, HEC=68, Payload[0]=45
+#  @738065 16 60 20 76 68 45 61 f3 49 6c 65 6b e8 b7 2e fd ae e0 1d 42 c9 e6 49 ea 78 96 21 10 4c 2b 71 23 65 cd 57 0d 2f db af 2d 92 da 39 18 63 97 38 d9 60 fe 8f 3f 6b 
+# 
+# UVM_INFO scoreboard.svh(175) @ 738065: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @738065: Scb save for RX port: VPI=66, Forward=0010
+# UVM_INFO atm_cell.sv(324) @ 738065: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=066, VCI=0207, CLP=0, PT=6, HEC=68, Payload[0]=45
+# 06 60 20 76 68 45 61 f3 49 6c 65 6b e8 b7 2e fd ae e0 1d 42 c9 e6 49 ea 78 96 21 10 4c 2b 71 23 65 cd 57 0d 2f db af 2d 92 da 39 18 63 97 38 d9 60 fe 8f 3f 6b 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#3 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 2
+# UVM_INFO atm_cell.sv(196) @ 738065: uvm_test_top.env.utopia_agnt_Rx[3].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @738065: UNI id:0 GFC=a, VPI=56, VCI=4223, CLP=1, PT=7, HEC=b3, Payload[0]=ed
+# @738065: a5 64 22 3f b3 ed d2 8c 27 51 b3 1d 74 28 bc 23 06 b8 a7 9f 84 b7 1d cb c0 5d aa 73 c3 04 fe 89 f4 1b 70 80 d5 18 4b a5 7f c9 0d 4a 19 9c 9b 0c ef fd 1a 49 2d 
+# 
+# UVM_INFO driver.svh(89) @ 738065: uvm_test_top.env.utopia_agnt_Rx[3].utopia_drv [utopia_driver] Sending cell:
+# a5 64 22 3f b3 ed d2 8c 27 51 b3 1d 74 28 bc 23 06 b8 a7 9f 84 b7 1d cb c0 5d aa 73 c3 04 fe 89 f4 1b 70 80 d5 18 4b a5 7f c9 0d 4a 19 9c 9b 0c ef fd 1a 49 2d 
+# UVM_INFO atm_cell.sv(324) @ 738105: reporter@@NNI_cell [NNI_cell] @738105 NNI id:0 VPI=0bd, VCI=0463, CLP=0, PT=3, HEC=4f, Payload[0]=26
+# @738105 0b d0 46 33 4f 26 1a c4 4f 23 b9 6e 72 9c a1 16 e5 7b be 0b dc d6 04 2e d6 02 5a e7 49 a1 87 b2 da 76 3b 45 a5 eb b8 09 68 da e3 e2 10 0d e5 fd fd 4f 25 d9 89 
+# 
+# UVM_INFO atm_cell.sv(324) @ 738105: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0bd, VCI=0463, CLP=0, PT=3, HEC=4f, Payload[0]=26
+# 0b d0 46 33 4f 26 1a c4 4f 23 b9 6e 72 9c a1 16 e5 7b be 0b dc d6 04 2e d6 02 5a e7 49 a1 87 b2 da 76 3b 45 a5 eb b8 09 68 da e3 e2 10 0d e5 fd fd 4f 25 d9 89 
+# 
+# UVM_INFO atm_cell.sv(324) @ 738105: reporter@@NNI_cell [NNI_cell] @738105 NNI id:0 VPI=0bd, VCI=0463, CLP=0, PT=3, HEC=4f, Payload[0]=26
+# @738105 0b d0 46 33 4f 26 1a c4 4f 23 b9 6e 72 9c a1 16 e5 7b be 0b dc d6 04 2e d6 02 5a e7 49 a1 87 b2 da 76 3b 45 a5 eb b8 09 68 da e3 e2 10 0d e5 fd fd 4f 25 d9 89 
+# 
+# UVM_INFO atm_cell.sv(324) @ 738105: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0bd, VCI=0463, CLP=0, PT=3, HEC=4f, Payload[0]=26
+# 0b d0 46 33 4f 26 1a c4 4f 23 b9 6e 72 9c a1 16 e5 7b be 0b dc d6 04 2e d6 02 5a e7 49 a1 87 b2 da 76 3b 45 a5 eb b8 09 68 da e3 e2 10 0d e5 fd fd 4f 25 d9 89 
+# 
+# UVM_INFO atm_cell.sv(324) @ 738105: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0bd, VCI=0463, CLP=0, PT=3, HEC=4f, Payload[0]=26
+# 0b d0 46 33 4f 26 1a c4 4f 23 b9 6e 72 9c a1 16 e5 7b be 0b dc d6 04 2e d6 02 5a e7 49 a1 87 b2 da 76 3b 45 a5 eb b8 09 68 da e3 e2 10 0d e5 fd fd 4f 25 d9 89 
+# 
+# UVM_INFO scoreboard.svh(195) @ 738105: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @738105: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 738105: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @738105: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 738105: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0bd, VCI=0463, CLP=0, PT=3, HEC=4f, Payload[0]=26
+# 0b d0 46 33 4f 26 1a c4 4f 23 b9 6e 72 9c a1 16 e5 7b be 0b dc d6 04 2e d6 02 5a e7 49 a1 87 b2 da 76 3b 45 a5 eb b8 09 68 da e3 e2 10 0d e5 fd fd 4f 25 d9 89 
+# 
+# UVM_INFO scoreboard.svh(195) @ 738105: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @738105: Scb check for port 1: 
+# UVM_INFO scoreboard.svh(210) @ 738105: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @738105: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 738605: reporter@@NNI_cell [NNI_cell]  @738605 NNI id:0 VPI=a56, VCI=4223, CLP=1, PT=7, HEC=b3, Payload[0]=ed
+#  @738605 a5 64 22 3f b3 ed d2 8c 27 51 b3 1d 74 28 bc 23 06 b8 a7 9f 84 b7 1d cb c0 5d aa 73 c3 04 fe 89 f4 1b 70 80 d5 18 4b a5 7f c9 0d 4a 19 9c 9b 0c ef fd 1a 49 2d 
+# 
+# UVM_INFO scoreboard.svh(175) @ 738605: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @738605: Scb save for RX port: VPI=56, Forward=1000
+# UVM_INFO atm_cell.sv(324) @ 738605: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=056, VCI=4223, CLP=1, PT=7, HEC=b3, Payload[0]=ed
+# 05 64 22 3f b3 ed d2 8c 27 51 b3 1d 74 28 bc 23 06 b8 a7 9f 84 b7 1d cb c0 5d aa 73 c3 04 fe 89 f4 1b 70 80 d5 18 4b a5 7f c9 0d 4a 19 9c 9b 0c ef fd 1a 49 2d 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#4 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 3
+# UVM_INFO atm_cell.sv(324) @ 738665: reporter@@NNI_cell [NNI_cell] @738665 NNI id:0 VPI=066, VCI=0207, CLP=0, PT=6, HEC=68, Payload[0]=45
+# @738665 06 60 20 76 68 45 61 f3 49 6c 65 6b e8 b7 2e fd ae e0 1d 42 c9 e6 49 ea 78 96 21 10 4c 2b 71 23 65 cd 57 0d 2f db af 2d 92 da 39 18 63 97 38 d9 60 fe 8f 3f 6b 
+# 
+# UVM_INFO atm_cell.sv(324) @ 738665: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=066, VCI=0207, CLP=0, PT=6, HEC=68, Payload[0]=45
+# 06 60 20 76 68 45 61 f3 49 6c 65 6b e8 b7 2e fd ae e0 1d 42 c9 e6 49 ea 78 96 21 10 4c 2b 71 23 65 cd 57 0d 2f db af 2d 92 da 39 18 63 97 38 d9 60 fe 8f 3f 6b 
+# 
+# UVM_INFO atm_cell.sv(324) @ 738665: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=066, VCI=0207, CLP=0, PT=6, HEC=68, Payload[0]=45
+# 06 60 20 76 68 45 61 f3 49 6c 65 6b e8 b7 2e fd ae e0 1d 42 c9 e6 49 ea 78 96 21 10 4c 2b 71 23 65 cd 57 0d 2f db af 2d 92 da 39 18 63 97 38 d9 60 fe 8f 3f 6b 
+# 
+# UVM_INFO scoreboard.svh(195) @ 738665: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @738665: Scb check for port 1: 
+# UVM_INFO scoreboard.svh(210) @ 738665: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @738665: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 739185: reporter@@NNI_cell [NNI_cell] @739185 NNI id:0 VPI=056, VCI=4223, CLP=1, PT=7, HEC=b3, Payload[0]=ed
+# @739185 05 64 22 3f b3 ed d2 8c 27 51 b3 1d 74 28 bc 23 06 b8 a7 9f 84 b7 1d cb c0 5d aa 73 c3 04 fe 89 f4 1b 70 80 d5 18 4b a5 7f c9 0d 4a 19 9c 9b 0c ef fd 1a 49 2d 
+# 
+# UVM_INFO atm_cell.sv(324) @ 739185: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=056, VCI=4223, CLP=1, PT=7, HEC=b3, Payload[0]=ed
+# 05 64 22 3f b3 ed d2 8c 27 51 b3 1d 74 28 bc 23 06 b8 a7 9f 84 b7 1d cb c0 5d aa 73 c3 04 fe 89 f4 1b 70 80 d5 18 4b a5 7f c9 0d 4a 19 9c 9b 0c ef fd 1a 49 2d 
+# 
+# UVM_INFO atm_cell.sv(324) @ 739185: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=056, VCI=4223, CLP=1, PT=7, HEC=b3, Payload[0]=ed
+# 05 64 22 3f b3 ed d2 8c 27 51 b3 1d 74 28 bc 23 06 b8 a7 9f 84 b7 1d cb c0 5d aa 73 c3 04 fe 89 f4 1b 70 80 d5 18 4b a5 7f c9 0d 4a 19 9c 9b 0c ef fd 1a 49 2d 
+# 
+# UVM_INFO scoreboard.svh(195) @ 739185: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @739185: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 739185: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @739185: Match found for the cell 
+# UVM_INFO atm_cell.sv(196) @ 878605: uvm_test_top.env.utopia_agnt_Rx[0].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @878605: UNI id:0 GFC=7, VPI=d3, VCI=3ee7, CLP=1, PT=1, HEC=38, Payload[0]=9c
+# @878605: 7d 33 ee 79 38 9c 0f 42 3c 4f 75 d4 b4 6e df c1 4b 9d 06 50 3d c6 e6 25 be 0e 60 5e 48 3b 6b 8c 98 93 ff 15 70 90 13 f5 01 9a d0 5a d9 63 65 46 07 6b 17 45 c2 
+# 
+# UVM_INFO driver.svh(89) @ 878605: uvm_test_top.env.utopia_agnt_Rx[0].utopia_drv [utopia_driver] Sending cell:
+# 7d 33 ee 79 38 9c 0f 42 3c 4f 75 d4 b4 6e df c1 4b 9d 06 50 3d c6 e6 25 be 0e 60 5e 48 3b 6b 8c 98 93 ff 15 70 90 13 f5 01 9a d0 5a d9 63 65 46 07 6b 17 45 c2 
+# UVM_INFO atm_cell.sv(324) @ 879135: reporter@@NNI_cell [NNI_cell]  @879135 NNI id:0 VPI=7d3, VCI=3ee7, CLP=1, PT=1, HEC=38, Payload[0]=9c
+#  @879135 7d 33 ee 79 38 9c 0f 42 3c 4f 75 d4 b4 6e df c1 4b 9d 06 50 3d c6 e6 25 be 0e 60 5e 48 3b 6b 8c 98 93 ff 15 70 90 13 f5 01 9a d0 5a d9 63 65 46 07 6b 17 45 c2 
+# 
+# UVM_INFO scoreboard.svh(175) @ 879135: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @879135: Scb save for RX port: VPI=d3, Forward=1110
+# UVM_INFO atm_cell.sv(324) @ 879135: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0d3, VCI=3ee7, CLP=1, PT=1, HEC=38, Payload[0]=9c
+# 0d 33 ee 79 38 9c 0f 42 3c 4f 75 d4 b4 6e df c1 4b 9d 06 50 3d c6 e6 25 be 0e 60 5e 48 3b 6b 8c 98 93 ff 15 70 90 13 f5 01 9a d0 5a d9 63 65 46 07 6b 17 45 c2 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#1 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 0
+# UVM_INFO atm_cell.sv(196) @ 879135: uvm_test_top.env.utopia_agnt_Rx[1].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @879135: UNI id:0 GFC=e, VPI=e1, VCI=1505, CLP=0, PT=4, HEC=9b, Payload[0]=8e
+# @879135: ee 11 50 54 9b 8e ca 4f 57 c3 9f 94 6c b0 00 2c 9e e3 aa 4f 8a 4b d4 bd 26 b8 6d 1d e8 2c 9c 8e 30 69 55 1b 91 82 be 49 55 1f 45 85 b1 ca a4 90 f5 7e 7e 90 d1 
+# 
+# UVM_INFO driver.svh(89) @ 879135: uvm_test_top.env.utopia_agnt_Rx[1].utopia_drv [utopia_driver] Sending cell:
+# ee 11 50 54 9b 8e ca 4f 57 c3 9f 94 6c b0 00 2c 9e e3 aa 4f 8a 4b d4 bd 26 b8 6d 1d e8 2c 9c 8e 30 69 55 1b 91 82 be 49 55 1f 45 85 b1 ca a4 90 f5 7e 7e 90 d1 
+# UVM_INFO atm_cell.sv(324) @ 879675: reporter@@NNI_cell [NNI_cell]  @879675 NNI id:0 VPI=ee1, VCI=1505, CLP=0, PT=4, HEC=9b, Payload[0]=8e
+#  @879675 ee 11 50 54 9b 8e ca 4f 57 c3 9f 94 6c b0 00 2c 9e e3 aa 4f 8a 4b d4 bd 26 b8 6d 1d e8 2c 9c 8e 30 69 55 1b 91 82 be 49 55 1f 45 85 b1 ca a4 90 f5 7e 7e 90 d1 
+# 
+# UVM_INFO scoreboard.svh(175) @ 879675: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @879675: Scb save for RX port: VPI=e1, Forward=0010
+# UVM_INFO atm_cell.sv(324) @ 879675: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0e1, VCI=1505, CLP=0, PT=4, HEC=9b, Payload[0]=8e
+# 0e 11 50 54 9b 8e ca 4f 57 c3 9f 94 6c b0 00 2c 9e e3 aa 4f 8a 4b d4 bd 26 b8 6d 1d e8 2c 9c 8e 30 69 55 1b 91 82 be 49 55 1f 45 85 b1 ca a4 90 f5 7e 7e 90 d1 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#2 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 1
+# UVM_INFO atm_cell.sv(196) @ 879675: uvm_test_top.env.utopia_agnt_Rx[2].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @879675: UNI id:0 GFC=9, VPI=fc, VCI=3bf3, CLP=0, PT=2, HEC=f3, Payload[0]=da
+# @879675: 9f c3 bf 32 f3 da 12 a8 f6 32 02 fe 9a e3 cd d5 7b fe 00 2d dc af 40 0d 0b 0f 42 97 d1 cd a2 cc 20 53 7a 0b 76 08 67 a8 67 12 df 13 a9 6d 45 24 71 7b 23 74 a4 
+# 
+# UVM_INFO driver.svh(89) @ 879675: uvm_test_top.env.utopia_agnt_Rx[2].utopia_drv [utopia_driver] Sending cell:
+# 9f c3 bf 32 f3 da 12 a8 f6 32 02 fe 9a e3 cd d5 7b fe 00 2d dc af 40 0d 0b 0f 42 97 d1 cd a2 cc 20 53 7a 0b 76 08 67 a8 67 12 df 13 a9 6d 45 24 71 7b 23 74 a4 
+# UVM_INFO atm_cell.sv(324) @ 879715: reporter@@NNI_cell [NNI_cell] @879715 NNI id:0 VPI=0d3, VCI=3ee7, CLP=1, PT=1, HEC=38, Payload[0]=9c
+# @879715 0d 33 ee 79 38 9c 0f 42 3c 4f 75 d4 b4 6e df c1 4b 9d 06 50 3d c6 e6 25 be 0e 60 5e 48 3b 6b 8c 98 93 ff 15 70 90 13 f5 01 9a d0 5a d9 63 65 46 07 6b 17 45 c2 
+# 
+# UVM_INFO atm_cell.sv(324) @ 879715: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0d3, VCI=3ee7, CLP=1, PT=1, HEC=38, Payload[0]=9c
+# 0d 33 ee 79 38 9c 0f 42 3c 4f 75 d4 b4 6e df c1 4b 9d 06 50 3d c6 e6 25 be 0e 60 5e 48 3b 6b 8c 98 93 ff 15 70 90 13 f5 01 9a d0 5a d9 63 65 46 07 6b 17 45 c2 
+# 
+# UVM_INFO atm_cell.sv(324) @ 879715: reporter@@NNI_cell [NNI_cell] @879715 NNI id:0 VPI=0d3, VCI=3ee7, CLP=1, PT=1, HEC=38, Payload[0]=9c
+# @879715 0d 33 ee 79 38 9c 0f 42 3c 4f 75 d4 b4 6e df c1 4b 9d 06 50 3d c6 e6 25 be 0e 60 5e 48 3b 6b 8c 98 93 ff 15 70 90 13 f5 01 9a d0 5a d9 63 65 46 07 6b 17 45 c2 
+# 
+# UVM_INFO atm_cell.sv(324) @ 879715: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0d3, VCI=3ee7, CLP=1, PT=1, HEC=38, Payload[0]=9c
+# 0d 33 ee 79 38 9c 0f 42 3c 4f 75 d4 b4 6e df c1 4b 9d 06 50 3d c6 e6 25 be 0e 60 5e 48 3b 6b 8c 98 93 ff 15 70 90 13 f5 01 9a d0 5a d9 63 65 46 07 6b 17 45 c2 
+# 
+# UVM_INFO atm_cell.sv(324) @ 879715: reporter@@NNI_cell [NNI_cell] @879715 NNI id:0 VPI=0d3, VCI=3ee7, CLP=1, PT=1, HEC=38, Payload[0]=9c
+# @879715 0d 33 ee 79 38 9c 0f 42 3c 4f 75 d4 b4 6e df c1 4b 9d 06 50 3d c6 e6 25 be 0e 60 5e 48 3b 6b 8c 98 93 ff 15 70 90 13 f5 01 9a d0 5a d9 63 65 46 07 6b 17 45 c2 
+# 
+# UVM_INFO atm_cell.sv(324) @ 879715: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0d3, VCI=3ee7, CLP=1, PT=1, HEC=38, Payload[0]=9c
+# 0d 33 ee 79 38 9c 0f 42 3c 4f 75 d4 b4 6e df c1 4b 9d 06 50 3d c6 e6 25 be 0e 60 5e 48 3b 6b 8c 98 93 ff 15 70 90 13 f5 01 9a d0 5a d9 63 65 46 07 6b 17 45 c2 
+# 
+# UVM_INFO atm_cell.sv(324) @ 879715: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0d3, VCI=3ee7, CLP=1, PT=1, HEC=38, Payload[0]=9c
+# 0d 33 ee 79 38 9c 0f 42 3c 4f 75 d4 b4 6e df c1 4b 9d 06 50 3d c6 e6 25 be 0e 60 5e 48 3b 6b 8c 98 93 ff 15 70 90 13 f5 01 9a d0 5a d9 63 65 46 07 6b 17 45 c2 
+# 
+# UVM_INFO scoreboard.svh(195) @ 879715: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @879715: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 879715: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @879715: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 879715: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0d3, VCI=3ee7, CLP=1, PT=1, HEC=38, Payload[0]=9c
+# 0d 33 ee 79 38 9c 0f 42 3c 4f 75 d4 b4 6e df c1 4b 9d 06 50 3d c6 e6 25 be 0e 60 5e 48 3b 6b 8c 98 93 ff 15 70 90 13 f5 01 9a d0 5a d9 63 65 46 07 6b 17 45 c2 
+# 
+# UVM_INFO scoreboard.svh(195) @ 879715: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @879715: Scb check for port 2: 
+# UVM_INFO scoreboard.svh(210) @ 879715: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @879715: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 879715: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0d3, VCI=3ee7, CLP=1, PT=1, HEC=38, Payload[0]=9c
+# 0d 33 ee 79 38 9c 0f 42 3c 4f 75 d4 b4 6e df c1 4b 9d 06 50 3d c6 e6 25 be 0e 60 5e 48 3b 6b 8c 98 93 ff 15 70 90 13 f5 01 9a d0 5a d9 63 65 46 07 6b 17 45 c2 
+# 
+# UVM_INFO scoreboard.svh(195) @ 879715: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @879715: Scb check for port 1: 
+# UVM_INFO scoreboard.svh(210) @ 879715: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @879715: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 880215: reporter@@NNI_cell [NNI_cell]  @880215 NNI id:0 VPI=9fc, VCI=3bf3, CLP=0, PT=2, HEC=f3, Payload[0]=da
+#  @880215 9f c3 bf 32 f3 da 12 a8 f6 32 02 fe 9a e3 cd d5 7b fe 00 2d dc af 40 0d 0b 0f 42 97 d1 cd a2 cc 20 53 7a 0b 76 08 67 a8 67 12 df 13 a9 6d 45 24 71 7b 23 74 a4 
+# 
+# UVM_INFO scoreboard.svh(175) @ 880215: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @880215: Scb save for RX port: VPI=fc, Forward=0001
+# UVM_INFO atm_cell.sv(324) @ 880215: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0fc, VCI=3bf3, CLP=0, PT=2, HEC=f3, Payload[0]=da
+# 0f c3 bf 32 f3 da 12 a8 f6 32 02 fe 9a e3 cd d5 7b fe 00 2d dc af 40 0d 0b 0f 42 97 d1 cd a2 cc 20 53 7a 0b 76 08 67 a8 67 12 df 13 a9 6d 45 24 71 7b 23 74 a4 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#3 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 2
+# UVM_INFO atm_cell.sv(196) @ 880215: uvm_test_top.env.utopia_agnt_Rx[3].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @880215: UNI id:0 GFC=b, VPI=cb, VCI=c166, CLP=1, PT=2, HEC=0d, Payload[0]=c5
+# @880215: bc bc 16 6a 0d c5 fd cb ad 4f f7 a0 e9 b1 cc b9 8d 77 54 30 4b 46 6d 79 6c 62 22 e1 35 6c 93 00 43 9c 25 25 8d 7b 98 0a f4 fd 06 bf f3 a1 2e c8 6e 16 bd 53 bf 
+# 
+# UVM_INFO driver.svh(89) @ 880215: uvm_test_top.env.utopia_agnt_Rx[3].utopia_drv [utopia_driver] Sending cell:
+# bc bc 16 6a 0d c5 fd cb ad 4f f7 a0 e9 b1 cc b9 8d 77 54 30 4b 46 6d 79 6c 62 22 e1 35 6c 93 00 43 9c 25 25 8d 7b 98 0a f4 fd 06 bf f3 a1 2e c8 6e 16 bd 53 bf 
+# UVM_INFO atm_cell.sv(324) @ 880275: reporter@@NNI_cell [NNI_cell] @880275 NNI id:0 VPI=0e1, VCI=1505, CLP=0, PT=4, HEC=9b, Payload[0]=8e
+# @880275 0e 11 50 54 9b 8e ca 4f 57 c3 9f 94 6c b0 00 2c 9e e3 aa 4f 8a 4b d4 bd 26 b8 6d 1d e8 2c 9c 8e 30 69 55 1b 91 82 be 49 55 1f 45 85 b1 ca a4 90 f5 7e 7e 90 d1 
+# 
+# UVM_INFO atm_cell.sv(324) @ 880275: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0e1, VCI=1505, CLP=0, PT=4, HEC=9b, Payload[0]=8e
+# 0e 11 50 54 9b 8e ca 4f 57 c3 9f 94 6c b0 00 2c 9e e3 aa 4f 8a 4b d4 bd 26 b8 6d 1d e8 2c 9c 8e 30 69 55 1b 91 82 be 49 55 1f 45 85 b1 ca a4 90 f5 7e 7e 90 d1 
+# 
+# UVM_INFO atm_cell.sv(324) @ 880275: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0e1, VCI=1505, CLP=0, PT=4, HEC=9b, Payload[0]=8e
+# 0e 11 50 54 9b 8e ca 4f 57 c3 9f 94 6c b0 00 2c 9e e3 aa 4f 8a 4b d4 bd 26 b8 6d 1d e8 2c 9c 8e 30 69 55 1b 91 82 be 49 55 1f 45 85 b1 ca a4 90 f5 7e 7e 90 d1 
+# 
+# UVM_INFO scoreboard.svh(195) @ 880275: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @880275: Scb check for port 1: 
+# UVM_INFO scoreboard.svh(210) @ 880275: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @880275: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 880755: reporter@@NNI_cell [NNI_cell]  @880755 NNI id:0 VPI=bcb, VCI=c166, CLP=1, PT=2, HEC=0d, Payload[0]=c5
+#  @880755 bc bc 16 6a 0d c5 fd cb ad 4f f7 a0 e9 b1 cc b9 8d 77 54 30 4b 46 6d 79 6c 62 22 e1 35 6c 93 00 43 9c 25 25 8d 7b 98 0a f4 fd 06 bf f3 a1 2e c8 6e 16 bd 53 bf 
+# 
+# UVM_INFO scoreboard.svh(175) @ 880755: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @880755: Scb save for RX port: VPI=cb, Forward=0101
+# UVM_INFO atm_cell.sv(324) @ 880755: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0cb, VCI=c166, CLP=1, PT=2, HEC=0d, Payload[0]=c5
+# 0c bc 16 6a 0d c5 fd cb ad 4f f7 a0 e9 b1 cc b9 8d 77 54 30 4b 46 6d 79 6c 62 22 e1 35 6c 93 00 43 9c 25 25 8d 7b 98 0a f4 fd 06 bf f3 a1 2e c8 6e 16 bd 53 bf 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#4 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 3
+# UVM_INFO atm_cell.sv(324) @ 880795: reporter@@NNI_cell [NNI_cell] @880795 NNI id:0 VPI=0fc, VCI=3bf3, CLP=0, PT=2, HEC=f3, Payload[0]=da
+# @880795 0f c3 bf 32 f3 da 12 a8 f6 32 02 fe 9a e3 cd d5 7b fe 00 2d dc af 40 0d 0b 0f 42 97 d1 cd a2 cc 20 53 7a 0b 76 08 67 a8 67 12 df 13 a9 6d 45 24 71 7b 23 74 a4 
+# 
+# UVM_INFO atm_cell.sv(324) @ 880795: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0fc, VCI=3bf3, CLP=0, PT=2, HEC=f3, Payload[0]=da
+# 0f c3 bf 32 f3 da 12 a8 f6 32 02 fe 9a e3 cd d5 7b fe 00 2d dc af 40 0d 0b 0f 42 97 d1 cd a2 cc 20 53 7a 0b 76 08 67 a8 67 12 df 13 a9 6d 45 24 71 7b 23 74 a4 
+# 
+# UVM_INFO atm_cell.sv(324) @ 880795: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0fc, VCI=3bf3, CLP=0, PT=2, HEC=f3, Payload[0]=da
+# 0f c3 bf 32 f3 da 12 a8 f6 32 02 fe 9a e3 cd d5 7b fe 00 2d dc af 40 0d 0b 0f 42 97 d1 cd a2 cc 20 53 7a 0b 76 08 67 a8 67 12 df 13 a9 6d 45 24 71 7b 23 74 a4 
+# 
+# UVM_INFO scoreboard.svh(195) @ 880795: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @880795: Scb check for port 0: 
+# UVM_INFO scoreboard.svh(210) @ 880795: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @880795: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 881335: reporter@@NNI_cell [NNI_cell] @881335 NNI id:0 VPI=0cb, VCI=c166, CLP=1, PT=2, HEC=0d, Payload[0]=c5
+# @881335 0c bc 16 6a 0d c5 fd cb ad 4f f7 a0 e9 b1 cc b9 8d 77 54 30 4b 46 6d 79 6c 62 22 e1 35 6c 93 00 43 9c 25 25 8d 7b 98 0a f4 fd 06 bf f3 a1 2e c8 6e 16 bd 53 bf 
+# 
+# UVM_INFO atm_cell.sv(324) @ 881335: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0cb, VCI=c166, CLP=1, PT=2, HEC=0d, Payload[0]=c5
+# 0c bc 16 6a 0d c5 fd cb ad 4f f7 a0 e9 b1 cc b9 8d 77 54 30 4b 46 6d 79 6c 62 22 e1 35 6c 93 00 43 9c 25 25 8d 7b 98 0a f4 fd 06 bf f3 a1 2e c8 6e 16 bd 53 bf 
+# 
+# UVM_INFO atm_cell.sv(324) @ 881335: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0cb, VCI=c166, CLP=1, PT=2, HEC=0d, Payload[0]=c5
+# 0c bc 16 6a 0d c5 fd cb ad 4f f7 a0 e9 b1 cc b9 8d 77 54 30 4b 46 6d 79 6c 62 22 e1 35 6c 93 00 43 9c 25 25 8d 7b 98 0a f4 fd 06 bf f3 a1 2e c8 6e 16 bd 53 bf 
+# 
+# UVM_INFO scoreboard.svh(195) @ 881335: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @881335: Scb check for port 2: 
+# UVM_INFO scoreboard.svh(210) @ 881335: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @881335: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 881355: reporter@@NNI_cell [NNI_cell] @881355 NNI id:0 VPI=0cb, VCI=c166, CLP=1, PT=2, HEC=0d, Payload[0]=c5
+# @881355 0c bc 16 6a 0d c5 fd cb ad 4f f7 a0 e9 b1 cc b9 8d 77 54 30 4b 46 6d 79 6c 62 22 e1 35 6c 93 00 43 9c 25 25 8d 7b 98 0a f4 fd 06 bf f3 a1 2e c8 6e 16 bd 53 bf 
+# 
+# UVM_INFO atm_cell.sv(324) @ 881355: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0cb, VCI=c166, CLP=1, PT=2, HEC=0d, Payload[0]=c5
+# 0c bc 16 6a 0d c5 fd cb ad 4f f7 a0 e9 b1 cc b9 8d 77 54 30 4b 46 6d 79 6c 62 22 e1 35 6c 93 00 43 9c 25 25 8d 7b 98 0a f4 fd 06 bf f3 a1 2e c8 6e 16 bd 53 bf 
+# 
+# UVM_INFO atm_cell.sv(324) @ 881355: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0cb, VCI=c166, CLP=1, PT=2, HEC=0d, Payload[0]=c5
+# 0c bc 16 6a 0d c5 fd cb ad 4f f7 a0 e9 b1 cc b9 8d 77 54 30 4b 46 6d 79 6c 62 22 e1 35 6c 93 00 43 9c 25 25 8d 7b 98 0a f4 fd 06 bf f3 a1 2e c8 6e 16 bd 53 bf 
+# 
+# UVM_INFO scoreboard.svh(195) @ 881355: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @881355: Scb check for port 0: 
+# UVM_INFO scoreboard.svh(210) @ 881355: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @881355: Match found for the cell 
+# UVM_INFO atm_cell.sv(196) @ 1020755: uvm_test_top.env.utopia_agnt_Rx[0].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @1020755: UNI id:0 GFC=9, VPI=e4, VCI=ee76, CLP=1, PT=3, HEC=53, Payload[0]=8c
+# @1020755: 9e 4e e7 6b 53 8c 89 ae fd 14 1c 5e f4 4b 31 32 15 90 d4 24 9f 7c 45 17 4f 67 c1 30 ca 80 ed 09 c0 31 0a 42 9c 87 ae 70 b7 d4 4b 7a 1b a7 37 58 86 35 e0 7c 31 
+# 
+# UVM_INFO driver.svh(89) @ 1020755: uvm_test_top.env.utopia_agnt_Rx[0].utopia_drv [utopia_driver] Sending cell:
+# 9e 4e e7 6b 53 8c 89 ae fd 14 1c 5e f4 4b 31 32 15 90 d4 24 9f 7c 45 17 4f 67 c1 30 ca 80 ed 09 c0 31 0a 42 9c 87 ae 70 b7 d4 4b 7a 1b a7 37 58 86 35 e0 7c 31 
+# UVM_INFO atm_cell.sv(324) @ 1021285: reporter@@NNI_cell [NNI_cell]  @1021285 NNI id:0 VPI=9e4, VCI=ee76, CLP=1, PT=3, HEC=53, Payload[0]=8c
+#  @1021285 9e 4e e7 6b 53 8c 89 ae fd 14 1c 5e f4 4b 31 32 15 90 d4 24 9f 7c 45 17 4f 67 c1 30 ca 80 ed 09 c0 31 0a 42 9c 87 ae 70 b7 d4 4b 7a 1b a7 37 58 86 35 e0 7c 31 
+# 
+# UVM_INFO scoreboard.svh(175) @ 1021285: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1021285: Scb save for RX port: VPI=e4, Forward=1000
+# UVM_INFO atm_cell.sv(324) @ 1021285: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0e4, VCI=ee76, CLP=1, PT=3, HEC=53, Payload[0]=8c
+# 0e 4e e7 6b 53 8c 89 ae fd 14 1c 5e f4 4b 31 32 15 90 d4 24 9f 7c 45 17 4f 67 c1 30 ca 80 ed 09 c0 31 0a 42 9c 87 ae 70 b7 d4 4b 7a 1b a7 37 58 86 35 e0 7c 31 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#1 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 0
+# UVM_INFO atm_cell.sv(196) @ 1021285: uvm_test_top.env.utopia_agnt_Rx[1].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @1021285: UNI id:0 GFC=a, VPI=cf, VCI=957c, CLP=0, PT=5, HEC=26, Payload[0]=52
+# @1021285: ac f9 57 c5 26 52 a5 fe 6f 87 fd 36 03 cb 50 87 3b ed f8 ae 8b 09 3b de e4 d2 6f 30 1a 30 4e 5c 5d 41 07 55 07 8e 66 7b 32 67 e1 db 3c db b1 f8 2c d4 e0 6e 34 
+# 
+# UVM_INFO driver.svh(89) @ 1021285: uvm_test_top.env.utopia_agnt_Rx[1].utopia_drv [utopia_driver] Sending cell:
+# ac f9 57 c5 26 52 a5 fe 6f 87 fd 36 03 cb 50 87 3b ed f8 ae 8b 09 3b de e4 d2 6f 30 1a 30 4e 5c 5d 41 07 55 07 8e 66 7b 32 67 e1 db 3c db b1 f8 2c d4 e0 6e 34 
+# UVM_INFO atm_cell.sv(324) @ 1021825: reporter@@NNI_cell [NNI_cell]  @1021825 NNI id:0 VPI=acf, VCI=957c, CLP=0, PT=5, HEC=26, Payload[0]=52
+#  @1021825 ac f9 57 c5 26 52 a5 fe 6f 87 fd 36 03 cb 50 87 3b ed f8 ae 8b 09 3b de e4 d2 6f 30 1a 30 4e 5c 5d 41 07 55 07 8e 66 7b 32 67 e1 db 3c db b1 f8 2c d4 e0 6e 34 
+# 
+# UVM_INFO scoreboard.svh(175) @ 1021825: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1021825: Scb save for RX port: VPI=cf, Forward=1100
+# UVM_INFO atm_cell.sv(324) @ 1021825: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0cf, VCI=957c, CLP=0, PT=5, HEC=26, Payload[0]=52
+# 0c f9 57 c5 26 52 a5 fe 6f 87 fd 36 03 cb 50 87 3b ed f8 ae 8b 09 3b de e4 d2 6f 30 1a 30 4e 5c 5d 41 07 55 07 8e 66 7b 32 67 e1 db 3c db b1 f8 2c d4 e0 6e 34 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#2 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 1
+# UVM_INFO atm_cell.sv(196) @ 1021825: uvm_test_top.env.utopia_agnt_Rx[2].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @1021825: UNI id:0 GFC=3, VPI=32, VCI=84b1, CLP=1, PT=0, HEC=50, Payload[0]=43
+# @1021825: 33 28 4b 18 50 43 af b1 19 33 07 2f 04 66 cd 6b bb 58 3b f7 4e b1 d5 10 07 dc c6 23 5e ec bf 47 30 9f 96 bf fa e2 14 e6 02 03 17 7f 00 0c b0 cf 50 ff af 85 79 
+# 
+# UVM_INFO driver.svh(89) @ 1021825: uvm_test_top.env.utopia_agnt_Rx[2].utopia_drv [utopia_driver] Sending cell:
+# 33 28 4b 18 50 43 af b1 19 33 07 2f 04 66 cd 6b bb 58 3b f7 4e b1 d5 10 07 dc c6 23 5e ec bf 47 30 9f 96 bf fa e2 14 e6 02 03 17 7f 00 0c b0 cf 50 ff af 85 79 
+# UVM_INFO atm_cell.sv(324) @ 1021865: reporter@@NNI_cell [NNI_cell] @1021865 NNI id:0 VPI=0e4, VCI=ee76, CLP=1, PT=3, HEC=53, Payload[0]=8c
+# @1021865 0e 4e e7 6b 53 8c 89 ae fd 14 1c 5e f4 4b 31 32 15 90 d4 24 9f 7c 45 17 4f 67 c1 30 ca 80 ed 09 c0 31 0a 42 9c 87 ae 70 b7 d4 4b 7a 1b a7 37 58 86 35 e0 7c 31 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1021865: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0e4, VCI=ee76, CLP=1, PT=3, HEC=53, Payload[0]=8c
+# 0e 4e e7 6b 53 8c 89 ae fd 14 1c 5e f4 4b 31 32 15 90 d4 24 9f 7c 45 17 4f 67 c1 30 ca 80 ed 09 c0 31 0a 42 9c 87 ae 70 b7 d4 4b 7a 1b a7 37 58 86 35 e0 7c 31 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1021865: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0e4, VCI=ee76, CLP=1, PT=3, HEC=53, Payload[0]=8c
+# 0e 4e e7 6b 53 8c 89 ae fd 14 1c 5e f4 4b 31 32 15 90 d4 24 9f 7c 45 17 4f 67 c1 30 ca 80 ed 09 c0 31 0a 42 9c 87 ae 70 b7 d4 4b 7a 1b a7 37 58 86 35 e0 7c 31 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1021865: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1021865: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 1021865: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1021865: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1022365: reporter@@NNI_cell [NNI_cell]  @1022365 NNI id:0 VPI=332, VCI=84b1, CLP=1, PT=0, HEC=50, Payload[0]=43
+#  @1022365 33 28 4b 18 50 43 af b1 19 33 07 2f 04 66 cd 6b bb 58 3b f7 4e b1 d5 10 07 dc c6 23 5e ec bf 47 30 9f 96 bf fa e2 14 e6 02 03 17 7f 00 0c b0 cf 50 ff af 85 79 
+# 
+# UVM_INFO scoreboard.svh(175) @ 1022365: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1022365: Scb save for RX port: VPI=32, Forward=0001
+# UVM_INFO atm_cell.sv(324) @ 1022365: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=032, VCI=84b1, CLP=1, PT=0, HEC=50, Payload[0]=43
+# 03 28 4b 18 50 43 af b1 19 33 07 2f 04 66 cd 6b bb 58 3b f7 4e b1 d5 10 07 dc c6 23 5e ec bf 47 30 9f 96 bf fa e2 14 e6 02 03 17 7f 00 0c b0 cf 50 ff af 85 79 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#3 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 2
+# UVM_INFO atm_cell.sv(196) @ 1022365: uvm_test_top.env.utopia_agnt_Rx[3].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @1022365: UNI id:0 GFC=8, VPI=f6, VCI=606e, CLP=1, PT=1, HEC=e1, Payload[0]=b7
+# @1022365: 8f 66 06 e9 e1 b7 7d 4e 72 6a 4c f2 0a 7b 11 d5 80 78 6b 30 95 a1 8f c8 96 6a 95 93 72 74 e2 a4 52 ab 0f 90 06 6a b6 89 1f 78 1b 29 4b d8 6b 2c fc c9 d5 78 32 
+# 
+# UVM_INFO driver.svh(89) @ 1022365: uvm_test_top.env.utopia_agnt_Rx[3].utopia_drv [utopia_driver] Sending cell:
+# 8f 66 06 e9 e1 b7 7d 4e 72 6a 4c f2 0a 7b 11 d5 80 78 6b 30 95 a1 8f c8 96 6a 95 93 72 74 e2 a4 52 ab 0f 90 06 6a b6 89 1f 78 1b 29 4b d8 6b 2c fc c9 d5 78 32 
+# UVM_INFO atm_cell.sv(324) @ 1022405: reporter@@NNI_cell [NNI_cell] @1022405 NNI id:0 VPI=0cf, VCI=957c, CLP=0, PT=5, HEC=26, Payload[0]=52
+# @1022405 0c f9 57 c5 26 52 a5 fe 6f 87 fd 36 03 cb 50 87 3b ed f8 ae 8b 09 3b de e4 d2 6f 30 1a 30 4e 5c 5d 41 07 55 07 8e 66 7b 32 67 e1 db 3c db b1 f8 2c d4 e0 6e 34 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1022405: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0cf, VCI=957c, CLP=0, PT=5, HEC=26, Payload[0]=52
+# 0c f9 57 c5 26 52 a5 fe 6f 87 fd 36 03 cb 50 87 3b ed f8 ae 8b 09 3b de e4 d2 6f 30 1a 30 4e 5c 5d 41 07 55 07 8e 66 7b 32 67 e1 db 3c db b1 f8 2c d4 e0 6e 34 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1022405: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0cf, VCI=957c, CLP=0, PT=5, HEC=26, Payload[0]=52
+# 0c f9 57 c5 26 52 a5 fe 6f 87 fd 36 03 cb 50 87 3b ed f8 ae 8b 09 3b de e4 d2 6f 30 1a 30 4e 5c 5d 41 07 55 07 8e 66 7b 32 67 e1 db 3c db b1 f8 2c d4 e0 6e 34 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1022405: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1022405: Scb check for port 2: 
+# UVM_INFO scoreboard.svh(210) @ 1022405: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1022405: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1022425: reporter@@NNI_cell [NNI_cell] @1022425 NNI id:0 VPI=0cf, VCI=957c, CLP=0, PT=5, HEC=26, Payload[0]=52
+# @1022425 0c f9 57 c5 26 52 a5 fe 6f 87 fd 36 03 cb 50 87 3b ed f8 ae 8b 09 3b de e4 d2 6f 30 1a 30 4e 5c 5d 41 07 55 07 8e 66 7b 32 67 e1 db 3c db b1 f8 2c d4 e0 6e 34 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1022425: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0cf, VCI=957c, CLP=0, PT=5, HEC=26, Payload[0]=52
+# 0c f9 57 c5 26 52 a5 fe 6f 87 fd 36 03 cb 50 87 3b ed f8 ae 8b 09 3b de e4 d2 6f 30 1a 30 4e 5c 5d 41 07 55 07 8e 66 7b 32 67 e1 db 3c db b1 f8 2c d4 e0 6e 34 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1022425: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0cf, VCI=957c, CLP=0, PT=5, HEC=26, Payload[0]=52
+# 0c f9 57 c5 26 52 a5 fe 6f 87 fd 36 03 cb 50 87 3b ed f8 ae 8b 09 3b de e4 d2 6f 30 1a 30 4e 5c 5d 41 07 55 07 8e 66 7b 32 67 e1 db 3c db b1 f8 2c d4 e0 6e 34 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1022425: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1022425: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 1022425: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1022425: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1022905: reporter@@NNI_cell [NNI_cell]  @1022905 NNI id:0 VPI=8f6, VCI=606e, CLP=1, PT=1, HEC=e1, Payload[0]=b7
+#  @1022905 8f 66 06 e9 e1 b7 7d 4e 72 6a 4c f2 0a 7b 11 d5 80 78 6b 30 95 a1 8f c8 96 6a 95 93 72 74 e2 a4 52 ab 0f 90 06 6a b6 89 1f 78 1b 29 4b d8 6b 2c fc c9 d5 78 32 
+# 
+# UVM_INFO scoreboard.svh(175) @ 1022905: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1022905: Scb save for RX port: VPI=f6, Forward=1001
+# UVM_INFO atm_cell.sv(324) @ 1022905: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0f6, VCI=606e, CLP=1, PT=1, HEC=e1, Payload[0]=b7
+# 0f 66 06 e9 e1 b7 7d 4e 72 6a 4c f2 0a 7b 11 d5 80 78 6b 30 95 a1 8f c8 96 6a 95 93 72 74 e2 a4 52 ab 0f 90 06 6a b6 89 1f 78 1b 29 4b d8 6b 2c fc c9 d5 78 32 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#4 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 3
+# UVM_INFO atm_cell.sv(324) @ 1022945: reporter@@NNI_cell [NNI_cell] @1022945 NNI id:0 VPI=032, VCI=84b1, CLP=1, PT=0, HEC=50, Payload[0]=43
+# @1022945 03 28 4b 18 50 43 af b1 19 33 07 2f 04 66 cd 6b bb 58 3b f7 4e b1 d5 10 07 dc c6 23 5e ec bf 47 30 9f 96 bf fa e2 14 e6 02 03 17 7f 00 0c b0 cf 50 ff af 85 79 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1022945: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=032, VCI=84b1, CLP=1, PT=0, HEC=50, Payload[0]=43
+# 03 28 4b 18 50 43 af b1 19 33 07 2f 04 66 cd 6b bb 58 3b f7 4e b1 d5 10 07 dc c6 23 5e ec bf 47 30 9f 96 bf fa e2 14 e6 02 03 17 7f 00 0c b0 cf 50 ff af 85 79 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1022945: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=032, VCI=84b1, CLP=1, PT=0, HEC=50, Payload[0]=43
+# 03 28 4b 18 50 43 af b1 19 33 07 2f 04 66 cd 6b bb 58 3b f7 4e b1 d5 10 07 dc c6 23 5e ec bf 47 30 9f 96 bf fa e2 14 e6 02 03 17 7f 00 0c b0 cf 50 ff af 85 79 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1022945: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1022945: Scb check for port 0: 
+# UVM_INFO scoreboard.svh(210) @ 1022945: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1022945: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1023485: reporter@@NNI_cell [NNI_cell] @1023485 NNI id:0 VPI=0f6, VCI=606e, CLP=1, PT=1, HEC=e1, Payload[0]=b7
+# @1023485 0f 66 06 e9 e1 b7 7d 4e 72 6a 4c f2 0a 7b 11 d5 80 78 6b 30 95 a1 8f c8 96 6a 95 93 72 74 e2 a4 52 ab 0f 90 06 6a b6 89 1f 78 1b 29 4b d8 6b 2c fc c9 d5 78 32 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1023485: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0f6, VCI=606e, CLP=1, PT=1, HEC=e1, Payload[0]=b7
+# 0f 66 06 e9 e1 b7 7d 4e 72 6a 4c f2 0a 7b 11 d5 80 78 6b 30 95 a1 8f c8 96 6a 95 93 72 74 e2 a4 52 ab 0f 90 06 6a b6 89 1f 78 1b 29 4b d8 6b 2c fc c9 d5 78 32 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1023485: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0f6, VCI=606e, CLP=1, PT=1, HEC=e1, Payload[0]=b7
+# 0f 66 06 e9 e1 b7 7d 4e 72 6a 4c f2 0a 7b 11 d5 80 78 6b 30 95 a1 8f c8 96 6a 95 93 72 74 e2 a4 52 ab 0f 90 06 6a b6 89 1f 78 1b 29 4b d8 6b 2c fc c9 d5 78 32 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1023485: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1023485: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 1023485: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1023485: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1023505: reporter@@NNI_cell [NNI_cell] @1023505 NNI id:0 VPI=0f6, VCI=606e, CLP=1, PT=1, HEC=e1, Payload[0]=b7
+# @1023505 0f 66 06 e9 e1 b7 7d 4e 72 6a 4c f2 0a 7b 11 d5 80 78 6b 30 95 a1 8f c8 96 6a 95 93 72 74 e2 a4 52 ab 0f 90 06 6a b6 89 1f 78 1b 29 4b d8 6b 2c fc c9 d5 78 32 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1023505: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0f6, VCI=606e, CLP=1, PT=1, HEC=e1, Payload[0]=b7
+# 0f 66 06 e9 e1 b7 7d 4e 72 6a 4c f2 0a 7b 11 d5 80 78 6b 30 95 a1 8f c8 96 6a 95 93 72 74 e2 a4 52 ab 0f 90 06 6a b6 89 1f 78 1b 29 4b d8 6b 2c fc c9 d5 78 32 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1023505: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0f6, VCI=606e, CLP=1, PT=1, HEC=e1, Payload[0]=b7
+# 0f 66 06 e9 e1 b7 7d 4e 72 6a 4c f2 0a 7b 11 d5 80 78 6b 30 95 a1 8f c8 96 6a 95 93 72 74 e2 a4 52 ab 0f 90 06 6a b6 89 1f 78 1b 29 4b d8 6b 2c fc c9 d5 78 32 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1023505: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1023505: Scb check for port 0: 
+# UVM_INFO scoreboard.svh(210) @ 1023505: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1023505: Match found for the cell 
+# UVM_INFO atm_cell.sv(196) @ 1162905: uvm_test_top.env.utopia_agnt_Rx[0].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @1162905: UNI id:0 GFC=3, VPI=b9, VCI=d796, CLP=1, PT=3, HEC=47, Payload[0]=b2
+# @1162905: 3b 9d 79 6b 47 b2 5c e7 c9 b2 75 49 32 ec 18 aa 4d 1f c8 e8 6f a8 bd 8e 5e 0d ed f6 97 fb 88 0d eb e3 65 e2 27 11 47 80 64 95 2d 49 c8 6f 14 10 a6 a9 2b 84 75 
+# 
+# UVM_INFO driver.svh(89) @ 1162905: uvm_test_top.env.utopia_agnt_Rx[0].utopia_drv [utopia_driver] Sending cell:
+# 3b 9d 79 6b 47 b2 5c e7 c9 b2 75 49 32 ec 18 aa 4d 1f c8 e8 6f a8 bd 8e 5e 0d ed f6 97 fb 88 0d eb e3 65 e2 27 11 47 80 64 95 2d 49 c8 6f 14 10 a6 a9 2b 84 75 
+# UVM_INFO atm_cell.sv(324) @ 1163435: reporter@@NNI_cell [NNI_cell]  @1163435 NNI id:0 VPI=3b9, VCI=d796, CLP=1, PT=3, HEC=47, Payload[0]=b2
+#  @1163435 3b 9d 79 6b 47 b2 5c e7 c9 b2 75 49 32 ec 18 aa 4d 1f c8 e8 6f a8 bd 8e 5e 0d ed f6 97 fb 88 0d eb e3 65 e2 27 11 47 80 64 95 2d 49 c8 6f 14 10 a6 a9 2b 84 75 
+# 
+# UVM_INFO scoreboard.svh(175) @ 1163435: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1163435: Scb save for RX port: VPI=b9, Forward=1110
+# UVM_INFO atm_cell.sv(324) @ 1163435: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=d796, CLP=1, PT=3, HEC=47, Payload[0]=b2
+# 0b 9d 79 6b 47 b2 5c e7 c9 b2 75 49 32 ec 18 aa 4d 1f c8 e8 6f a8 bd 8e 5e 0d ed f6 97 fb 88 0d eb e3 65 e2 27 11 47 80 64 95 2d 49 c8 6f 14 10 a6 a9 2b 84 75 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#1 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 0
+# UVM_INFO atm_cell.sv(196) @ 1163435: uvm_test_top.env.utopia_agnt_Rx[1].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @1163435: UNI id:0 GFC=c, VPI=ce, VCI=da34, CLP=0, PT=1, HEC=af, Payload[0]=1c
+# @1163435: cc ed a3 41 af 1c ae c5 bd 2b 33 50 cd 45 7b c9 e3 39 ce f6 bb bd 70 d2 74 00 4b 15 e2 6f 85 c7 1d 6a f3 e0 6a ff 14 b4 63 08 b6 3b 89 a2 33 7c b5 e7 ce 15 96 
+# 
+# UVM_INFO driver.svh(89) @ 1163435: uvm_test_top.env.utopia_agnt_Rx[1].utopia_drv [utopia_driver] Sending cell:
+# cc ed a3 41 af 1c ae c5 bd 2b 33 50 cd 45 7b c9 e3 39 ce f6 bb bd 70 d2 74 00 4b 15 e2 6f 85 c7 1d 6a f3 e0 6a ff 14 b4 63 08 b6 3b 89 a2 33 7c b5 e7 ce 15 96 
+# UVM_INFO atm_cell.sv(324) @ 1163975: reporter@@NNI_cell [NNI_cell]  @1163975 NNI id:0 VPI=cce, VCI=da34, CLP=0, PT=1, HEC=af, Payload[0]=1c
+#  @1163975 cc ed a3 41 af 1c ae c5 bd 2b 33 50 cd 45 7b c9 e3 39 ce f6 bb bd 70 d2 74 00 4b 15 e2 6f 85 c7 1d 6a f3 e0 6a ff 14 b4 63 08 b6 3b 89 a2 33 7c b5 e7 ce 15 96 
+# 
+# UVM_INFO scoreboard.svh(175) @ 1163975: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1163975: Scb save for RX port: VPI=ce, Forward=0110
+# UVM_INFO atm_cell.sv(324) @ 1163975: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0ce, VCI=da34, CLP=0, PT=1, HEC=af, Payload[0]=1c
+# 0c ed a3 41 af 1c ae c5 bd 2b 33 50 cd 45 7b c9 e3 39 ce f6 bb bd 70 d2 74 00 4b 15 e2 6f 85 c7 1d 6a f3 e0 6a ff 14 b4 63 08 b6 3b 89 a2 33 7c b5 e7 ce 15 96 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#2 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 1
+# UVM_INFO atm_cell.sv(196) @ 1163975: uvm_test_top.env.utopia_agnt_Rx[2].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @1163975: UNI id:0 GFC=6, VPI=0e, VCI=01ab, CLP=1, PT=7, HEC=2f, Payload[0]=1f
+# @1163975: 60 e0 1a bf 2f 1f a5 2d 44 f9 25 02 5c 2f 5c 3c 3e 36 f8 41 a5 f7 e4 80 69 77 06 b8 0c 6f 58 c7 3b 72 95 19 c9 76 c4 a6 57 d7 b4 79 a0 13 61 51 92 e1 c1 e7 3f 
+# 
+# UVM_INFO driver.svh(89) @ 1163975: uvm_test_top.env.utopia_agnt_Rx[2].utopia_drv [utopia_driver] Sending cell:
+# 60 e0 1a bf 2f 1f a5 2d 44 f9 25 02 5c 2f 5c 3c 3e 36 f8 41 a5 f7 e4 80 69 77 06 b8 0c 6f 58 c7 3b 72 95 19 c9 76 c4 a6 57 d7 b4 79 a0 13 61 51 92 e1 c1 e7 3f 
+# UVM_INFO atm_cell.sv(324) @ 1164015: reporter@@NNI_cell [NNI_cell] @1164015 NNI id:0 VPI=0b9, VCI=d796, CLP=1, PT=3, HEC=47, Payload[0]=b2
+# @1164015 0b 9d 79 6b 47 b2 5c e7 c9 b2 75 49 32 ec 18 aa 4d 1f c8 e8 6f a8 bd 8e 5e 0d ed f6 97 fb 88 0d eb e3 65 e2 27 11 47 80 64 95 2d 49 c8 6f 14 10 a6 a9 2b 84 75 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1164015: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=d796, CLP=1, PT=3, HEC=47, Payload[0]=b2
+# 0b 9d 79 6b 47 b2 5c e7 c9 b2 75 49 32 ec 18 aa 4d 1f c8 e8 6f a8 bd 8e 5e 0d ed f6 97 fb 88 0d eb e3 65 e2 27 11 47 80 64 95 2d 49 c8 6f 14 10 a6 a9 2b 84 75 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1164015: reporter@@NNI_cell [NNI_cell] @1164015 NNI id:0 VPI=0b9, VCI=d796, CLP=1, PT=3, HEC=47, Payload[0]=b2
+# @1164015 0b 9d 79 6b 47 b2 5c e7 c9 b2 75 49 32 ec 18 aa 4d 1f c8 e8 6f a8 bd 8e 5e 0d ed f6 97 fb 88 0d eb e3 65 e2 27 11 47 80 64 95 2d 49 c8 6f 14 10 a6 a9 2b 84 75 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1164015: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=d796, CLP=1, PT=3, HEC=47, Payload[0]=b2
+# 0b 9d 79 6b 47 b2 5c e7 c9 b2 75 49 32 ec 18 aa 4d 1f c8 e8 6f a8 bd 8e 5e 0d ed f6 97 fb 88 0d eb e3 65 e2 27 11 47 80 64 95 2d 49 c8 6f 14 10 a6 a9 2b 84 75 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1164015: reporter@@NNI_cell [NNI_cell] @1164015 NNI id:0 VPI=0b9, VCI=d796, CLP=1, PT=3, HEC=47, Payload[0]=b2
+# @1164015 0b 9d 79 6b 47 b2 5c e7 c9 b2 75 49 32 ec 18 aa 4d 1f c8 e8 6f a8 bd 8e 5e 0d ed f6 97 fb 88 0d eb e3 65 e2 27 11 47 80 64 95 2d 49 c8 6f 14 10 a6 a9 2b 84 75 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1164015: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=d796, CLP=1, PT=3, HEC=47, Payload[0]=b2
+# 0b 9d 79 6b 47 b2 5c e7 c9 b2 75 49 32 ec 18 aa 4d 1f c8 e8 6f a8 bd 8e 5e 0d ed f6 97 fb 88 0d eb e3 65 e2 27 11 47 80 64 95 2d 49 c8 6f 14 10 a6 a9 2b 84 75 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1164015: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=d796, CLP=1, PT=3, HEC=47, Payload[0]=b2
+# 0b 9d 79 6b 47 b2 5c e7 c9 b2 75 49 32 ec 18 aa 4d 1f c8 e8 6f a8 bd 8e 5e 0d ed f6 97 fb 88 0d eb e3 65 e2 27 11 47 80 64 95 2d 49 c8 6f 14 10 a6 a9 2b 84 75 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1164015: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1164015: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 1164015: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1164015: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1164015: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=d796, CLP=1, PT=3, HEC=47, Payload[0]=b2
+# 0b 9d 79 6b 47 b2 5c e7 c9 b2 75 49 32 ec 18 aa 4d 1f c8 e8 6f a8 bd 8e 5e 0d ed f6 97 fb 88 0d eb e3 65 e2 27 11 47 80 64 95 2d 49 c8 6f 14 10 a6 a9 2b 84 75 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1164015: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1164015: Scb check for port 2: 
+# UVM_INFO scoreboard.svh(210) @ 1164015: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1164015: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1164015: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b9, VCI=d796, CLP=1, PT=3, HEC=47, Payload[0]=b2
+# 0b 9d 79 6b 47 b2 5c e7 c9 b2 75 49 32 ec 18 aa 4d 1f c8 e8 6f a8 bd 8e 5e 0d ed f6 97 fb 88 0d eb e3 65 e2 27 11 47 80 64 95 2d 49 c8 6f 14 10 a6 a9 2b 84 75 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1164015: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1164015: Scb check for port 1: 
+# UVM_INFO scoreboard.svh(210) @ 1164015: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1164015: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1164515: reporter@@NNI_cell [NNI_cell]  @1164515 NNI id:0 VPI=60e, VCI=01ab, CLP=1, PT=7, HEC=2f, Payload[0]=1f
+#  @1164515 60 e0 1a bf 2f 1f a5 2d 44 f9 25 02 5c 2f 5c 3c 3e 36 f8 41 a5 f7 e4 80 69 77 06 b8 0c 6f 58 c7 3b 72 95 19 c9 76 c4 a6 57 d7 b4 79 a0 13 61 51 92 e1 c1 e7 3f 
+# 
+# UVM_INFO scoreboard.svh(175) @ 1164515: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1164515: Scb save for RX port: VPI=e, Forward=0111
+# UVM_INFO atm_cell.sv(324) @ 1164515: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=00e, VCI=01ab, CLP=1, PT=7, HEC=2f, Payload[0]=1f
+# 00 e0 1a bf 2f 1f a5 2d 44 f9 25 02 5c 2f 5c 3c 3e 36 f8 41 a5 f7 e4 80 69 77 06 b8 0c 6f 58 c7 3b 72 95 19 c9 76 c4 a6 57 d7 b4 79 a0 13 61 51 92 e1 c1 e7 3f 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#3 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 2
+# UVM_INFO atm_cell.sv(196) @ 1164515: uvm_test_top.env.utopia_agnt_Rx[3].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @1164515: UNI id:0 GFC=e, VPI=6b, VCI=c7d3, CLP=0, PT=0, HEC=8e, Payload[0]=27
+# @1164515: e6 bc 7d 30 8e 27 e2 aa c2 21 32 1e c3 66 ab 14 b6 ce db ce fe 6f 17 89 ef b3 bf 5a 08 f6 23 db 0e 71 57 37 c8 8c 7e f4 bf da c8 73 a4 d6 db 86 e6 38 c1 df 68 
+# 
+# UVM_INFO driver.svh(89) @ 1164515: uvm_test_top.env.utopia_agnt_Rx[3].utopia_drv [utopia_driver] Sending cell:
+# e6 bc 7d 30 8e 27 e2 aa c2 21 32 1e c3 66 ab 14 b6 ce db ce fe 6f 17 89 ef b3 bf 5a 08 f6 23 db 0e 71 57 37 c8 8c 7e f4 bf da c8 73 a4 d6 db 86 e6 38 c1 df 68 
+# UVM_INFO atm_cell.sv(324) @ 1164575: reporter@@NNI_cell [NNI_cell] @1164575 NNI id:0 VPI=0ce, VCI=da34, CLP=0, PT=1, HEC=af, Payload[0]=1c
+# @1164575 0c ed a3 41 af 1c ae c5 bd 2b 33 50 cd 45 7b c9 e3 39 ce f6 bb bd 70 d2 74 00 4b 15 e2 6f 85 c7 1d 6a f3 e0 6a ff 14 b4 63 08 b6 3b 89 a2 33 7c b5 e7 ce 15 96 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1164575: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0ce, VCI=da34, CLP=0, PT=1, HEC=af, Payload[0]=1c
+# 0c ed a3 41 af 1c ae c5 bd 2b 33 50 cd 45 7b c9 e3 39 ce f6 bb bd 70 d2 74 00 4b 15 e2 6f 85 c7 1d 6a f3 e0 6a ff 14 b4 63 08 b6 3b 89 a2 33 7c b5 e7 ce 15 96 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1164575: reporter@@NNI_cell [NNI_cell] @1164575 NNI id:0 VPI=0ce, VCI=da34, CLP=0, PT=1, HEC=af, Payload[0]=1c
+# @1164575 0c ed a3 41 af 1c ae c5 bd 2b 33 50 cd 45 7b c9 e3 39 ce f6 bb bd 70 d2 74 00 4b 15 e2 6f 85 c7 1d 6a f3 e0 6a ff 14 b4 63 08 b6 3b 89 a2 33 7c b5 e7 ce 15 96 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1164575: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0ce, VCI=da34, CLP=0, PT=1, HEC=af, Payload[0]=1c
+# 0c ed a3 41 af 1c ae c5 bd 2b 33 50 cd 45 7b c9 e3 39 ce f6 bb bd 70 d2 74 00 4b 15 e2 6f 85 c7 1d 6a f3 e0 6a ff 14 b4 63 08 b6 3b 89 a2 33 7c b5 e7 ce 15 96 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1164575: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0ce, VCI=da34, CLP=0, PT=1, HEC=af, Payload[0]=1c
+# 0c ed a3 41 af 1c ae c5 bd 2b 33 50 cd 45 7b c9 e3 39 ce f6 bb bd 70 d2 74 00 4b 15 e2 6f 85 c7 1d 6a f3 e0 6a ff 14 b4 63 08 b6 3b 89 a2 33 7c b5 e7 ce 15 96 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1164575: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1164575: Scb check for port 2: 
+# UVM_INFO scoreboard.svh(210) @ 1164575: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1164575: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1164575: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0ce, VCI=da34, CLP=0, PT=1, HEC=af, Payload[0]=1c
+# 0c ed a3 41 af 1c ae c5 bd 2b 33 50 cd 45 7b c9 e3 39 ce f6 bb bd 70 d2 74 00 4b 15 e2 6f 85 c7 1d 6a f3 e0 6a ff 14 b4 63 08 b6 3b 89 a2 33 7c b5 e7 ce 15 96 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1164575: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1164575: Scb check for port 1: 
+# UVM_INFO scoreboard.svh(210) @ 1164575: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1164575: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1165055: reporter@@NNI_cell [NNI_cell]  @1165055 NNI id:0 VPI=e6b, VCI=c7d3, CLP=0, PT=0, HEC=8e, Payload[0]=27
+#  @1165055 e6 bc 7d 30 8e 27 e2 aa c2 21 32 1e c3 66 ab 14 b6 ce db ce fe 6f 17 89 ef b3 bf 5a 08 f6 23 db 0e 71 57 37 c8 8c 7e f4 bf da c8 73 a4 d6 db 86 e6 38 c1 df 68 
+# 
+# UVM_INFO scoreboard.svh(175) @ 1165055: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1165055: Scb save for RX port: VPI=6b, Forward=0100
+# UVM_INFO atm_cell.sv(324) @ 1165055: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=06b, VCI=c7d3, CLP=0, PT=0, HEC=8e, Payload[0]=27
+# 06 bc 7d 30 8e 27 e2 aa c2 21 32 1e c3 66 ab 14 b6 ce db ce fe 6f 17 89 ef b3 bf 5a 08 f6 23 db 0e 71 57 37 c8 8c 7e f4 bf da c8 73 a4 d6 db 86 e6 38 c1 df 68 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#4 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 3
+# UVM_INFO atm_cell.sv(324) @ 1165095: reporter@@NNI_cell [NNI_cell] @1165095 NNI id:0 VPI=00e, VCI=01ab, CLP=1, PT=7, HEC=2f, Payload[0]=1f
+# @1165095 00 e0 1a bf 2f 1f a5 2d 44 f9 25 02 5c 2f 5c 3c 3e 36 f8 41 a5 f7 e4 80 69 77 06 b8 0c 6f 58 c7 3b 72 95 19 c9 76 c4 a6 57 d7 b4 79 a0 13 61 51 92 e1 c1 e7 3f 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1165095: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=00e, VCI=01ab, CLP=1, PT=7, HEC=2f, Payload[0]=1f
+# 00 e0 1a bf 2f 1f a5 2d 44 f9 25 02 5c 2f 5c 3c 3e 36 f8 41 a5 f7 e4 80 69 77 06 b8 0c 6f 58 c7 3b 72 95 19 c9 76 c4 a6 57 d7 b4 79 a0 13 61 51 92 e1 c1 e7 3f 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1165095: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=00e, VCI=01ab, CLP=1, PT=7, HEC=2f, Payload[0]=1f
+# 00 e0 1a bf 2f 1f a5 2d 44 f9 25 02 5c 2f 5c 3c 3e 36 f8 41 a5 f7 e4 80 69 77 06 b8 0c 6f 58 c7 3b 72 95 19 c9 76 c4 a6 57 d7 b4 79 a0 13 61 51 92 e1 c1 e7 3f 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1165095: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1165095: Scb check for port 0: 
+# UVM_INFO scoreboard.svh(210) @ 1165095: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1165095: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1165135: reporter@@NNI_cell [NNI_cell] @1165135 NNI id:0 VPI=00e, VCI=01ab, CLP=1, PT=7, HEC=2f, Payload[0]=1f
+# @1165135 00 e0 1a bf 2f 1f a5 2d 44 f9 25 02 5c 2f 5c 3c 3e 36 f8 41 a5 f7 e4 80 69 77 06 b8 0c 6f 58 c7 3b 72 95 19 c9 76 c4 a6 57 d7 b4 79 a0 13 61 51 92 e1 c1 e7 3f 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1165135: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=00e, VCI=01ab, CLP=1, PT=7, HEC=2f, Payload[0]=1f
+# 00 e0 1a bf 2f 1f a5 2d 44 f9 25 02 5c 2f 5c 3c 3e 36 f8 41 a5 f7 e4 80 69 77 06 b8 0c 6f 58 c7 3b 72 95 19 c9 76 c4 a6 57 d7 b4 79 a0 13 61 51 92 e1 c1 e7 3f 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1165135: reporter@@NNI_cell [NNI_cell] @1165135 NNI id:0 VPI=00e, VCI=01ab, CLP=1, PT=7, HEC=2f, Payload[0]=1f
+# @1165135 00 e0 1a bf 2f 1f a5 2d 44 f9 25 02 5c 2f 5c 3c 3e 36 f8 41 a5 f7 e4 80 69 77 06 b8 0c 6f 58 c7 3b 72 95 19 c9 76 c4 a6 57 d7 b4 79 a0 13 61 51 92 e1 c1 e7 3f 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1165135: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=00e, VCI=01ab, CLP=1, PT=7, HEC=2f, Payload[0]=1f
+# 00 e0 1a bf 2f 1f a5 2d 44 f9 25 02 5c 2f 5c 3c 3e 36 f8 41 a5 f7 e4 80 69 77 06 b8 0c 6f 58 c7 3b 72 95 19 c9 76 c4 a6 57 d7 b4 79 a0 13 61 51 92 e1 c1 e7 3f 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1165135: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=00e, VCI=01ab, CLP=1, PT=7, HEC=2f, Payload[0]=1f
+# 00 e0 1a bf 2f 1f a5 2d 44 f9 25 02 5c 2f 5c 3c 3e 36 f8 41 a5 f7 e4 80 69 77 06 b8 0c 6f 58 c7 3b 72 95 19 c9 76 c4 a6 57 d7 b4 79 a0 13 61 51 92 e1 c1 e7 3f 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1165135: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1165135: Scb check for port 2: 
+# UVM_INFO scoreboard.svh(210) @ 1165135: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1165135: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1165135: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=00e, VCI=01ab, CLP=1, PT=7, HEC=2f, Payload[0]=1f
+# 00 e0 1a bf 2f 1f a5 2d 44 f9 25 02 5c 2f 5c 3c 3e 36 f8 41 a5 f7 e4 80 69 77 06 b8 0c 6f 58 c7 3b 72 95 19 c9 76 c4 a6 57 d7 b4 79 a0 13 61 51 92 e1 c1 e7 3f 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1165135: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1165135: Scb check for port 1: 
+# UVM_INFO scoreboard.svh(210) @ 1165135: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1165135: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1165695: reporter@@NNI_cell [NNI_cell] @1165695 NNI id:0 VPI=06b, VCI=c7d3, CLP=0, PT=0, HEC=8e, Payload[0]=27
+# @1165695 06 bc 7d 30 8e 27 e2 aa c2 21 32 1e c3 66 ab 14 b6 ce db ce fe 6f 17 89 ef b3 bf 5a 08 f6 23 db 0e 71 57 37 c8 8c 7e f4 bf da c8 73 a4 d6 db 86 e6 38 c1 df 68 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1165695: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=06b, VCI=c7d3, CLP=0, PT=0, HEC=8e, Payload[0]=27
+# 06 bc 7d 30 8e 27 e2 aa c2 21 32 1e c3 66 ab 14 b6 ce db ce fe 6f 17 89 ef b3 bf 5a 08 f6 23 db 0e 71 57 37 c8 8c 7e f4 bf da c8 73 a4 d6 db 86 e6 38 c1 df 68 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1165695: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=06b, VCI=c7d3, CLP=0, PT=0, HEC=8e, Payload[0]=27
+# 06 bc 7d 30 8e 27 e2 aa c2 21 32 1e c3 66 ab 14 b6 ce db ce fe 6f 17 89 ef b3 bf 5a 08 f6 23 db 0e 71 57 37 c8 8c 7e f4 bf da c8 73 a4 d6 db 86 e6 38 c1 df 68 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1165695: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1165695: Scb check for port 2: 
+# UVM_INFO scoreboard.svh(210) @ 1165695: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1165695: Match found for the cell 
+# UVM_INFO atm_cell.sv(196) @ 1305055: uvm_test_top.env.utopia_agnt_Rx[0].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @1305055: UNI id:0 GFC=8, VPI=b2, VCI=9c06, CLP=1, PT=0, HEC=65, Payload[0]=a6
+# @1305055: 8b 29 c0 68 65 a6 24 0c 3d 1a b9 99 68 59 9b 02 fb 5d 74 0c ac c1 54 37 11 59 59 5e a0 19 f8 a3 59 1a f6 04 bf d5 bf 65 c7 ae de 70 da d2 f1 11 23 e2 3a 77 8e 
+# 
+# UVM_INFO driver.svh(89) @ 1305055: uvm_test_top.env.utopia_agnt_Rx[0].utopia_drv [utopia_driver] Sending cell:
+# 8b 29 c0 68 65 a6 24 0c 3d 1a b9 99 68 59 9b 02 fb 5d 74 0c ac c1 54 37 11 59 59 5e a0 19 f8 a3 59 1a f6 04 bf d5 bf 65 c7 ae de 70 da d2 f1 11 23 e2 3a 77 8e 
+# UVM_INFO atm_cell.sv(324) @ 1305585: reporter@@NNI_cell [NNI_cell]  @1305585 NNI id:0 VPI=8b2, VCI=9c06, CLP=1, PT=0, HEC=65, Payload[0]=a6
+#  @1305585 8b 29 c0 68 65 a6 24 0c 3d 1a b9 99 68 59 9b 02 fb 5d 74 0c ac c1 54 37 11 59 59 5e a0 19 f8 a3 59 1a f6 04 bf d5 bf 65 c7 ae de 70 da d2 f1 11 23 e2 3a 77 8e 
+# 
+# UVM_INFO scoreboard.svh(175) @ 1305585: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1305585: Scb save for RX port: VPI=b2, Forward=1010
+# UVM_INFO atm_cell.sv(324) @ 1305585: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b2, VCI=9c06, CLP=1, PT=0, HEC=65, Payload[0]=a6
+# 0b 29 c0 68 65 a6 24 0c 3d 1a b9 99 68 59 9b 02 fb 5d 74 0c ac c1 54 37 11 59 59 5e a0 19 f8 a3 59 1a f6 04 bf d5 bf 65 c7 ae de 70 da d2 f1 11 23 e2 3a 77 8e 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#1 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 0
+# UVM_INFO atm_cell.sv(196) @ 1305585: uvm_test_top.env.utopia_agnt_Rx[1].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @1305585: UNI id:0 GFC=2, VPI=6e, VCI=21f5, CLP=1, PT=5, HEC=f7, Payload[0]=34
+# @1305585: 26 e2 1f 5d f7 34 b4 42 64 e0 e5 06 44 c2 77 df 2e bb 3d 76 16 09 72 a6 b0 44 7c f3 7b 20 9f 8a 5f 8f 1c b2 c9 c6 ba 8a 83 0a dc 76 95 71 bf ba a8 fb 83 96 09 
+# 
+# UVM_INFO driver.svh(89) @ 1305585: uvm_test_top.env.utopia_agnt_Rx[1].utopia_drv [utopia_driver] Sending cell:
+# 26 e2 1f 5d f7 34 b4 42 64 e0 e5 06 44 c2 77 df 2e bb 3d 76 16 09 72 a6 b0 44 7c f3 7b 20 9f 8a 5f 8f 1c b2 c9 c6 ba 8a 83 0a dc 76 95 71 bf ba a8 fb 83 96 09 
+# UVM_INFO atm_cell.sv(324) @ 1306125: reporter@@NNI_cell [NNI_cell]  @1306125 NNI id:0 VPI=26e, VCI=21f5, CLP=1, PT=5, HEC=f7, Payload[0]=34
+#  @1306125 26 e2 1f 5d f7 34 b4 42 64 e0 e5 06 44 c2 77 df 2e bb 3d 76 16 09 72 a6 b0 44 7c f3 7b 20 9f 8a 5f 8f 1c b2 c9 c6 ba 8a 83 0a dc 76 95 71 bf ba a8 fb 83 96 09 
+# 
+# UVM_INFO scoreboard.svh(175) @ 1306125: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1306125: Scb save for RX port: VPI=6e, Forward=0001
+# UVM_INFO atm_cell.sv(324) @ 1306125: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=06e, VCI=21f5, CLP=1, PT=5, HEC=f7, Payload[0]=34
+# 06 e2 1f 5d f7 34 b4 42 64 e0 e5 06 44 c2 77 df 2e bb 3d 76 16 09 72 a6 b0 44 7c f3 7b 20 9f 8a 5f 8f 1c b2 c9 c6 ba 8a 83 0a dc 76 95 71 bf ba a8 fb 83 96 09 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#2 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 1
+# UVM_INFO atm_cell.sv(196) @ 1306125: uvm_test_top.env.utopia_agnt_Rx[2].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @1306125: UNI id:0 GFC=b, VPI=b2, VCI=b8ad, CLP=1, PT=2, HEC=d4, Payload[0]=cc
+# @1306125: bb 2b 8a da d4 cc 6c 17 15 53 59 6a d6 1c 86 6f 4c b7 1e da c1 77 05 30 60 d6 27 b0 33 0b b4 a2 4a 47 57 7b 94 41 64 f1 7b 00 d8 32 42 c7 1c 13 a4 7f 68 f7 c4 
+# 
+# UVM_INFO driver.svh(89) @ 1306125: uvm_test_top.env.utopia_agnt_Rx[2].utopia_drv [utopia_driver] Sending cell:
+# bb 2b 8a da d4 cc 6c 17 15 53 59 6a d6 1c 86 6f 4c b7 1e da c1 77 05 30 60 d6 27 b0 33 0b b4 a2 4a 47 57 7b 94 41 64 f1 7b 00 d8 32 42 c7 1c 13 a4 7f 68 f7 c4 
+# UVM_INFO atm_cell.sv(324) @ 1306165: reporter@@NNI_cell [NNI_cell] @1306165 NNI id:0 VPI=0b2, VCI=9c06, CLP=1, PT=0, HEC=65, Payload[0]=a6
+# @1306165 0b 29 c0 68 65 a6 24 0c 3d 1a b9 99 68 59 9b 02 fb 5d 74 0c ac c1 54 37 11 59 59 5e a0 19 f8 a3 59 1a f6 04 bf d5 bf 65 c7 ae de 70 da d2 f1 11 23 e2 3a 77 8e 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1306165: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b2, VCI=9c06, CLP=1, PT=0, HEC=65, Payload[0]=a6
+# 0b 29 c0 68 65 a6 24 0c 3d 1a b9 99 68 59 9b 02 fb 5d 74 0c ac c1 54 37 11 59 59 5e a0 19 f8 a3 59 1a f6 04 bf d5 bf 65 c7 ae de 70 da d2 f1 11 23 e2 3a 77 8e 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1306165: reporter@@NNI_cell [NNI_cell] @1306165 NNI id:0 VPI=0b2, VCI=9c06, CLP=1, PT=0, HEC=65, Payload[0]=a6
+# @1306165 0b 29 c0 68 65 a6 24 0c 3d 1a b9 99 68 59 9b 02 fb 5d 74 0c ac c1 54 37 11 59 59 5e a0 19 f8 a3 59 1a f6 04 bf d5 bf 65 c7 ae de 70 da d2 f1 11 23 e2 3a 77 8e 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1306165: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b2, VCI=9c06, CLP=1, PT=0, HEC=65, Payload[0]=a6
+# 0b 29 c0 68 65 a6 24 0c 3d 1a b9 99 68 59 9b 02 fb 5d 74 0c ac c1 54 37 11 59 59 5e a0 19 f8 a3 59 1a f6 04 bf d5 bf 65 c7 ae de 70 da d2 f1 11 23 e2 3a 77 8e 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1306165: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b2, VCI=9c06, CLP=1, PT=0, HEC=65, Payload[0]=a6
+# 0b 29 c0 68 65 a6 24 0c 3d 1a b9 99 68 59 9b 02 fb 5d 74 0c ac c1 54 37 11 59 59 5e a0 19 f8 a3 59 1a f6 04 bf d5 bf 65 c7 ae de 70 da d2 f1 11 23 e2 3a 77 8e 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1306165: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1306165: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 1306165: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1306165: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1306165: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b2, VCI=9c06, CLP=1, PT=0, HEC=65, Payload[0]=a6
+# 0b 29 c0 68 65 a6 24 0c 3d 1a b9 99 68 59 9b 02 fb 5d 74 0c ac c1 54 37 11 59 59 5e a0 19 f8 a3 59 1a f6 04 bf d5 bf 65 c7 ae de 70 da d2 f1 11 23 e2 3a 77 8e 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1306165: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1306165: Scb check for port 1: 
+# UVM_INFO scoreboard.svh(210) @ 1306165: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1306165: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1306665: reporter@@NNI_cell [NNI_cell]  @1306665 NNI id:0 VPI=bb2, VCI=b8ad, CLP=1, PT=2, HEC=d4, Payload[0]=cc
+#  @1306665 bb 2b 8a da d4 cc 6c 17 15 53 59 6a d6 1c 86 6f 4c b7 1e da c1 77 05 30 60 d6 27 b0 33 0b b4 a2 4a 47 57 7b 94 41 64 f1 7b 00 d8 32 42 c7 1c 13 a4 7f 68 f7 c4 
+# 
+# UVM_INFO scoreboard.svh(175) @ 1306665: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1306665: Scb save for RX port: VPI=b2, Forward=1010
+# UVM_INFO atm_cell.sv(324) @ 1306665: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b2, VCI=b8ad, CLP=1, PT=2, HEC=d4, Payload[0]=cc
+# 0b 2b 8a da d4 cc 6c 17 15 53 59 6a d6 1c 86 6f 4c b7 1e da c1 77 05 30 60 d6 27 b0 33 0b b4 a2 4a 47 57 7b 94 41 64 f1 7b 00 d8 32 42 c7 1c 13 a4 7f 68 f7 c4 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#3 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 2
+# UVM_INFO atm_cell.sv(196) @ 1306665: uvm_test_top.env.utopia_agnt_Rx[3].utopia_sqncr@@UNI_seq.UNI_cell [UNI_cell] @1306665: UNI id:0 GFC=9, VPI=a4, VCI=4e77, CLP=1, PT=7, HEC=e0, Payload[0]=b6
+# @1306665: 9a 44 e7 7f e0 b6 28 02 a9 c5 ce bc 02 8a 19 33 2e 94 f1 a4 85 5c 05 7f 4a fb ac cf e7 bb 4f aa b3 f9 4c 3b d9 11 8a 7d 14 18 9a b3 cb 2b 59 6d 04 97 d4 95 08 
+# 
+# UVM_INFO driver.svh(89) @ 1306665: uvm_test_top.env.utopia_agnt_Rx[3].utopia_drv [utopia_driver] Sending cell:
+# 9a 44 e7 7f e0 b6 28 02 a9 c5 ce bc 02 8a 19 33 2e 94 f1 a4 85 5c 05 7f 4a fb ac cf e7 bb 4f aa b3 f9 4c 3b d9 11 8a 7d 14 18 9a b3 cb 2b 59 6d 04 97 d4 95 08 
+# UVM_INFO atm_cell.sv(324) @ 1306705: reporter@@NNI_cell [NNI_cell] @1306705 NNI id:0 VPI=06e, VCI=21f5, CLP=1, PT=5, HEC=f7, Payload[0]=34
+# @1306705 06 e2 1f 5d f7 34 b4 42 64 e0 e5 06 44 c2 77 df 2e bb 3d 76 16 09 72 a6 b0 44 7c f3 7b 20 9f 8a 5f 8f 1c b2 c9 c6 ba 8a 83 0a dc 76 95 71 bf ba a8 fb 83 96 09 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1306705: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=06e, VCI=21f5, CLP=1, PT=5, HEC=f7, Payload[0]=34
+# 06 e2 1f 5d f7 34 b4 42 64 e0 e5 06 44 c2 77 df 2e bb 3d 76 16 09 72 a6 b0 44 7c f3 7b 20 9f 8a 5f 8f 1c b2 c9 c6 ba 8a 83 0a dc 76 95 71 bf ba a8 fb 83 96 09 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1306705: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=06e, VCI=21f5, CLP=1, PT=5, HEC=f7, Payload[0]=34
+# 06 e2 1f 5d f7 34 b4 42 64 e0 e5 06 44 c2 77 df 2e bb 3d 76 16 09 72 a6 b0 44 7c f3 7b 20 9f 8a 5f 8f 1c b2 c9 c6 ba 8a 83 0a dc 76 95 71 bf ba a8 fb 83 96 09 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1306705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1306705: Scb check for port 0: 
+# UVM_INFO scoreboard.svh(210) @ 1306705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1306705: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1307205: reporter@@NNI_cell [NNI_cell]  @1307205 NNI id:0 VPI=9a4, VCI=4e77, CLP=1, PT=7, HEC=e0, Payload[0]=b6
+#  @1307205 9a 44 e7 7f e0 b6 28 02 a9 c5 ce bc 02 8a 19 33 2e 94 f1 a4 85 5c 05 7f 4a fb ac cf e7 bb 4f aa b3 f9 4c 3b d9 11 8a 7d 14 18 9a b3 cb 2b 59 6d 04 97 d4 95 08 
+# 
+# UVM_INFO scoreboard.svh(175) @ 1307205: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1307205: Scb save for RX port: VPI=a4, Forward=1101
+# UVM_INFO atm_cell.sv(324) @ 1307205: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0a4, VCI=4e77, CLP=1, PT=7, HEC=e0, Payload[0]=b6
+# 0a 44 e7 7f e0 b6 28 02 a9 c5 ce bc 02 8a 19 33 2e 94 f1 a4 85 5c 05 7f 4a fb ac cf e7 bb 4f aa b3 f9 4c 3b d9 11 8a 7d 14 18 9a b3 cb 2b 59 6d 04 97 d4 95 08 
+# 
+# YoYo 
+# CG_FWD = {{\/testbench_sv_unit::utopia_coverage::CG_fwd#4 } 1 100 {} {} 1 64 0 0 0 0 0} {0 100 {} 1 64 0 0} {1 100 {} 0} {1 100 {} 0 0 0 0} for RX port = 3
+# UVM_INFO atm_cell.sv(324) @ 1307245: reporter@@NNI_cell [NNI_cell] @1307245 NNI id:0 VPI=0b2, VCI=b8ad, CLP=1, PT=2, HEC=d4, Payload[0]=cc
+# @1307245 0b 2b 8a da d4 cc 6c 17 15 53 59 6a d6 1c 86 6f 4c b7 1e da c1 77 05 30 60 d6 27 b0 33 0b b4 a2 4a 47 57 7b 94 41 64 f1 7b 00 d8 32 42 c7 1c 13 a4 7f 68 f7 c4 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1307245: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b2, VCI=b8ad, CLP=1, PT=2, HEC=d4, Payload[0]=cc
+# 0b 2b 8a da d4 cc 6c 17 15 53 59 6a d6 1c 86 6f 4c b7 1e da c1 77 05 30 60 d6 27 b0 33 0b b4 a2 4a 47 57 7b 94 41 64 f1 7b 00 d8 32 42 c7 1c 13 a4 7f 68 f7 c4 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1307245: reporter@@NNI_cell [NNI_cell] @1307245 NNI id:0 VPI=0b2, VCI=b8ad, CLP=1, PT=2, HEC=d4, Payload[0]=cc
+# @1307245 0b 2b 8a da d4 cc 6c 17 15 53 59 6a d6 1c 86 6f 4c b7 1e da c1 77 05 30 60 d6 27 b0 33 0b b4 a2 4a 47 57 7b 94 41 64 f1 7b 00 d8 32 42 c7 1c 13 a4 7f 68 f7 c4 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1307245: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b2, VCI=b8ad, CLP=1, PT=2, HEC=d4, Payload[0]=cc
+# 0b 2b 8a da d4 cc 6c 17 15 53 59 6a d6 1c 86 6f 4c b7 1e da c1 77 05 30 60 d6 27 b0 33 0b b4 a2 4a 47 57 7b 94 41 64 f1 7b 00 d8 32 42 c7 1c 13 a4 7f 68 f7 c4 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1307245: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b2, VCI=b8ad, CLP=1, PT=2, HEC=d4, Payload[0]=cc
+# 0b 2b 8a da d4 cc 6c 17 15 53 59 6a d6 1c 86 6f 4c b7 1e da c1 77 05 30 60 d6 27 b0 33 0b b4 a2 4a 47 57 7b 94 41 64 f1 7b 00 d8 32 42 c7 1c 13 a4 7f 68 f7 c4 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1307245: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1307245: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 1307245: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1307245: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1307245: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0b2, VCI=b8ad, CLP=1, PT=2, HEC=d4, Payload[0]=cc
+# 0b 2b 8a da d4 cc 6c 17 15 53 59 6a d6 1c 86 6f 4c b7 1e da c1 77 05 30 60 d6 27 b0 33 0b b4 a2 4a 47 57 7b 94 41 64 f1 7b 00 d8 32 42 c7 1c 13 a4 7f 68 f7 c4 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1307245: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1307245: Scb check for port 1: 
+# UVM_INFO scoreboard.svh(210) @ 1307245: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1307245: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1307785: reporter@@NNI_cell [NNI_cell] @1307785 NNI id:0 VPI=0a4, VCI=4e77, CLP=1, PT=7, HEC=e0, Payload[0]=b6
+# @1307785 0a 44 e7 7f e0 b6 28 02 a9 c5 ce bc 02 8a 19 33 2e 94 f1 a4 85 5c 05 7f 4a fb ac cf e7 bb 4f aa b3 f9 4c 3b d9 11 8a 7d 14 18 9a b3 cb 2b 59 6d 04 97 d4 95 08 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1307785: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0a4, VCI=4e77, CLP=1, PT=7, HEC=e0, Payload[0]=b6
+# 0a 44 e7 7f e0 b6 28 02 a9 c5 ce bc 02 8a 19 33 2e 94 f1 a4 85 5c 05 7f 4a fb ac cf e7 bb 4f aa b3 f9 4c 3b d9 11 8a 7d 14 18 9a b3 cb 2b 59 6d 04 97 d4 95 08 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1307785: reporter@@NNI_cell [NNI_cell] @1307785 NNI id:0 VPI=0a4, VCI=4e77, CLP=1, PT=7, HEC=e0, Payload[0]=b6
+# @1307785 0a 44 e7 7f e0 b6 28 02 a9 c5 ce bc 02 8a 19 33 2e 94 f1 a4 85 5c 05 7f 4a fb ac cf e7 bb 4f aa b3 f9 4c 3b d9 11 8a 7d 14 18 9a b3 cb 2b 59 6d 04 97 d4 95 08 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1307785: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0a4, VCI=4e77, CLP=1, PT=7, HEC=e0, Payload[0]=b6
+# 0a 44 e7 7f e0 b6 28 02 a9 c5 ce bc 02 8a 19 33 2e 94 f1 a4 85 5c 05 7f 4a fb ac cf e7 bb 4f aa b3 f9 4c 3b d9 11 8a 7d 14 18 9a b3 cb 2b 59 6d 04 97 d4 95 08 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1307785: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0a4, VCI=4e77, CLP=1, PT=7, HEC=e0, Payload[0]=b6
+# 0a 44 e7 7f e0 b6 28 02 a9 c5 ce bc 02 8a 19 33 2e 94 f1 a4 85 5c 05 7f 4a fb ac cf e7 bb 4f aa b3 f9 4c 3b d9 11 8a 7d 14 18 9a b3 cb 2b 59 6d 04 97 d4 95 08 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1307785: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1307785: Scb check for port 2: 
+# UVM_INFO scoreboard.svh(210) @ 1307785: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1307785: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1307785: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0a4, VCI=4e77, CLP=1, PT=7, HEC=e0, Payload[0]=b6
+# 0a 44 e7 7f e0 b6 28 02 a9 c5 ce bc 02 8a 19 33 2e 94 f1 a4 85 5c 05 7f 4a fb ac cf e7 bb 4f aa b3 f9 4c 3b d9 11 8a 7d 14 18 9a b3 cb 2b 59 6d 04 97 d4 95 08 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1307785: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1307785: Scb check for port 0: 
+# UVM_INFO scoreboard.svh(210) @ 1307785: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1307785: Match found for the cell 
+# UVM_INFO atm_cell.sv(324) @ 1307805: reporter@@NNI_cell [NNI_cell] @1307805 NNI id:0 VPI=0a4, VCI=4e77, CLP=1, PT=7, HEC=e0, Payload[0]=b6
+# @1307805 0a 44 e7 7f e0 b6 28 02 a9 c5 ce bc 02 8a 19 33 2e 94 f1 a4 85 5c 05 7f 4a fb ac cf e7 bb 4f aa b3 f9 4c 3b d9 11 8a 7d 14 18 9a b3 cb 2b 59 6d 04 97 d4 95 08 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1307805: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0a4, VCI=4e77, CLP=1, PT=7, HEC=e0, Payload[0]=b6
+# 0a 44 e7 7f e0 b6 28 02 a9 c5 ce bc 02 8a 19 33 2e 94 f1 a4 85 5c 05 7f 4a fb ac cf e7 bb 4f aa b3 f9 4c 3b d9 11 8a 7d 14 18 9a b3 cb 2b 59 6d 04 97 d4 95 08 
+# 
+# UVM_INFO atm_cell.sv(324) @ 1307805: reporter@@NNI_cell [NNI_cell] NNI id:0 VPI=0a4, VCI=4e77, CLP=1, PT=7, HEC=e0, Payload[0]=b6
+# 0a 44 e7 7f e0 b6 28 02 a9 c5 ce bc 02 8a 19 33 2e 94 f1 a4 85 5c 05 7f 4a fb ac cf e7 bb 4f aa b3 f9 4c 3b d9 11 8a 7d 14 18 9a b3 cb 2b 59 6d 04 97 d4 95 08 
+# 
+# UVM_INFO scoreboard.svh(195) @ 1307805: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1307805: Scb check for port 3: 
+# UVM_INFO scoreboard.svh(210) @ 1307805: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1307805: Match found for the cell 
+# Scoreboard final check phase....
+# UVM_INFO scoreboard.svh(153) @ 1625705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1625705: Number of expected cells 18 matches with number of actual cells 18 for TX port 0 
+# UVM_INFO scoreboard.svh(153) @ 1625705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1625705: Number of expected cells 17 matches with number of actual cells 17 for TX port 1 
+# UVM_INFO scoreboard.svh(153) @ 1625705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1625705: Number of expected cells 16 matches with number of actual cells 16 for TX port 2 
+# UVM_INFO scoreboard.svh(153) @ 1625705: uvm_test_top.env.utopia_scbd [utopia_scoreboard] @1625705: Number of expected cells 22 matches with number of actual cells 22 for TX port 3 
+# Scoreboard ends....
+# UVM_INFO test.sv(145) @ 1625705: uvm_test_top [MYINFO1] TEST PASSED
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_objection.svh(1270) @ 1625705: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO verilog_src/uvm-1.2/src/base/uvm_report_server.svh(847) @ 1625705: reporter [UVM/REPORT/SERVER] 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  576
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [MYINFO1]     1
+# [NNI_cell]   299
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [UNI_cell]    40
+# [UVM/RELNOTES]     1
+# [UVMTOP]     1
+# [utopia_driver]    40
+# [utopia_scoreboard]   190
+# 
+# ** Note: $finish    : /usr/share/questa/questasim/linux_x86_64/../verilog_src/uvm-1.2/src/base/uvm_root.svh(517)
+#    Time: 1625705 ns  Iteration: 69  Instance: /top
+# End time: 18:22:38 on Jun 05,2023, Elapsed time: 0:00:05
+# Errors: 0, Warnings: 20

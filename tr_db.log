@@ -1,0 +1,4 @@
+  CREATE_STREAM @0 {NAME:UNI_seq1 T:Transactions SCOPE:uvm_test_top.env.utopia_agnt_Rx[0].utopia_sqncr STREAM:2165}
+  CREATE_STREAM @0 {NAME:UNI_seq2 T:Transactions SCOPE:uvm_test_top.env.utopia_agnt_Rx[1].utopia_sqncr STREAM:2168}
+  CREATE_STREAM @0 {NAME:UNI_seq3 T:Transactions SCOPE:uvm_test_top.env.utopia_agnt_Rx[2].utopia_sqncr STREAM:2171}
+  CREATE_STREAM @0 {NAME:UNI_seq4 T:Transactions SCOPE:uvm_test_top.env.utopia_agnt_Rx[3].utopia_sqncr STREAM:2174}
