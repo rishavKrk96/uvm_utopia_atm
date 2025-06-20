@@ -64,8 +64,9 @@ Transactions are modeled as UNI and NNI cells. Sequences randomize their attribu
 - Virtual interfaces and configuration handled via `uvm_config_db`
 
   ### 7. Files and Directory Structure
-  ```bash
 
+```bash
+.
 ├── src/ # UVM components: agents, drivers, monitors, etc.
 ├── results/ # Simulation logs and coverage reports
 ├── top.sv # Top-level module
