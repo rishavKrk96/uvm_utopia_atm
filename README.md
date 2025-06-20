@@ -62,3 +62,13 @@ Transactions are modeled as UNI and NNI cells. Sequences randomize their attribu
 - Scoreboard uses arrayed TLM FIFOs for scalable checking  
 - Monitor and coverage connections made through analysis FIFOs  
 - Virtual interfaces and configuration handled via `uvm_config_db`
+
+  ### 7. Files and Directory Structure
+  ```bash
+  .
+├── src/ # UVM components: agents, drivers, monitors, etc.
+├── results/ # Simulation logs and coverage reports
+├── top.sv # Top-level module
+├── README.md # Project description
+└── Utopia_simulation_log_with_all_packet_transmission_messages.txt
+  ```
