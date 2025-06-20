@@ -65,10 +65,11 @@ Transactions are modeled as UNI and NNI cells. Sequences randomize their attribu
 
   ### 7. Files and Directory Structure
   ```bash
-  .
+
 ├── src/ # UVM components: agents, drivers, monitors, etc.
 ├── results/ # Simulation logs and coverage reports
 ├── top.sv # Top-level module
 ├── README.md # Project description
 └── Utopia_simulation_log_with_all_packet_transmission_messages.txt
+
   ```
